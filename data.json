@@ -1,12 +1,20 @@
 {
- "updated": "2026-10-25 02:05",
+ "updated": "2026-10-25 03:07",
  "tabs": [
   {
    "id": "tver",
    "name": "TVer",
    "kind": "news",
-   "note": "TVerには追加予定の一覧がないため、関連ニュースの見出しを表示しています。",
+   "note": "TVerには追加予定の一覧がないため、関連ニュースの見出しを表示しています。名作ドラマ特集はおおむね春・夏・秋・冬の年4回、入れ替えと同時に発表されます。",
    "links": [
+    {
+     "label": "TVer 名作ドラマ特集",
+     "url": "https://tver.jp/specials/meisaku-drama"
+    },
+    {
+     "label": "名作ドラマ特集 配信ラインナップ一覧",
+     "url": "https://schedule-drama.tver.jp/meisaku"
+    },
     {
      "label": "TVerを開く",
      "url": "https://tver.jp/"
@@ -14,16 +22,23 @@
    ],
    "items": [
     {
-     "title": "妹よ 1994年放送 第9話 おめでとう、おにいちゃん｜ドラマ｜見逃し無料配信はTVer！人気の動画見放題 - TVer",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBQTFlXLUVlSlZtaWNvSWJ6R0lJUUVwVmRfQmxTajQ5ZGNRSXVGbFVraFJxTTNJbVZ5N09GMjBzN05sTHRhNzRXMzlrOA?oc=5",
+     "title": "【松田好花がドラマの脚本に初挑戦】今泉力哉が監督を務め映像化！元日向坂46加藤史帆が姉役で出演！脚本指導はかもめんたる・岩崎う大が担当！一体どんな仕上がりに！？ - TVer",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5LaTNVUV9XdXZueWxhb05xMFoyaVFpY2lfRWREN185R2tMQkV2QmVRSXQ1VFFHdkZ1QjR5dW4wODE3S3ZxSUF0ODREbw?oc=5",
      "date": "10/25",
      "first_seen": "2026-10-25",
      "new": true
     },
     {
-     "title": "日本シリーズ第2戦の配信はU-NEXT・TVer｜10月25日DeNA対ソフトバンクを見る方法【10月24日掲載】 - BANGER!!!（バンガー!!!）映画評論・情報サイト",
-     "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5kYlJrbjN1M0V3QkJPUUFkM1JDLVlTUmlRRDZ6SC1kRU91Sy1mOGY1VG1HbzJjNHZMdWVsamVPN2JVV1Z2MUdPUUJB?oc=5",
-     "date": "10/24",
+     "title": "OUR HOUSE 2016年放送 第8話 生き還ったママ｜ドラマ｜見逃し無料配信はTVer！人気の動画見放題 - TVer",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBqSzlpQnlnMGdUNXhLTmlPenJHMFZrSUNueEhnYTFlVDNKZWhydGQwc25lcGk1emx1SUVLb0Z3azVLaF9NYl93b3M3MA?oc=5",
+     "date": "10/25",
+     "first_seen": "2026-10-25",
+     "new": true
+    },
+    {
+     "title": "妹よ 1994年放送 第9話 おめでとう、おにいちゃん｜ドラマ｜見逃し無料配信はTVer！人気の動画見放題 - TVer",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBQTFlXLUVlSlZtaWNvSWJ6R0lJUUVwVmRfQmxTajQ5ZGNRSXVGbFVraFJxTTNJbVZ5N09GMjBzN05sTHRhNzRXMzlrOA?oc=5",
+     "date": "10/25",
      "first_seen": "2026-10-25",
      "new": true
     },
@@ -34,39 +49,9 @@
      "first_seen": "2000-01-01"
     },
     {
-     "title": "TVerで『第105回全国高校サッカー選手権大会』地区大会決勝全48試合＆全国大会全試合を無料ライブ配信 - Excite エキサイト",
-     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5LWkpXOF9fbVhObk02QjJIbkNBSkFfUjFDMlNFcXZORUtObXZENjhMajItZEx5OTNIWkRGWENFSlpVX1NBNDhIQUZEd2Y2ZmhDRXZBRmRLR2xTTFQ0T2c?oc=5",
-     "date": "10/24",
-     "first_seen": "2000-01-01"
-    },
-    {
-     "title": "晩酌の流儀５ 10月23日(金)放送分 第4話 「えのきステーキ」｜ドラマ｜見逃し無料配信はTVer！人気の動画見放題 - TVer",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5hR3ZxNFJSaV94N2d6b3NYa3REbDMyaEZNMFJKS0tMeDktdEhLM1BVdnZrc1Yya0JKOTE1NlU5UHhOekhqQTlXSVQ3Yw?oc=5",
-     "date": "10/24",
-     "first_seen": "2000-01-01"
-    },
-    {
-     "title": "まめとむぎ 10月23日(金)放送分 #4 これからは、隣にいる。｜ドラマ｜見逃し無料配信はTVer！人気の動画見放題 - TVer",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE82d3RSZVNIQ0lBVjNhM3JQQlAwQm1IckNlWkc0Mm03aS1nQXZMX3VBZmVZTEZ2VmhSSnhPU005ZkVnWndVNWNEUkhfTQ?oc=5",
-     "date": "10/24",
-     "first_seen": "2000-01-01"
-    },
-    {
      "title": "第8話 涙腺崩壊！月海の決断と涙の別れ 最後の晩餐 - TVer",
      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5LWGFtdVM0cE92ZzY3WGhQUjJrMm9kX1Eyc2dwZzA4bDFCcDRONEtDMEY3eFlnbmo1X0RWb29uUmROMGVGRjNSa1ZnZw?oc=5",
      "date": "10/24",
-     "first_seen": "2000-01-01"
-    },
-    {
-     "title": "【解説放送版】第2話 二つの事件 一つの真実 - TVer",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1uakN1T0REMWZQVTFVbXJ5VUVjZ3U1UzlzbS1KNzZJbVdpemxFcEV3Q0dvdDczUmVfZjNZLVNIYkpLajZ2TkJTdXZGQQ?oc=5",
-     "date": "10/23",
-     "first_seen": "2000-01-01"
-    },
-    {
-     "title": "【“コメ急落”日本米の逆襲】安く大量生産！さらに海外で稼ぐ！ - TVer",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1qSHdNN0dJSElfLTZaSEk1OHJ0NUlReFZjNG9hTU5aQ0NVVEtFeExkc2xXeGtvaHpORE5feEEzQU5zczVwRWF6TlhUbw?oc=5",
-     "date": "10/23",
      "first_seen": "2000-01-01"
     },
     {
@@ -76,10 +61,11 @@
      "first_seen": "2000-01-01"
     },
     {
-     "title": "「シルバニアファミリー フレアのカラフル・エブリデイ」の配信はどこで見れる？見放題サブスク・TVer・放送日まとめ - アニメ！アニメ！",
-     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9mQTNrb2hncHI3cmw2VjNqZDZtNzY1bWZ3c0ExU3ZFQ0Y3dF9SSVgzS0l6dHh3SkVrOVZKWW9zZVREMmxTMGlST0QyQ3V0TG9qTWFlWTRuTEloQmIwWEZJWklB?oc=5",
+     "title": "OneAcre×SBS、縦型ショートドラマ『ダウトコール』を地上波・TVerへ展開！TVerお気に入り登録1,300件突破！ - 新Screens",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5JdWVkMXNtR053dlpPOVVaMElSNU1UV3MtNS1mZnNLWXUxTEQtTVRRRnU5bWl5azFtdWxTVGFfYm1CeXdPajVJU1k3UGYxbWRZdzFiZEp2LWgyZw?oc=5",
      "date": "10/23",
-     "first_seen": "2000-01-01"
+     "first_seen": "2026-10-25",
+     "new": true
     },
     {
      "title": "TVerで『SMBC日本シリーズ2026』無料ライブ配信決定「横浜DeNAベイスターズ」と「福岡ソフトバンクホークス」が激突 - PR TIMES",
@@ -88,21 +74,51 @@
      "first_seen": "2000-01-01"
     },
     {
-     "title": "民間のコンソーシアムで、世界に負けないAIロボットをつくる！：アンパラレルド - テレビ東京",
-     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5LZlRka0h1N2FCTkZ4ZGVQZ3lJOVEzUWZMYjIwR1V5M1YwRTQydnMzYkZMTlhoWWxlc2NYcnF4dkdqVmV6MXU3bDdVM1F3dExUay1zSUhrcDRHLWhfU054eTRQeGdlU19pQzdTUWxqQ1hFUQ?oc=5",
+     "title": "女帝 10月22日(木)放送分 【第１話・火の国の誓い】｜ドラマ｜見逃し無料配信はTVer！人気の動画見放題 - TVer",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE8wamdLbVJBNzRUS25ER1JlWDVid2UwZ2JfdzZrcF8tbFlhREZScC1KZ0E1bmNyR2Y3VHVxZzBMWllieDI1bTY1QWxUUQ?oc=5",
      "date": "10/23",
-     "first_seen": "2000-01-01"
+     "first_seen": "2026-10-25",
+     "new": true
     },
     {
-     "title": "大手外食チェーン“110億円もの”買収劇＆経営難に陥った＜地方の宿＞再建請負人に密着!! - テレビ東京",
-     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE91MVRMelgwQW56OUZCRVhxcHUySm5vMDIwQVRTUzZIdkhqSFVaUWpkS3NhTjFLX2xveDFqV0M2MTZSYXB5a05GYXdjbElkS01hSnMxQS16TWdiVE5YTFFKMDJ0Mk9qX1p3N0d5T2RvVGZaUQ?oc=5",
+     "title": "ライフトレード 10月22日(木)放送分 第3話 アンコの闇と色恋管理｜ドラマ｜見逃し無料配信はTVer！人気の動画見放題 - TVer",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5MWmxqUFhDNFNfN3VsWTRiV1ZDemFqWUdZb0dmaGdqWXJGX0FuRHFENGhqTW10ZXZ4M0pQek9LakxRWm5HbWRMNUFubw?oc=5",
      "date": "10/23",
-     "first_seen": "2000-01-01"
+     "first_seen": "2026-10-25",
+     "new": true
     },
     {
-     "title": "プロ野球日本シリーズ、TVerで全試合無料ライブ配信 - ｄメニューニュース",
-     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQQURjY1ZWZzV5Tl9XQkN1UlhpWFNmWThKOHdpZ1pLT1VwSGV0TUFpSVhrbDhMcVFTeFAwZFVhSlExaldxeU1VWVc2SE5mZ3RFUWc5dEg5UF9yOU1QbTJPd1JoZ0dBb2d3VmdjWVpJVksyb2dQTjNrMEtYS282eXJKUWlaaE5zRTlyQkdEeVhB0gGOAUFVX3lxTFBBRGNjVlZnNXlOX1dCQ3VSWGlYU2ZZOEo4d2lnWktPVXBIZXRNQWlJWGtsOExxUVN4UDBkVWFKUTFqV3F5TVVZVzZITmZndEVRZzl0SDlQX3I5TVBtMk93UmhnR0FvZ3dWZ2NZWklWSzJvZ1BOM2swS1hLbzZ5ckpRaVpoTnNFOXJCR0R5WEE?oc=5",
+     "title": "赤灯えれじい 10月22日(木)放送分 第3話 サトシ、一人暮らしする｜ドラマ｜見逃し無料配信はTVer！人気の動画見放題 - TVer",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE93Z0pPRUdjdmRITnkzNzM1akhUQVI0aU55M2YwRkhrdnJWX1l2RGRyaFNHNjJxaHN3RktnZWFpV2gzOUNncFhuSml6TQ?oc=5",
      "date": "10/23",
+     "first_seen": "2026-10-25",
+     "new": true
+    },
+    {
+     "title": "ディア・シスター 2014年放送 第8話 秘密のラブレター｜ドラマ｜見逃し無料配信はTVer！人気の動画見放題 - TVer",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE45TWdzcWlLOGppNW5fbG15ejU4YWhYVFJGRjFja0x6M25YbW5TVkpBeWZfV1M3MTQyNXVSTC0tV3V0dW9hSTA2Wlpoaw?oc=5",
+     "date": "10/23",
+     "first_seen": "2026-10-25",
+     "new": true
+    },
+    {
+     "title": "熱を操って103年！タイガー魔法瓶 低迷からの再建物語 - TVer",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9pN21fdjAwajJlaXVQSWhQM1M0dnIwSmZHOEM2VzFEOUN1ZEFqYWhObEh6cnBFbHVrbHNiZWJJLUZETG9zcThLLURIQQ?oc=5",
+     "date": "10/22",
+     "first_seen": "2026-10-25",
+     "new": true
+    },
+    {
+     "title": "石原さとみ主演『ポリティカルパン』フジドラマ初の快挙を達成 日本における「Netflix」TOP10で週間1位を獲得 - AGARA 紀伊民報",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBlVHIzZDdfd29PNk5mVGVUbzNxc3V0RllwM2VzUGJ1QjZLQVhhTm40RDhkTG50c3FOU1ExemtYcmVXNDBCVUlfYkdQanBXbHR6T0dWUmgwTEU3ZTlvQnc?oc=5",
+     "date": "10/22",
+     "first_seen": "2026-10-25",
+     "new": true
+    },
+    {
+     "title": "TVer、決済機能「TVer ID支払い」を提供開始 第1弾としてFODと提携しコンテンツとの出合いから利用までをよりスムーズに - PR TIMES",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8yRFVPVkJIRDF3M2ppMVJjSlAzNU1Ea3ZwcnJmeTBJZzN2ZEhhNzZ2OE54YmNIZnpmZ2FZX1hJaW1HMG5QQkhMYkVrRGVlZVR2QjdoeENIbFRGdzhFdUN5WDBpa081Yk1obVE?oc=5",
+     "date": "10/22",
      "first_seen": "2026-10-25",
      "new": true
     }
@@ -125,6 +141,17 @@
     }
    ],
    "days": [
+    {
+     "date": "2026-10-25",
+     "label": "10月25日(日)",
+     "items": [
+      {
+       "title": "2週連続！映画「96時間／リベンジ」",
+       "link": "https://bangumi.org/tv_events/AmOwggmfsAM",
+       "time": "2:15〜4:10 関西テレビ"
+      }
+     ]
+    },
     {
      "date": "2026-10-30",
      "label": "10月30日(金)",
@@ -195,13 +222,19 @@
      "label": "10月25日(日)",
      "items": [
       {
-       "title": "ダーク・オデッセイ"
+       "title": "ダーク・オデッセイ",
+       "genre": "映画",
+       "len": "115分"
       },
       {
-       "title": "バビロン"
+       "title": "バビロン",
+       "genre": "映画",
+       "len": "181分"
       },
       {
-       "title": "完璧な他人"
+       "title": "完璧な他人",
+       "genre": "映画",
+       "len": "116分"
       }
      ]
     },
@@ -210,7 +243,9 @@
      "label": "10月26日(月)",
      "items": [
       {
-       "title": "種から植えるTV【テレビ東京オンデマンド】"
+       "title": "種から植えるTV【テレビ東京オンデマンド】",
+       "genre": "その他",
+       "len": "228話"
       }
      ]
     },
@@ -219,10 +254,14 @@
      "label": "10月27日(火)",
      "items": [
       {
-       "title": "ソード・オブ・レジェンド 古剣奇譚"
+       "title": "ソード・オブ・レジェンド 古剣奇譚",
+       "genre": "映画",
+       "len": "105分"
       },
       {
-       "title": "レジェンド・オブ・キングダム 勇者マイロックと聖なる甲冑の伝説"
+       "title": "レジェンド・オブ・キングダム 勇者マイロックと聖なる甲冑の伝説",
+       "genre": "映画",
+       "len": "80分"
       }
      ]
     },
@@ -231,7 +270,9 @@
      "label": "10月28日(水)",
      "items": [
       {
-       "title": "トライバル ゲット・アウト・アライブ"
+       "title": "トライバル ゲット・アウト・アライブ",
+       "genre": "映画",
+       "len": "86分"
       }
      ]
     },
@@ -240,10 +281,14 @@
      "label": "10月29日(木)",
      "items": [
       {
-       "title": "ザ・スパイ ゴースト・エージェント"
+       "title": "ザ・スパイ ゴースト・エージェント",
+       "genre": "映画",
+       "len": "121分"
       },
       {
-       "title": "シークレット・オブ・ハロウィン"
+       "title": "シークレット・オブ・ハロウィン",
+       "genre": "映画",
+       "len": "112分"
       }
      ]
     },
@@ -252,31 +297,49 @@
      "label": "10月30日(金)",
      "items": [
       {
-       "title": "アフリカン・ネイチャー"
+       "title": "アフリカン・ネイチャー",
+       "genre": "映画",
+       "len": "86分"
       },
       {
-       "title": "アンダーカバー・エンジェル 守護天使"
+       "title": "アンダーカバー・エンジェル 守護天使",
+       "genre": "映画",
+       "len": "87分"
       },
       {
-       "title": "クレヨンしんちゃん外伝 シーズン1"
+       "title": "クレヨンしんちゃん外伝 シーズン1",
+       "genre": "アニメ",
+       "len": "13話"
       },
       {
-       "title": "ザ・ラスト・ウェーブ"
+       "title": "ザ・ラスト・ウェーブ",
+       "genre": "映画",
+       "len": "105分"
       },
       {
-       "title": "シンクロニック"
+       "title": "シンクロニック",
+       "genre": "映画",
+       "len": "102分"
       },
       {
-       "title": "スレイヤー 7日目の煉獄"
+       "title": "スレイヤー 7日目の煉獄",
+       "genre": "映画",
+       "len": "87分"
       },
       {
-       "title": "レッド・ブレイク"
+       "title": "レッド・ブレイク",
+       "genre": "映画",
+       "len": "93分"
       },
       {
-       "title": "名探偵ポアロ：ベネチアの亡霊"
+       "title": "名探偵ポアロ：ベネチアの亡霊",
+       "genre": "映画",
+       "len": "99分"
       },
       {
-       "title": "夏目友人帳 シーズン7"
+       "title": "夏目友人帳 シーズン7",
+       "genre": "アニメ",
+       "len": "13話"
       }
      ]
     },
@@ -285,598 +348,994 @@
      "label": "10月31日(土)",
      "items": [
       {
-       "title": "17歳"
+       "title": "17歳",
+       "genre": "映画",
+       "len": "90分"
       },
       {
-       "title": "60デイズ・イン：ナルコス 麻薬カルテル潜入60日"
+       "title": "60デイズ・イン：ナルコス 麻薬カルテル潜入60日",
+       "genre": "その他",
+       "len": "8話"
       },
       {
-       "title": "Academy アカデミー"
+       "title": "Academy アカデミー",
+       "genre": "映画",
+       "len": "112分"
       },
       {
-       "title": "Avanti"
+       "title": "Avanti",
+       "genre": "その他",
+       "len": "144分"
       },
       {
-       "title": "CLOSING TIME クロージング・タイム"
+       "title": "CLOSING TIME クロージング・タイム",
+       "genre": "映画",
+       "len": "81分"
       },
       {
-       "title": "China Moon"
+       "title": "China Moon",
+       "genre": "映画",
+       "len": "96分"
       },
       {
-       "title": "D-デイ ノルマンディー上陸"
+       "title": "D-デイ ノルマンディー上陸",
+       "genre": "映画",
+       "len": "80分"
       },
       {
-       "title": "FLINT２ ～フリント 怒りの脱出～ 前編"
+       "title": "FLINT２ ～フリント 怒りの脱出～ 前編",
+       "genre": "映画",
+       "len": "105分"
       },
       {
-       "title": "Fanmade: ENHYPEN"
+       "title": "Fanmade: ENHYPEN",
+       "genre": "その他",
+       "len": "81分"
       },
       {
-       "title": "HUNTER×HUNTER"
+       "title": "HUNTER×HUNTER",
+       "genre": "アニメ",
+       "len": "148話"
       },
       {
-       "title": "Halloween With The New Addams Family"
+       "title": "Halloween With The New Addams Family",
+       "genre": "その他",
+       "len": "74分"
       },
       {
-       "title": "Hawaii Five-0 シーズン1"
+       "title": "Hawaii Five-0 シーズン1",
+       "genre": "ドラマ",
+       "len": "24話"
       },
       {
-       "title": "Lie to Me"
+       "title": "Lie to Me",
+       "genre": "ドラマ",
+       "len": "13話"
       },
       {
-       "title": "Love, サイモン 17歳の告白"
+       "title": "Love, サイモン 17歳の告白",
+       "genre": "映画",
+       "len": "110分"
       },
       {
-       "title": "MOMOKO KIKUCHI 40th ANNIVERSARY FINAL"
+       "title": "MOMOKO KIKUCHI 40th ANNIVERSARY FINAL",
+       "genre": "その他",
+       "len": "116分"
       },
       {
-       "title": "PLANET OF THE APES／猿の惑星"
+       "title": "PLANET OF THE APES／猿の惑星",
+       "genre": "映画",
+       "len": "115分"
       },
       {
-       "title": "Teen Wolf: The Movie"
+       "title": "Teen Wolf: The Movie",
+       "genre": "映画",
+       "len": "133分"
       },
       {
-       "title": "The Addams Family (2019)"
+       "title": "The Addams Family (2019)",
+       "genre": "キッズ",
+       "len": "87分"
       },
       {
-       "title": "The Silence of the Lambs"
+       "title": "The Silence of the Lambs",
+       "genre": "映画",
+       "len": "114分"
       },
       {
-       "title": "xXx トリプルX：再起動"
+       "title": "xXx トリプルX：再起動",
+       "genre": "映画",
+       "len": "101分"
       },
       {
-       "title": "xXxトリプルX：再起動"
+       "title": "xXxトリプルX：再起動",
+       "genre": "映画",
+       "len": "107分"
       },
       {
-       "title": "あのこと"
+       "title": "あのこと",
+       "genre": "映画",
+       "len": "100分"
       },
       {
-       "title": "あるいは裏切りという名の犬"
+       "title": "あるいは裏切りという名の犬",
+       "genre": "映画",
+       "len": "111分"
       },
       {
-       "title": "おそ松さん おうまでこばなし"
+       "title": "おそ松さん おうまでこばなし",
+       "genre": "アニメ",
+       "len": "24分"
       },
       {
-       "title": "おそ松さん シーズン1"
+       "title": "おそ松さん シーズン1",
+       "genre": "アニメ",
+       "len": "25話"
       },
       {
-       "title": "おそ松さん～ヒピポ族と輝く果実～"
+       "title": "おそ松さん～ヒピポ族と輝く果実～",
+       "genre": "アニメ",
+       "len": "68分"
       },
       {
-       "title": "おそ松さん～魂のたこ焼きパーティーと伝説のお泊まり会～"
+       "title": "おそ松さん～魂のたこ焼きパーティーと伝説のお泊まり会～",
+       "genre": "アニメ",
+       "len": "58分"
       },
       {
-       "title": "ひまわり"
+       "title": "ひまわり",
+       "genre": "映画",
+       "len": "108分"
       },
       {
-       "title": "ひまわり [新録吹替版]"
+       "title": "ひまわり [新録吹替版]",
+       "genre": "映画",
+       "len": "108分"
       },
       {
-       "title": "みなみけ シーズン1"
+       "title": "みなみけ シーズン1",
+       "genre": "アニメ",
+       "len": "13話"
       },
       {
-       "title": "アクセレーション"
+       "title": "アクセレーション",
+       "genre": "映画",
+       "len": "85分"
       },
       {
-       "title": "アスリート殺人事件～体操選手たちの光と闇"
+       "title": "アスリート殺人事件～体操選手たちの光と闇",
+       "genre": "ドラマ",
+       "len": "6話"
       },
       {
-       "title": "アダムス・ファミリー 2"
+       "title": "アダムス・ファミリー 2",
+       "genre": "キッズ",
+       "len": "88分"
       },
       {
-       "title": "アダムス･ファミリー"
+       "title": "アダムス･ファミリー",
+       "genre": "キッズ",
+       "len": "82分"
       },
       {
-       "title": "アップタウン・ガールズ"
+       "title": "アップタウン・ガールズ",
+       "genre": "その他",
+       "len": "89分"
       },
       {
-       "title": "アデル、ブルーは熱い色"
+       "title": "アデル、ブルーは熱い色",
+       "genre": "映画",
+       "len": "180分"
       },
       {
-       "title": "アニメ「モンスターストライク デッドバースリローデッド」"
+       "title": "アニメ「モンスターストライク デッドバースリローデッド」",
+       "genre": "アニメ",
+       "len": "10話"
       },
       {
-       "title": "アリエナ -禁断の女子高生-"
+       "title": "アリエナ -禁断の女子高生-",
+       "genre": "映画",
+       "len": "83分"
       },
       {
-       "title": "アレキサンダー"
+       "title": "アレキサンダー",
+       "genre": "映画",
+       "len": "175分"
       },
       {
-       "title": "イフ・アイ・ステイ 愛が還る場所"
+       "title": "イフ・アイ・ステイ 愛が還る場所",
+       "genre": "映画",
+       "len": "107分"
       },
       {
-       "title": "イルジン 不良たち"
+       "title": "イルジン 不良たち",
+       "genre": "映画",
+       "len": "81分"
       },
       {
-       "title": "イルジン２ 不良たち"
+       "title": "イルジン２ 不良たち",
+       "genre": "映画",
+       "len": "81分"
       },
       {
-       "title": "インモラル家政婦"
+       "title": "インモラル家政婦",
+       "genre": "映画",
+       "len": "83分"
       },
       {
-       "title": "ウィッチクラフト/黒魔術の追跡者"
+       "title": "ウィッチクラフト/黒魔術の追跡者",
+       "genre": "映画",
+       "len": "93分"
       },
       {
-       "title": "ウルフ・オブ・ウォールストリート"
+       "title": "ウルフ・オブ・ウォールストリート",
+       "genre": "映画",
+       "len": "172分"
       },
       {
-       "title": "エグゼキューター 暗殺者"
+       "title": "エグゼキューター 暗殺者",
+       "genre": "映画",
+       "len": "93分"
       },
       {
-       "title": "エターナル・コード"
+       "title": "エターナル・コード",
+       "genre": "映画",
+       "len": "106分"
       },
       {
-       "title": "エンド・オブ・デイズ"
+       "title": "エンド・オブ・デイズ",
+       "genre": "映画",
+       "len": "122分"
       },
       {
-       "title": "オフ・ザ・メニュー 恋は最高のスパイス"
+       "title": "オフ・ザ・メニュー 恋は最高のスパイス",
+       "genre": "映画",
+       "len": "96分"
       },
       {
-       "title": "オルラ"
+       "title": "オルラ",
+       "genre": "映画",
+       "len": "91分"
       },
       {
-       "title": "オーバーボード"
+       "title": "オーバーボード",
+       "genre": "その他",
+       "len": "112分"
       },
       {
-       "title": "ガールズバンドクライ"
+       "title": "ガールズバンドクライ",
+       "genre": "アニメ",
+       "len": "13話"
       },
       {
-       "title": "キャビン28 ケディ殺人事件"
+       "title": "キャビン28 ケディ殺人事件",
+       "genre": "映画",
+       "len": "83分"
       },
       {
-       "title": "キル・イット～巡り合うふたり～"
+       "title": "キル・イット～巡り合うふたり～",
+       "genre": "ドラマ",
+       "len": "12話"
       },
       {
-       "title": "グラスドラゴン"
+       "title": "グラスドラゴン",
+       "genre": "映画",
+       "len": "107分"
       },
       {
-       "title": "グルメ探偵ヘンリー"
+       "title": "グルメ探偵ヘンリー",
+       "genre": "ドラマ",
+       "len": "5話"
       },
       {
-       "title": "ゴースト／ニューヨークの幻"
+       "title": "ゴースト／ニューヨークの幻",
+       "genre": "映画",
+       "len": "121分"
       },
       {
-       "title": "サム＝サマンサ"
+       "title": "サム＝サマンサ",
+       "genre": "映画",
+       "len": "103分"
       },
       {
-       "title": "サラもり刑事～パチスロ捜査班～"
+       "title": "サラもり刑事～パチスロ捜査班～",
+       "genre": "その他",
+       "len": "20話"
       },
       {
-       "title": "サン･イズ･オールソー･ア･スター引き寄せられる２人"
+       "title": "サン･イズ･オールソー･ア･スター引き寄せられる２人",
+       "genre": "映画",
+       "len": "96分"
       },
       {
-       "title": "サークル：繋がった二つの世界"
+       "title": "サークル：繋がった二つの世界",
+       "genre": "ドラマ",
+       "len": "12話"
       },
       {
-       "title": "ザ・イコライザー シーズン3"
+       "title": "ザ・イコライザー シーズン3",
+       "genre": "ドラマ",
+       "len": "18話"
       },
       {
-       "title": "ザ・ショーガールズ 優等生の欲望"
+       "title": "ザ・ショーガールズ 優等生の欲望",
+       "genre": "その他",
+       "len": "80分"
       },
       {
-       "title": "ザ・ショーガールズ 淫らな三角関係"
+       "title": "ザ・ショーガールズ 淫らな三角関係",
+       "genre": "その他",
+       "len": "78分"
       },
       {
-       "title": "ザ・ショーガールズ 覗かれる快感"
+       "title": "ザ・ショーガールズ 覗かれる快感",
+       "genre": "その他",
+       "len": "77分"
       },
       {
-       "title": "シン・ゴジラ"
+       "title": "シン・ゴジラ",
+       "genre": "映画",
+       "len": "120分"
       },
       {
-       "title": "ジェミニマン"
+       "title": "ジェミニマン",
+       "genre": "映画",
+       "len": "106分"
       },
       {
-       "title": "ジュラシック・サバイブ"
+       "title": "ジュラシック・サバイブ",
+       "genre": "映画",
+       "len": "75分"
       },
       {
-       "title": "スチューデント"
+       "title": "スチューデント",
+       "genre": "映画",
+       "len": "104分"
       },
       {
-       "title": "スーパー・マグナム"
+       "title": "スーパー・マグナム",
+       "genre": "映画",
+       "len": "86分"
       },
       {
-       "title": "ターミナル"
+       "title": "ターミナル",
+       "genre": "映画",
+       "len": "118分"
       },
       {
-       "title": "チャック・ノリスの地獄のヒーロー2"
+       "title": "チャック・ノリスの地獄のヒーロー2",
+       "genre": "映画",
+       "len": "92分"
       },
       {
-       "title": "チョアチョア"
+       "title": "チョアチョア",
+       "genre": "ドラマ",
+       "len": "22話"
       },
       {
-       "title": "ティーン・ウルフ"
+       "title": "ティーン・ウルフ",
+       "genre": "その他",
+       "len": "89分"
       },
       {
-       "title": "ティーン・ウルフ2 僕のいとこも狼だった"
+       "title": "ティーン・ウルフ2 僕のいとこも狼だった",
+       "genre": "その他",
+       "len": "94分"
       },
       {
-       "title": "デストイレ"
+       "title": "デストイレ",
+       "genre": "映画",
+       "len": "54分"
       },
       {
-       "title": "デッド・オン・アライバル"
+       "title": "デッド・オン・アライバル",
+       "genre": "映画",
+       "len": "97分"
       },
       {
-       "title": "トゥームレイダー ファーストミッション"
+       "title": "トゥームレイダー ファーストミッション",
+       "genre": "映画",
+       "len": "113分"
       },
       {
-       "title": "トロピカル～ジュ！プリキュア"
+       "title": "トロピカル～ジュ！プリキュア",
+       "genre": "キッズ",
+       "len": "46話"
       },
       {
-       "title": "ドラマW シリウスの道"
+       "title": "ドラマW シリウスの道",
+       "genre": "映画",
+       "len": "158分"
       },
       {
-       "title": "ドルフ・ラングレンinエリミネイト・ソルジャー"
+       "title": "ドルフ・ラングレンinエリミネイト・ソルジャー",
+       "genre": "映画",
+       "len": "95分"
       },
       {
-       "title": "ドント・オープン"
+       "title": "ドント・オープン",
+       "genre": "映画",
+       "len": "82分"
       },
       {
-       "title": "ノッティングヒルの恋人"
+       "title": "ノッティングヒルの恋人",
+       "genre": "映画",
+       "len": "119分"
       },
       {
-       "title": "バッドガイズ ー悪い奴らー"
+       "title": "バッドガイズ ー悪い奴らー",
+       "genre": "ドラマ",
+       "len": "11話"
       },
       {
-       "title": "バッドガイズ２～悪の都市～"
+       "title": "バッドガイズ２～悪の都市～",
+       "genre": "ドラマ",
+       "len": "16話"
       },
       {
-       "title": "バトルガンm‐16"
+       "title": "バトルガンm‐16",
+       "genre": "映画",
+       "len": "96分"
       },
       {
-       "title": "バトル・オブ・ポイントマン"
+       "title": "バトル・オブ・ポイントマン",
+       "genre": "映画",
+       "len": "87分"
       },
       {
-       "title": "バリバリ伝説 劇場版"
+       "title": "バリバリ伝説 劇場版",
+       "genre": "アニメ",
+       "len": "85分"
       },
       {
-       "title": "パチスロバトルリーグ シーズン18"
+       "title": "パチスロバトルリーグ シーズン18",
+       "genre": "その他",
+       "len": "25話"
       },
       {
-       "title": "パトリオット・ゲーム"
+       "title": "パトリオット・ゲーム",
+       "genre": "映画",
+       "len": "112分"
       },
       {
-       "title": "パニック・ライド 淫行強制"
+       "title": "パニック・ライド 淫行強制",
+       "genre": "映画",
+       "len": "84分"
       },
       {
-       "title": "ビトレイヤー 裏切りの闘争"
+       "title": "ビトレイヤー 裏切りの闘争",
+       "genre": "映画",
+       "len": "98分"
       },
       {
-       "title": "フィクサー シーズン1"
+       "title": "フィクサー シーズン1",
+       "genre": "ドラマ",
+       "len": "5話"
       },
       {
-       "title": "フューリアス ワン"
+       "title": "フューリアス ワン",
+       "genre": "映画",
+       "len": "99分"
       },
       {
-       "title": "ブラドック/地獄のヒーロー３"
+       "title": "ブラドック/地獄のヒーロー３",
+       "genre": "映画",
+       "len": "99分"
       },
       {
-       "title": "ペット"
+       "title": "ペット",
+       "genre": "キッズ",
+       "len": "79分"
       },
       {
-       "title": "ペナルティループ"
+       "title": "ペナルティループ",
+       "genre": "映画",
+       "len": "99分"
       },
       {
-       "title": "ホワイトシャーク"
+       "title": "ホワイトシャーク",
+       "genre": "映画",
+       "len": "85分"
       },
       {
-       "title": "ボディ・オブ・プルーフ/死体の証言 シーズン1"
+       "title": "ボディ・オブ・プルーフ/死体の証言 シーズン1",
+       "genre": "ドラマ",
+       "len": "9話"
       },
       {
-       "title": "ポルターガイスト2"
+       "title": "ポルターガイスト2",
+       "genre": "その他",
+       "len": "87分"
       },
       {
-       "title": "ポルターガイスト3／少女の霊に捧ぐ…"
+       "title": "ポルターガイスト3／少女の霊に捧ぐ…",
+       "genre": "その他",
+       "len": "94分"
       },
       {
-       "title": "ポルターガイスト<劇場 公開バージョン >"
+       "title": "ポルターガイスト<劇場 公開バージョン >",
+       "genre": "映画",
+       "len": "90分"
       },
       {
-       "title": "マックス"
+       "title": "マックス",
+       "genre": "その他",
+       "len": "111分"
       },
       {
-       "title": "マックス２： ホワイトハウス･ヒーロー"
+       "title": "マックス２： ホワイトハウス･ヒーロー",
+       "genre": "キッズ",
+       "len": "85分"
       },
       {
-       "title": "ミケランジェロ・プロジェクト"
+       "title": "ミケランジェロ・プロジェクト",
+       "genre": "映画",
+       "len": "113分"
       },
       {
-       "title": "ミッシング～彼らがいた～"
+       "title": "ミッシング～彼らがいた～",
+       "genre": "ドラマ",
+       "len": "12話"
       },
       {
-       "title": "モトカレ←リトライ"
+       "title": "モトカレ←リトライ",
+       "genre": "アニメ",
+       "len": "8話"
       },
       {
-       "title": "ユージュアル・サスペクツ"
+       "title": "ユージュアル・サスペクツ",
+       "genre": "映画",
+       "len": "106分"
       },
       {
-       "title": "ラスト、コーション [R-15指定版]"
+       "title": "ラスト、コーション [R-15指定版]",
+       "genre": "映画",
+       "len": "156分"
       },
       {
-       "title": "リベンジ・ビースト"
+       "title": "リベンジ・ビースト",
+       "genre": "映画",
+       "len": "78分"
       },
       {
-       "title": "レイジング･ブル"
+       "title": "レイジング･ブル",
+       "genre": "映画",
+       "len": "124分"
       },
       {
-       "title": "レインマン"
+       "title": "レインマン",
+       "genre": "映画",
+       "len": "128分"
       },
       {
-       "title": "ロサンゼルス"
+       "title": "ロサンゼルス",
+       "genre": "映画",
+       "len": "89分"
       },
       {
-       "title": "ロシアン・ルーレット"
+       "title": "ロシアン・ルーレット",
+       "genre": "映画",
+       "len": "97分"
       },
       {
-       "title": "ロジャー・ラビット"
+       "title": "ロジャー・ラビット",
+       "genre": "アニメ",
+       "len": "104分"
       },
       {
-       "title": "ワールド・ウォーZ"
+       "title": "ワールド・ウォーZ",
+       "genre": "映画",
+       "len": "110分"
       },
       {
-       "title": "ヴァレー・ガール"
+       "title": "ヴァレー・ガール",
+       "genre": "その他",
+       "len": "99分"
       },
       {
-       "title": "七人の秘書"
+       "title": "七人の秘書",
+       "genre": "ドラマ",
+       "len": "8話"
       },
       {
-       "title": "不倫したい女"
+       "title": "不倫したい女",
+       "genre": "映画",
+       "len": "112分"
       },
       {
-       "title": "不思議の国の数学者"
+       "title": "不思議の国の数学者",
+       "genre": "映画",
+       "len": "117分"
       },
       {
-       "title": "事件"
+       "title": "事件",
+       "genre": "ドラマ",
+       "len": "4話"
       },
       {
-       "title": "人狼ゲーム プリズン・ブレイク"
+       "title": "人狼ゲーム プリズン・ブレイク",
+       "genre": "映画",
+       "len": "100分"
       },
       {
-       "title": "人狼ゲーム ラヴァ-ズ"
+       "title": "人狼ゲーム ラヴァ-ズ",
+       "genre": "映画",
+       "len": "108分"
       },
       {
-       "title": "人間動物園"
+       "title": "人間動物園",
+       "genre": "映画",
+       "len": "105分"
       },
       {
-       "title": "偉大な生涯の物語"
+       "title": "偉大な生涯の物語",
+       "genre": "映画",
+       "len": "189分"
       },
       {
-       "title": "処刑人"
+       "title": "処刑人",
+       "genre": "映画",
+       "len": "108分"
       },
       {
-       "title": "刑務所のルールブック"
+       "title": "刑務所のルールブック",
+       "genre": "ドラマ",
+       "len": "16話"
       },
       {
-       "title": "劇場版 「オーバーロード」 聖王国編"
+       "title": "劇場版 「オーバーロード」 聖王国編",
+       "genre": "アニメ",
+       "len": "133分"
       },
       {
-       "title": "劇場版 機動戦士ガンダム00 -A wakening of the Trailblazer-"
+       "title": "劇場版 機動戦士ガンダム00 -A wakening of the Trailblazer-",
+       "genre": "アニメ",
+       "len": "120分"
       },
       {
-       "title": "劇場版「僕とロボコ」"
+       "title": "劇場版「僕とロボコ」",
+       "genre": "アニメ",
+       "len": "64分"
       },
       {
-       "title": "千年の愛"
+       "title": "千年の愛",
+       "genre": "ドラマ",
+       "len": "20話"
       },
       {
-       "title": "博士と彼女のセオリー"
+       "title": "博士と彼女のセオリー",
+       "genre": "映画",
+       "len": "115分"
       },
       {
-       "title": "危険がいっぱい"
+       "title": "危険がいっぱい",
+       "genre": "映画",
+       "len": "98分"
       },
       {
-       "title": "合併結婚"
+       "title": "合併結婚",
+       "genre": "その他",
+       "len": "111分"
       },
       {
-       "title": "名探偵シャーロック･ノームズ"
+       "title": "名探偵シャーロック･ノームズ",
+       "genre": "キッズ",
+       "len": "83分"
       },
       {
-       "title": "地獄のヒーロー"
+       "title": "地獄のヒーロー",
+       "genre": "映画",
+       "len": "97分"
       },
       {
-       "title": "夕陽のギャングたち"
+       "title": "夕陽のギャングたち",
+       "genre": "映画",
+       "len": "150分"
       },
       {
-       "title": "大脱走"
+       "title": "大脱走",
+       "genre": "映画",
+       "len": "165分"
       },
       {
-       "title": "女子万歳"
+       "title": "女子万歳",
+       "genre": "ドラマ",
+       "len": "16話"
       },
       {
-       "title": "官能小説の女"
+       "title": "官能小説の女",
+       "genre": "その他",
+       "len": "105分"
       },
       {
-       "title": "将軍家の末息子"
+       "title": "将軍家の末息子",
+       "genre": "ドラマ",
+       "len": "24話"
       },
       {
-       "title": "小説の向こう側～To Ship Someone～"
+       "title": "小説の向こう側～To Ship Someone～",
+       "genre": "ドラマ",
+       "len": "24話"
       },
       {
-       "title": "幼い依頼人"
+       "title": "幼い依頼人",
+       "genre": "映画",
+       "len": "114分"
       },
       {
-       "title": "快楽の悪の華"
+       "title": "快楽の悪の華",
+       "genre": "映画",
+       "len": "101分"
       },
       {
-       "title": "怪盗クイーンの優雅な休暇"
+       "title": "怪盗クイーンの優雅な休暇",
+       "genre": "アニメ",
+       "len": "88分"
       },
       {
-       "title": "怪盗グルーの月泥棒"
+       "title": "怪盗グルーの月泥棒",
+       "genre": "キッズ",
+       "len": "95分"
       },
       {
-       "title": "情事の終わり"
+       "title": "情事の終わり",
+       "genre": "映画",
+       "len": "73分"
       },
       {
-       "title": "愛と青春の旅だち"
+       "title": "愛と青春の旅だち",
+       "genre": "映画",
+       "len": "119分"
       },
       {
-       "title": "戦闘妖精少女 たすけて！メイヴちゃん"
+       "title": "戦闘妖精少女 たすけて！メイヴちゃん",
+       "genre": "アニメ",
+       "len": "24分"
       },
       {
-       "title": "捨てられ聖女の異世界ごはん旅 隠れスキルでキャンピングカーを召喚しました"
+       "title": "捨てられ聖女の異世界ごはん旅 隠れスキルでキャンピングカーを召喚しました",
+       "genre": "アニメ",
+       "len": "12話"
       },
       {
-       "title": "新・猿の惑星"
+       "title": "新・猿の惑星",
+       "genre": "映画",
+       "len": "97分"
       },
       {
-       "title": "新機動戦記ガンダムW"
+       "title": "新機動戦記ガンダムW",
+       "genre": "アニメ",
+       "len": "49話"
       },
       {
-       "title": "新機動戦記ガンダムW Endless Waltz"
+       "title": "新機動戦記ガンダムW Endless Waltz",
+       "genre": "アニメ",
+       "len": "3話"
       },
       {
-       "title": "日本統一69"
+       "title": "日本統一69",
+       "genre": "映画",
+       "len": "73分"
       },
       {
-       "title": "日経プレミアム 工場へ行こうⅢAMAZING FACTORY"
+       "title": "日経プレミアム 工場へ行こうⅢAMAZING FACTORY",
+       "genre": "その他",
+       "len": "46話"
       },
       {
-       "title": "時には昔の話を 森山周一郎 声優と呼ばれた俳優"
+       "title": "時には昔の話を 森山周一郎 声優と呼ばれた俳優",
+       "genre": "その他",
+       "len": "108分"
       },
       {
-       "title": "最強出涸らし皇子の暗躍帝位争い"
+       "title": "最強出涸らし皇子の暗躍帝位争い",
+       "genre": "アニメ",
+       "len": "12話"
       },
       {
-       "title": "最強配達人"
+       "title": "最強配達人",
+       "genre": "ドラマ",
+       "len": "16話"
       },
       {
-       "title": "最後の猿の惑星"
+       "title": "最後の猿の惑星",
+       "genre": "映画",
+       "len": "83分"
       },
       {
-       "title": "最高の人生をあなたと"
+       "title": "最高の人生をあなたと",
+       "genre": "映画",
+       "len": "89分"
       },
       {
-       "title": "来生たかお 50th Anniversary Concert 2025-2026 〜 The Song 〜"
+       "title": "来生たかお 50th Anniversary Concert 2025-2026 〜 The Song 〜",
+       "genre": "その他",
+       "len": "76分"
       },
       {
-       "title": "東京裁判 [4Kリマスター版]"
+       "title": "東京裁判 [4Kリマスター版]",
+       "genre": "その他",
+       "len": "277分"
       },
       {
-       "title": "機動戦士ガンダム 鉄血のオルフェンズ シーズン1"
+       "title": "機動戦士ガンダム 鉄血のオルフェンズ シーズン1",
+       "genre": "アニメ",
+       "len": "25話"
       },
       {
-       "title": "機動戦士ガンダム00 セカンドシーズン"
+       "title": "機動戦士ガンダム00 セカンドシーズン",
+       "genre": "アニメ",
+       "len": "25話"
       },
       {
-       "title": "機動戦士ガンダム00 ファーストシーズン"
+       "title": "機動戦士ガンダム00 ファーストシーズン",
+       "genre": "アニメ",
+       "len": "25話"
       },
       {
-       "title": "機動戦士ガンダムΖΖ"
+       "title": "機動戦士ガンダムΖΖ",
+       "genre": "アニメ",
+       "len": "47話"
       },
       {
-       "title": "殺人犯ジョン・リスト"
+       "title": "殺人犯ジョン・リスト",
+       "genre": "映画",
+       "len": "83分"
       },
       {
-       "title": "水滸英雄伝"
+       "title": "水滸英雄伝",
+       "genre": "映画",
+       "len": "80分"
       },
       {
-       "title": "沈黙の啓示 TRUE JUSTICE PART2"
+       "title": "沈黙の啓示 TRUE JUSTICE PART2",
+       "genre": "映画",
+       "len": "90分"
       },
       {
-       "title": "沈黙の宿命 TRUE JUSTICE PART1"
+       "title": "沈黙の宿命 TRUE JUSTICE PART1",
+       "genre": "映画",
+       "len": "90分"
       },
       {
-       "title": "沈黙の弾痕 TRUE JUSTICE PART4"
+       "title": "沈黙の弾痕 TRUE JUSTICE PART4",
+       "genre": "映画",
+       "len": "90分"
       },
       {
-       "title": "沈黙の挽歌 TRUE JUSTICE PART5"
+       "title": "沈黙の挽歌 TRUE JUSTICE PART5",
+       "genre": "映画",
+       "len": "89分"
       },
       {
-       "title": "沈黙の神拳 TRUE JUSTICE PART6"
+       "title": "沈黙の神拳 TRUE JUSTICE PART6",
+       "genre": "映画",
+       "len": "90分"
       },
       {
-       "title": "沈黙の背信 TRUE JUSTICE PART3"
+       "title": "沈黙の背信 TRUE JUSTICE PART3",
+       "genre": "映画",
+       "len": "90分"
       },
       {
-       "title": "波打ち際のむろみさん"
+       "title": "波打ち際のむろみさん",
+       "genre": "アニメ",
+       "len": "13話"
       },
       {
-       "title": "湾岸ミッドナイト"
+       "title": "湾岸ミッドナイト",
+       "genre": "アニメ",
+       "len": "26話"
       },
       {
-       "title": "潮風のいたずら"
+       "title": "潮風のいたずら",
+       "genre": "その他",
+       "len": "108分"
       },
       {
-       "title": "狙撃兵"
+       "title": "狙撃兵",
+       "genre": "映画",
+       "len": "88分"
       },
       {
-       "title": "狼よさらば 地獄のリベンジャー"
+       "title": "狼よさらば 地獄のリベンジャー",
+       "genre": "映画",
+       "len": "86分"
       },
       {
-       "title": "猿の惑星・征服"
+       "title": "猿の惑星・征服",
+       "genre": "映画",
+       "len": "83分"
       },
       {
-       "title": "猿の惑星：創世記（ジェネシス）"
+       "title": "猿の惑星：創世記（ジェネシス）",
+       "genre": "映画",
+       "len": "105分"
       },
       {
-       "title": "猿の惑星：新世紀（ライジング）"
+       "title": "猿の惑星：新世紀（ライジング）",
+       "genre": "映画",
+       "len": "130分"
       },
       {
-       "title": "猿の惑星：聖戦記（グレート・ウォー）"
+       "title": "猿の惑星：聖戦記（グレート・ウォー）",
+       "genre": "映画",
+       "len": "140分"
       },
       {
-       "title": "私生活のない女 [4Kレストア版]"
+       "title": "私生活のない女 [4Kレストア版]",
+       "genre": "映画",
+       "len": "114分"
       },
       {
-       "title": "続・猿の惑星"
+       "title": "続・猿の惑星",
+       "genre": "映画",
+       "len": "95分"
       },
       {
-       "title": "罠の女"
+       "title": "罠の女",
+       "genre": "映画",
+       "len": "103分"
       },
       {
-       "title": "翡翠の恋～占いから始まるロマンス～"
+       "title": "翡翠の恋～占いから始まるロマンス～",
+       "genre": "ドラマ",
+       "len": "8話"
       },
       {
-       "title": "花ざかりのプリンセス"
+       "title": "花ざかりのプリンセス",
+       "genre": "ドラマ",
+       "len": "24話"
       },
       {
-       "title": "花と竜"
+       "title": "花と竜",
+       "genre": "映画",
+       "len": "109分"
       },
       {
-       "title": "誰が2PACを殺したか？ -殺害事件の真実"
+       "title": "誰が2PACを殺したか？ -殺害事件の真実",
+       "genre": "その他",
+       "len": "6話"
       },
       {
-       "title": "転校先の清楚可憐な美少女が、昔男子と思って一緒に遊んだ幼馴染だった件"
+       "title": "転校先の清楚可憐な美少女が、昔男子と思って一緒に遊んだ幼馴染だった件",
+       "genre": "アニメ",
+       "len": "12話"
       },
       {
-       "title": "郵便探偵 ロストレターズ・ミステリー"
+       "title": "郵便探偵 ロストレターズ・ミステリー",
+       "genre": "ドラマ",
+       "len": "20話"
       },
       {
-       "title": "銀河鉄道999 アンドロメダ篇"
+       "title": "銀河鉄道999 アンドロメダ篇",
+       "genre": "アニメ",
+       "len": "113話"
       },
       {
-       "title": "開運！怪談好きが集まるお悩み相談所"
+       "title": "開運！怪談好きが集まるお悩み相談所",
+       "genre": "その他",
+       "len": "10話"
       },
       {
-       "title": "隠し砦の三悪人 THE LAST PRINCESS"
+       "title": "隠し砦の三悪人 THE LAST PRINCESS",
+       "genre": "映画",
+       "len": "118分"
       },
       {
-       "title": "青い挑発"
+       "title": "青い挑発",
+       "genre": "映画",
+       "len": "75分"
       },
       {
-       "title": "青春の鐘"
+       "title": "青春の鐘",
+       "genre": "映画",
+       "len": "82分"
       },
       {
-       "title": "黒いチューリップ"
+       "title": "黒いチューリップ",
+       "genre": "映画",
+       "len": "113分"
       }
      ]
     },
@@ -885,10 +1344,14 @@
      "label": "11月1日(日)",
      "items": [
       {
-       "title": "凌雲志～愛と正義に生きた英雄～"
+       "title": "凌雲志～愛と正義に生きた英雄～",
+       "genre": "ドラマ",
+       "len": "43話"
       },
       {
-       "title": "王妃小夕～皇子が愛した花嫁の秘密～"
+       "title": "王妃小夕～皇子が愛した花嫁の秘密～",
+       "genre": "ドラマ",
+       "len": "7話"
       }
      ]
     },
@@ -897,25 +1360,39 @@
      "label": "11月2日(月)",
      "items": [
       {
-       "title": "GODZILLA ゴジラ"
+       "title": "GODZILLA ゴジラ",
+       "genre": "映画",
+       "len": "123分"
       },
       {
-       "title": "Viva!公務員"
+       "title": "Viva!公務員",
+       "genre": "映画",
+       "len": "87分"
       },
       {
-       "title": "コブリック大佐の決断"
+       "title": "コブリック大佐の決断",
+       "genre": "映画",
+       "len": "97分"
       },
       {
-       "title": "バッド・デート 最悪から始まる恋"
+       "title": "バッド・デート 最悪から始まる恋",
+       "genre": "映画",
+       "len": "84分"
       },
       {
-       "title": "ムービング・ロマンス"
+       "title": "ムービング・ロマンス",
+       "genre": "映画",
+       "len": "84分"
       },
       {
-       "title": "メイズ・ランナー3：最期の迷宮"
+       "title": "メイズ・ランナー3：最期の迷宮",
+       "genre": "映画",
+       "len": "144分"
       },
       {
-       "title": "メイズ・ランナー２：砂漠の迷宮"
+       "title": "メイズ・ランナー２：砂漠の迷宮",
+       "genre": "映画",
+       "len": "132分"
       }
      ]
     },
@@ -924,10 +1401,14 @@
      "label": "11月3日(火)",
      "items": [
       {
-       "title": "なにわ男子 デビューまで1100日のキセキ natural"
+       "title": "なにわ男子 デビューまで1100日のキセキ natural",
+       "genre": "その他",
+       "len": "8話"
       },
       {
-       "title": "セックス・ドール"
+       "title": "セックス・ドール",
+       "genre": "映画",
+       "len": "102分"
       }
      ]
     },
@@ -936,13 +1417,19 @@
      "label": "11月4日(水)",
      "items": [
       {
-       "title": "バトル・オーシャン／海上決戦"
+       "title": "バトル・オーシャン／海上決戦",
+       "genre": "映画",
+       "len": "110分"
       },
       {
-       "title": "朝鮮魔術師"
+       "title": "朝鮮魔術師",
+       "genre": "映画",
+       "len": "122分"
       },
       {
-       "title": "罪深き少年たち"
+       "title": "罪深き少年たち",
+       "genre": "映画",
+       "len": "124分"
       }
      ]
     },
@@ -951,40 +1438,64 @@
      "label": "11月5日(木)",
      "items": [
       {
-       "title": "GP506"
+       "title": "GP506",
+       "genre": "映画",
+       "len": "121分"
       },
       {
-       "title": "I AM. SM TOWN LIVE WORLD TOUR IN MADISON SQUARE GARDEN"
+       "title": "I AM. SM TOWN LIVE WORLD TOUR IN MADISON SQUARE GARDEN",
+       "genre": "映画",
+       "len": "115分"
       },
       {
-       "title": "ワンダフル・ラジオ"
+       "title": "ワンダフル・ラジオ",
+       "genre": "映画",
+       "len": "122分"
       },
       {
-       "title": "天命の城"
+       "title": "天命の城",
+       "genre": "映画",
+       "len": "139分"
       },
       {
-       "title": "朝鮮名探偵 トリカブトの秘密"
+       "title": "朝鮮名探偵 トリカブトの秘密",
+       "genre": "映画",
+       "len": "116分"
       },
       {
-       "title": "朝鮮名探偵 鬼<トッケビ>の秘密"
+       "title": "朝鮮名探偵 鬼<トッケビ>の秘密",
+       "genre": "映画",
+       "len": "120分"
       },
       {
-       "title": "海にかかる霧"
+       "title": "海にかかる霧",
+       "genre": "映画",
+       "len": "111分"
       },
       {
-       "title": "甘い人生 レストア版"
+       "title": "甘い人生 レストア版",
+       "genre": "映画",
+       "len": "120分"
       },
       {
-       "title": "美しき野獣"
+       "title": "美しき野獣",
+       "genre": "映画",
+       "len": "125分"
       },
       {
-       "title": "義兄弟 SECRET REUNION"
+       "title": "義兄弟 SECRET REUNION",
+       "genre": "映画",
+       "len": "117分"
       },
       {
-       "title": "長沙里9.15"
+       "title": "長沙里9.15",
+       "genre": "映画",
+       "len": "104分"
       },
       {
-       "title": "非常宣言"
+       "title": "非常宣言",
+       "genre": "映画",
+       "len": "141分"
       }
      ]
     },
@@ -993,7 +1504,9 @@
      "label": "11月7日(土)",
      "items": [
       {
-       "title": "ドラゴン・ナイト 紅蓮の竜と最後の騎士"
+       "title": "ドラゴン・ナイト 紅蓮の竜と最後の騎士",
+       "genre": "映画",
+       "len": "99分"
       }
      ]
     },
@@ -1002,10 +1515,14 @@
      "label": "11月8日(日)",
      "items": [
       {
-       "title": "キャメラを止めるな！"
+       "title": "キャメラを止めるな！",
+       "genre": "映画",
+       "len": "112分"
       },
       {
-       "title": "ファレル・ウィリアムス：ピース・バイ・ピース"
+       "title": "ファレル・ウィリアムス：ピース・バイ・ピース",
+       "genre": "アニメ",
+       "len": "94分"
       }
      ]
     },
@@ -1014,10 +1531,14 @@
      "label": "11月9日(月)",
      "items": [
       {
-       "title": "アメージング・ネイチャー"
+       "title": "アメージング・ネイチャー",
+       "genre": "映画",
+       "len": "83分"
       },
       {
-       "title": "ローマ法王の休日"
+       "title": "ローマ法王の休日",
+       "genre": "映画",
+       "len": "105分"
       }
      ]
     },
@@ -1026,10 +1547,14 @@
      "label": "11月10日(火)",
      "items": [
       {
-       "title": "ハウ"
+       "title": "ハウ",
+       "genre": "映画",
+       "len": "118分"
       },
       {
-       "title": "侵入者"
+       "title": "侵入者",
+       "genre": "映画",
+       "len": "98分"
       }
      ]
     },
@@ -1038,7 +1563,9 @@
      "label": "11月11日(水)",
      "items": [
       {
-       "title": "ドント・ゴー・ダウン"
+       "title": "ドント・ゴー・ダウン",
+       "genre": "映画",
+       "len": "103分"
       }
      ]
     },
@@ -1047,55 +1574,89 @@
      "label": "11月14日(土)",
      "items": [
       {
-       "title": "DEATH NOTE デスノート"
+       "title": "DEATH NOTE デスノート",
+       "genre": "映画",
+       "len": "126分"
       },
       {
-       "title": "DEATH NOTE デスノート the Last name"
+       "title": "DEATH NOTE デスノート the Last name",
+       "genre": "映画",
+       "len": "141分"
       },
       {
-       "title": "L change the WorLd"
+       "title": "L change the WorLd",
+       "genre": "映画",
+       "len": "129分"
       },
       {
-       "title": "NUMB[ナム] 極限の争奪戦"
+       "title": "NUMB[ナム] 極限の争奪戦",
+       "genre": "映画",
+       "len": "88分"
       },
       {
-       "title": "アタック・ザ・ブロック"
+       "title": "アタック・ザ・ブロック",
+       "genre": "映画",
+       "len": "88分"
       },
       {
-       "title": "カラーパープル(2023)"
+       "title": "カラーパープル(2023)",
+       "genre": "映画",
+       "len": "130分"
       },
       {
-       "title": "グラディエーター"
+       "title": "グラディエーター",
+       "genre": "映画",
+       "len": "155分"
       },
       {
-       "title": "サイコ・オンライン"
+       "title": "サイコ・オンライン",
+       "genre": "映画",
+       "len": "90分"
       },
       {
-       "title": "デスノート Light up the NEW world"
+       "title": "デスノート Light up the NEW world",
+       "genre": "映画",
+       "len": "135分"
       },
       {
-       "title": "ヒトラーを殺し、その後ビッグフットを殺した男"
+       "title": "ヒトラーを殺し、その後ビッグフットを殺した男",
+       "genre": "映画",
+       "len": "98分"
       },
       {
-       "title": "ホームステイ ボクと僕の100日間"
+       "title": "ホームステイ ボクと僕の100日間",
+       "genre": "映画",
+       "len": "137分"
       },
       {
-       "title": "ワイルド・スピード"
+       "title": "ワイルド・スピード",
+       "genre": "映画",
+       "len": "107分"
       },
       {
-       "title": "ワイルド・スピードX2"
+       "title": "ワイルド・スピードX2",
+       "genre": "映画",
+       "len": "108分"
       },
       {
-       "title": "ワイルド・スピードX3 TOKYO DRIFT"
+       "title": "ワイルド・スピードX3 TOKYO DRIFT",
+       "genre": "映画",
+       "len": "104分"
       },
       {
-       "title": "回路"
+       "title": "回路",
+       "genre": "映画",
+       "len": "119分"
       },
       {
-       "title": "蛇の道"
+       "title": "蛇の道",
+       "genre": "映画",
+       "len": "85分"
       },
       {
-       "title": "黒の試走車"
+       "title": "黒の試走車",
+       "genre": "映画",
+       "len": "95分"
       }
      ]
     },
@@ -1104,16 +1665,24 @@
      "label": "11月15日(日)",
      "items": [
       {
-       "title": "キラーカット"
+       "title": "キラーカット",
+       "genre": "映画",
+       "len": "94分"
       },
       {
-       "title": "デーモン・インサイド 血塗られた家"
+       "title": "デーモン・インサイド 血塗られた家",
+       "genre": "映画",
+       "len": "103分"
       },
       {
-       "title": "ラスト・デイズ・オブ・アビー 宇宙飛行士の記憶を持つ愛娘"
+       "title": "ラスト・デイズ・オブ・アビー 宇宙飛行士の記憶を持つ愛娘",
+       "genre": "映画",
+       "len": "102分"
       },
       {
-       "title": "レイラ 売られた少女"
+       "title": "レイラ 売られた少女",
+       "genre": "映画",
+       "len": "76分"
       }
      ]
     },
@@ -1122,10 +1691,14 @@
      "label": "11月17日(火)",
      "items": [
       {
-       "title": "ターミネーター：新起動／ジェニシス"
+       "title": "ターミネーター：新起動／ジェニシス",
+       "genre": "映画",
+       "len": "126分"
       },
       {
-       "title": "トゥモロー・ワールド"
+       "title": "トゥモロー・ワールド",
+       "genre": "映画",
+       "len": "109分"
       }
      ]
     },
@@ -1134,7 +1707,9 @@
      "label": "11月19日(木)",
      "items": [
       {
-       "title": "レジェンド・オブ・ドラゴンテイマー／降龍十八掌"
+       "title": "レジェンド・オブ・ドラゴンテイマー／降龍十八掌",
+       "genre": "映画",
+       "len": "94分"
       }
      ]
     },
@@ -1143,28 +1718,44 @@
      "label": "11月20日(金)",
      "items": [
       {
-       "title": "SUNNY 強い気持ち・強い愛"
+       "title": "SUNNY 強い気持ち・強い愛",
+       "genre": "映画",
+       "len": "119分"
       },
       {
-       "title": "さよなら、ティラノ"
+       "title": "さよなら、ティラノ",
+       "genre": "キッズ",
+       "len": "98分"
       },
       {
-       "title": "モテキ"
+       "title": "モテキ",
+       "genre": "映画",
+       "len": "118分"
       },
       {
-       "title": "亜人"
+       "title": "亜人",
+       "genre": "映画",
+       "len": "108分"
       },
       {
-       "title": "屍人荘の殺人"
+       "title": "屍人荘の殺人",
+       "genre": "映画",
+       "len": "120分"
       },
       {
-       "title": "怒り"
+       "title": "怒り",
+       "genre": "映画",
+       "len": "141分"
       },
       {
-       "title": "悪人"
+       "title": "悪人",
+       "genre": "映画",
+       "len": "140分"
       },
       {
-       "title": "言葉を失う"
+       "title": "言葉を失う",
+       "genre": "映画",
+       "len": "102分"
       }
      ]
     },
@@ -1173,28 +1764,44 @@
      "label": "11月21日(土)",
      "items": [
       {
-       "title": "おおかみこどもの雨と雪"
+       "title": "おおかみこどもの雨と雪",
+       "genre": "アニメ",
+       "len": "117分"
       },
       {
-       "title": "サマーウォーズ"
+       "title": "サマーウォーズ",
+       "genre": "アニメ",
+       "len": "114分"
       },
       {
-       "title": "セントラル・インテリジェンス C.I.A."
+       "title": "セントラル・インテリジェンス C.I.A.",
+       "genre": "映画",
+       "len": "99分"
       },
       {
-       "title": "バケモノの子"
+       "title": "バケモノの子",
+       "genre": "アニメ",
+       "len": "119分"
       },
       {
-       "title": "ブドウ畑で離さないで"
+       "title": "ブドウ畑で離さないで",
+       "genre": "映画",
+       "len": "87分"
       },
       {
-       "title": "ブリング・ミー・ホーム 尋ね人"
+       "title": "ブリング・ミー・ホーム 尋ね人",
+       "genre": "映画",
+       "len": "108分"
       },
       {
-       "title": "未来のミライ"
+       "title": "未来のミライ",
+       "genre": "アニメ",
+       "len": "98分"
       },
       {
-       "title": "竜とそばかすの姫"
+       "title": "竜とそばかすの姫",
+       "genre": "アニメ",
+       "len": "121分"
       }
      ]
     }
