@@ -1,3 +1,4 @@
+# update.py v2026.10.25-1 (2026-10-25): 映画の長さ絞り込み / スポーツ除外 / 深夜の取りこぼし修正 / アマプラのジャンル / TVer新着+通知
 #!/usr/bin/env python3
 """TVウォッチ: 各サイトから「日付と作品名」を集めて data.json を作る。
 標準ライブラリだけで動く。GitHub Actions から毎日1回実行される想定。
@@ -15,6 +16,7 @@ from datetime import date, datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
+VERSION = "v2026.10.25-1"
 JST = timezone(timedelta(hours=9))
 OUT = Path(__file__).with_name("data.json")
 UA = {"User-Agent": "Mozilla/5.0 (tv-watch personal use; once a day)"}
@@ -362,7 +364,7 @@ def main():
         if t["kind"] == "days" and not tab[key] and tab["status"] == "ok":
             tab["status"] = "empty"
         tabs.append(tab)
-    data = {"updated": datetime.now(JST).strftime("%Y-%m-%d %H:%M"), "tabs": tabs}
+    data = {"updated": datetime.now(JST).strftime("%Y-%m-%d %H:%M"), "version": VERSION, "tabs": tabs}
     OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1), "utf-8")
     if to_notify:
         lines = [i["title"] for i in to_notify[:5]]
