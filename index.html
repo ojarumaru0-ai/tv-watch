@@ -1,3 +1,4 @@
+<!-- index.html v2026.10.25-1 (2026-10-25): 気になる(★)タブ / アマプラのジャンル絞り込み / TVerのNEW表示 / 再読み込みボタン -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -219,7 +220,7 @@
     view.appendChild(links);
   }
 
-  function render() { document.getElementById("stamp").textContent = "データ取得 " + data.updated; renderTabs(); renderView(); }
+  function render() { document.getElementById("stamp").textContent = "データ取得 " + data.updated + " ・画面 v2026.10.25-1 ・データ " + (data.version || "旧"); renderTabs(); renderView(); }
 
   function load() {
     var btn = document.getElementById("refresh"); btn.disabled = true;
