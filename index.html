@@ -32,15 +32,25 @@
   details { background:var(--card); border:1px solid var(--line); border-radius:10px; margin-bottom:8px; }
   summary { padding:12px 14px; font-weight:600; cursor:pointer; min-height:44px; }
   summary .n { color:var(--sub); font-weight:400; font-size:13px; margin-left:6px; }
-  ul { margin:0; padding:0 14px 12px 32px; }
-  li { margin:2px 0; }
+  ul { margin:0; padding:0 14px 12px 8px; list-style:none; }
+  li { margin:2px 0; display:flex; align-items:flex-start; gap:2px; }
+  li .body { padding-top:5px; min-width:0; overflow-wrap:anywhere; }
+  .star { flex:none; border:0; background:none; color:var(--accent); font-size:20px; line-height:28px; padding:4px 8px; min-width:40px; min-height:36px; }
+  .g { display:inline-block; font-size:12px; line-height:18px; padding:0 6px; margin-right:6px; border:1px solid var(--line); border-radius:6px; color:var(--sub); }
+  .len { color:var(--sub); font-size:13px; margin-left:6px; white-space:nowrap; }
+  .chips { display:flex; gap:8px; overflow-x:auto; margin-bottom:12px; }
+  .chips button { flex:none; border:1px solid var(--line); background:var(--card); color:var(--ink); border-radius:999px; padding:6px 14px; min-height:40px; }
+  .chips button[aria-pressed="true"] { background:var(--ink); color:var(--bg); border-color:var(--ink); }
+  .addrow { display:flex; gap:8px; margin-bottom:12px; }
+  .addrow input { flex:1; min-width:0; min-height:44px; padding:10px 14px; border:1px solid var(--line); border-radius:10px; background:var(--card); color:var(--ink); font:inherit; }
+  .addrow button { border:0; border-radius:10px; padding:10px 16px; min-height:44px; background:var(--accent); color:var(--accent-ink); font-weight:600; }
+  .badge { display:inline-block; margin-right:6px; padding:0 7px; border-radius:6px; background:var(--accent); color:var(--accent-ink); font-size:12px; font-weight:700; vertical-align:1px; }
   li .t { color:var(--sub); margin-right:6px; font-variant-numeric:tabular-nums; }
   li a, .news a { color:var(--accent); text-decoration:none; }
   .news a { display:block; padding:12px 14px; margin-bottom:8px; border-radius:10px; background:var(--card); border:1px solid var(--line); color:var(--ink); }
   .news .m { display:block; font-size:13px; color:var(--sub); }
   h2 { font-size:14px; color:var(--sub); margin:18px 0 6px; font-weight:600; }
   .links a { display:block; padding:12px 14px; margin-bottom:8px; border-radius:10px; background:var(--card); border:1px solid var(--line); color:var(--accent); text-decoration:none; font-weight:600; }
-  .badge { display:inline-block; margin-right:6px; padding:0 7px; border-radius:6px; background:var(--accent); color:var(--accent-ink); font-size:12px; font-weight:700; vertical-align:1px; }
   .empty { padding:12px 2px; color:var(--sub); }
   a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible { outline:3px solid var(--accent); outline-offset:2px; }
 </style>
@@ -48,33 +58,61 @@
 <body>
 <header>
   <div><h1>TVウォッチ</h1><p id="stamp">読み込み中…</p></div>
-  <button id="refresh" type="button">更新</button>
+  <button id="refresh" type="button">再読み込み</button>
 </header>
 <nav id="tabs" role="tablist"></nav>
 <main id="view"></main>
 
 <script>
 (function () {
-  var data = null, current = lsGet("tab") || "movie", query = "";
+  var data = null, current = lsGet("tab") || "movie", query = "", genre = "";
+  var favs = loadFavs();
+  var GENRES = ["映画", "ドラマ", "アニメ", "キッズ", "その他"];
   function lsGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
   function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
   function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function loadFavs() { try { var a = JSON.parse(lsGet("favs") || "[]"); return Array.isArray(a) ? a.filter(function (x) { return typeof x === "string" && x; }) : []; } catch (e) { return []; } }
+  function saveFavs() { lsSet("favs", JSON.stringify(favs)); }
+  function norm(s) { return String(s).toLowerCase().replace(/[\s\u3000「」『』（）()【】\[\]・!！?？~〜\-－:：,，.。\/／]/g, ""); }
+  function core(title) { var m = title.match(/[「『](.+?)[」』]/); return (m ? m[1] : title).trim(); }
+  function isFav(title) { var n = norm(title); return favs.some(function (f) { var m = norm(f); return m && n.indexOf(m) >= 0; }); }
+  function addFav(w) { w = w.trim(); if (w && favs.indexOf(w) < 0) { favs.push(w); saveFavs(); } }
+  function removeFav(w) { favs = favs.filter(function (f) { return f !== w; }); saveFavs(); }
+  function setTab(id) { current = id; query = ""; genre = ""; lsSet("tab", id); render(); }
 
   function renderTabs() {
     var nav = document.getElementById("tabs"); nav.textContent = "";
-    data.tabs.forEach(function (t) {
+    [{ id: "fav", name: "★気になる" }].concat(data.tabs).forEach(function (t) {
       var b = el("button", null, t.name); b.type = "button";
       b.setAttribute("role", "tab"); b.setAttribute("aria-selected", String(t.id === current));
-      b.onclick = function () { current = t.id; query = ""; lsSet("tab", t.id); render(); };
+      b.onclick = function () { setTab(t.id); };
       nav.appendChild(b);
     });
   }
 
-  function renderDays(tab, view) {
-    var q = query.trim().toLowerCase(), shown = 0, opened = 0;
-    var box = el("div");
-    (tab.days || []).forEach(function (day) {
-      var items = day.items.filter(function (it) { return !q || it.title.toLowerCase().indexOf(q) >= 0; });
+  function itemRow(it, extra) {
+    var li = el("li");
+    var s = el("button", "star", isFav(it.title) ? "★" : "☆"); s.type = "button";
+    s.setAttribute("aria-label", it.title + "を気になるに登録");
+    s.onclick = function () { if (!isFav(it.title)) { addFav(core(it.title)); renderView(); } };
+    li.appendChild(s);
+    var body = el("div", "body");
+    if (extra) body.appendChild(el("span", "g", extra));
+    if (it.time) body.appendChild(el("span", "t", it.time));
+    if (it.genre) body.appendChild(el("span", "g", it.genre));
+    if (it.link) { var a = el("a", null, it.title); a.href = it.link; a.target = "_blank"; a.rel = "noopener"; body.appendChild(a); }
+    else body.appendChild(document.createTextNode(it.title));
+    if (it.len) body.appendChild(el("span", "len", it.len));
+    li.appendChild(body);
+    return li;
+  }
+
+  function dayBox(groups, q, opts) {
+    var shown = 0, opened = 0, box = el("div");
+    groups.forEach(function (day) {
+      var items = day.items.filter(function (it) {
+        return (!q || it.title.toLowerCase().indexOf(q) >= 0) && (!opts.genre || it.genre === opts.genre);
+      });
       if (!items.length) return;
       shown += items.length;
       var d = el("details");
@@ -84,16 +122,31 @@
       s.appendChild(el("span", "n", items.length + "件"));
       d.appendChild(s);
       var ul = el("ul");
-      items.forEach(function (it) {
-        var li = el("li");
-        if (it.time) li.appendChild(el("span", "t", it.time));
-        if (it.link) { var a = el("a", null, it.title); a.href = it.link; a.target = "_blank"; a.rel = "noopener"; li.appendChild(a); }
-        else li.appendChild(document.createTextNode(it.title));
-        ul.appendChild(li);
-      });
+      items.forEach(function (it) { ul.appendChild(itemRow(it, opts.showTab ? it._tab : "")); });
       d.appendChild(ul); box.appendChild(d);
     });
-    if (!shown) box.appendChild(el("p", "empty", q ? "該当する作品はありません。" : "予定を取得できませんでした。下のリンクから確認してください。"));
+    return { box: box, shown: shown };
+  }
+
+  function renderDays(tab, view) {
+    var q = query.trim().toLowerCase();
+    var r = dayBox(tab.days || [], q, { genre: genre });
+    if (!r.shown) r.box.appendChild(el("p", "empty", (q || genre) ? "該当する作品はありません。" : "予定を取得できませんでした。下のリンクから確認してください。"));
+    view.appendChild(r.box);
+  }
+
+  function renderChips(tab, view) {
+    var seen = {};
+    (tab.days || []).forEach(function (d) { d.items.forEach(function (it) { if (it.genre) seen[it.genre] = 1; }); });
+    var list = GENRES.filter(function (g) { return seen[g]; });
+    if (list.length < 2) return;
+    var box = el("div", "chips");
+    [""].concat(list).forEach(function (g) {
+      var b = el("button", null, g || "すべて"); b.type = "button";
+      b.setAttribute("aria-pressed", String(genre === g));
+      b.onclick = function () { genre = g; renderView(); };
+      box.appendChild(b);
+    });
     view.appendChild(box);
   }
 
@@ -110,8 +163,45 @@
     view.appendChild(box);
   }
 
+  function renderFav(view) {
+    view.appendChild(el("p", "note", "気になる作品名やキーワード(例: ガンダム)を登録すると、映画・ニコニコ・アマプラ終了の予定から該当するものをここに集めます。各行の☆をタップしても登録できます。登録内容はこのiPhoneの中だけに保存されます。"));
+    var row = el("div", "addrow");
+    var inp = el("input"); inp.type = "text"; inp.placeholder = "作品名・キーワードを追加"; inp.setAttribute("aria-label", "作品名・キーワード");
+    var add = el("button", null, "追加"); add.type = "button";
+    function submit() { addFav(inp.value); renderView(); }
+    add.onclick = submit;
+    inp.onkeydown = function (e) { if (e.key === "Enter") submit(); };
+    row.appendChild(inp); row.appendChild(add); view.appendChild(row);
+    if (favs.length) {
+      var chips = el("div", "chips");
+      favs.forEach(function (f) {
+        var b = el("button", null, f + " ×"); b.type = "button"; b.setAttribute("aria-label", f + "を削除");
+        b.onclick = function () { removeFav(f); renderView(); };
+        chips.appendChild(b);
+      });
+      view.appendChild(chips);
+    }
+    var byDate = {};
+    data.tabs.forEach(function (t) {
+      if (t.kind !== "days") return;
+      (t.days || []).forEach(function (d) {
+        d.items.forEach(function (it) {
+          if (!isFav(it.title)) return;
+          var g = byDate[d.date] || (byDate[d.date] = { date: d.date, label: d.label, items: [] });
+          var c = {}; for (var k in it) c[k] = it[k]; c._tab = t.name;
+          g.items.push(c);
+        });
+      });
+    });
+    var groups = Object.keys(byDate).sort().map(function (k) { return byDate[k]; });
+    var r = dayBox(groups, "", { showTab: true });
+    if (!r.shown) r.box.appendChild(el("p", "empty", favs.length ? "いまのところ該当する予定はありません。" : "まだ何も登録されていません。"));
+    view.appendChild(r.box);
+  }
+
   function renderView() {
     var view = document.getElementById("view"); view.textContent = "";
+    if (current === "fav") { renderFav(view); return; }
     var tab = data.tabs.filter(function (t) { return t.id === current; })[0] || data.tabs[0];
     if (tab.note) view.appendChild(el("p", "note", tab.note));
     if (tab.status === "error") view.appendChild(el("p", "warn", "最新の取得に失敗したため、前回の内容を表示しています。"));
@@ -120,6 +210,7 @@
       var q = el("input"); q.id = "q"; q.type = "search"; q.placeholder = "作品名で絞り込み"; q.value = query;
       q.oninput = function () { query = q.value; var pos = q.selectionStart; renderView(); var n = document.getElementById("q"); n.focus(); n.setSelectionRange(pos, pos); };
       view.appendChild(q);
+      renderChips(tab, view);
       renderDays(tab, view);
     } else renderNews(tab, view);
     view.appendChild(el("h2", null, "公式・一覧ページ"));
@@ -128,7 +219,7 @@
     view.appendChild(links);
   }
 
-  function render() { document.getElementById("stamp").textContent = "最終更新 " + data.updated; renderTabs(); renderView(); }
+  function render() { document.getElementById("stamp").textContent = "データ取得 " + data.updated; renderTabs(); renderView(); }
 
   function load() {
     var btn = document.getElementById("refresh"); btn.disabled = true;
@@ -137,7 +228,7 @@
       .then(function (j) { data = j; render(); })
       .catch(function () {
         var v = document.getElementById("view"); v.textContent = "";
-        v.appendChild(el("p", "warn", "データを読み込めませんでした。通信状況を確認して、もう一度「更新」を押してください。"));
+        v.appendChild(el("p", "warn", "データを読み込めませんでした。通信状況を確認して、もう一度「再読み込み」を押してください。"));
       })
       .then(function () { btn.disabled = false; });
   }
