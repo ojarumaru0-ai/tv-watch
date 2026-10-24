@@ -1,3 +1,4 @@
+# update.yml v2026.10.25-1 (2026-10-25): 内容は前と同じ。通知を使う場合だけ env の3行を有効にする
 name: update-data
 
 on:
@@ -18,6 +19,9 @@ jobs:
           python-version: "3.12"
       - name: Collect headlines
         run: python update.py
+        # ntfyの通知を使う場合は、下の3行の先頭の「# 」を外す(Secretsに NTFY_TOPIC を登録)
+        # env:
+        #   NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
       - name: Commit if changed
         run: |
           git config user.name "tv-watch-bot"
