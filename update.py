@@ -5,6 +5,7 @@
 """
 import html
 import json
+import os
 import re
 import time
 import urllib.parse
@@ -149,21 +150,73 @@ def parse_epg_movies(raw):
     return found
 
 
-def fetch_movies(days=8):
-    rows, ok = [], False
-    for i in range(days):
-        d = TODAY + timedelta(days=i)
-        url = f"https://bangumi.org/epg/td?broad_cast_date={d:%Y%m%d}&ggm_group_id=85"
+# 放送枠がこの分数より短い「映画」は、予告・紹介コーナーとみなして除く
+MIN_MINUTES = 80
+DETAIL = re.compile(r"(\d{1,2})月(\d{1,2})日\s*[月火水木金土日]曜日?\s*(\d{1,2}):(\d{2})\s*[-－–〜~]\s*(\d{1,2}):(\d{2})\s*(\S*)")
+_detail_cache = {}
+
+
+def parse_detail(raw):
+    """番組詳細ページから 放送日・開始/終了・枠の長さ・局名 を取り出す。取れなければ None"""
+    m = DETAIL.search(" ".join(to_lines(raw)))
+    if not m:
+        return None
+    mo, dd, sh, sm, eh, em = (int(m[i]) for i in range(1, 7))
+    minutes = (eh * 60 + em) - (sh * 60 + sm)
+    if minutes <= 0:
+        minutes += 24 * 60
+    year = TODAY.year
+    try:
+        d = date(year, mo, dd)
+        if (d - TODAY).days < -180:
+            d = date(year + 1, mo, dd)
+    except ValueError:
+        return None
+    return {"date": d, "start": f"{sh}:{sm:02d}", "end": f"{eh}:{em:02d}",
+            "minutes": minutes, "sort": sh * 60 + sm, "channel": re.sub(r"\d+$", "", m[7])}
+
+
+def fetch_detail(link):
+    if link not in _detail_cache:
         try:
-            for item in parse_epg_movies(get(url)):
-                rows.append((d, item))
+            _detail_cache[link] = parse_detail(get(link + "?overwrite_area=42"))  # 兵庫の番組表と同じ形のURL
+        except Exception as e:
+            print(f"[warn] detail {link}: {e}")
+            _detail_cache[link] = None
+        time.sleep(1)
+    return _detail_cache[link]
+
+
+def fetch_movies(days=8):
+    rows, ok, seen = [], False, set()
+    for i in range(days):
+        grid_day = TODAY + timedelta(days=i)
+        url = f"https://bangumi.org/epg/td?broad_cast_date={grid_day:%Y%m%d}&ggm_group_id=85"
+        try:
+            candidates = parse_epg_movies(get(url))
             ok = True
         except Exception as e:
-            print(f"[warn] movie {d}: {e}")
+            print(f"[warn] movie {grid_day}: {e}")
+            candidates = []
         time.sleep(1)
+        for item in candidates:
+            info = fetch_detail(item["link"])
+            if info is None:
+                # 詳細が読めないときは落とさずに残す（日付は番組表の列の日付）
+                rows.append((grid_day, 9999, item))
+                continue
+            if info["minutes"] < MIN_MINUTES:
+                continue
+            key = (info["date"], item["title"])
+            if key in seen:
+                continue
+            seen.add(key)
+            item["time"] = f"{info['start']}〜{info['end']} {info['channel']}".strip()
+            rows.append((info["date"], info["sort"], item))
     if not ok:
         raise RuntimeError("番組表を取得できませんでした")
-    return group_by_day(rows)
+    rows.sort(key=lambda r: (r[0], r[1]))
+    return group_by_day([(d, item) for d, _, item in rows])
 
 
 # ---------------------------------------------------------------- TVer (見出しニュース)
@@ -190,13 +243,55 @@ def fetch_news(queries):
     return items[:15]
 
 
+# ---------------------------------------------------------------- 新着の検出と通知
+# 新着のうち、タイトルにこれらの語を含むものだけスマホに通知する
+NOTIFY_WORDS = re.compile(r"名作|傑作|懐かし|過去作|一挙|期間限定|特集|再配信|あの")
+NEW_DAYS = 3  # この日数以内に初めて見つかったものに NEW を付ける
+
+
+def notify(title, message, click=None):
+    """ntfy.sh へ通知。環境変数 NTFY_TOPIC が無ければ何もしない。"""
+    topic = os.environ.get("NTFY_TOPIC", "").strip()
+    if not topic:
+        return
+    body = {"topic": topic, "title": title, "message": message}
+    if click:
+        body["click"] = click
+    req = urllib.request.Request(
+        "https://ntfy.sh/", data=json.dumps(body, ensure_ascii=False).encode("utf-8"),
+        headers={"Content-Type": "application/json"})
+    try:
+        urllib.request.urlopen(req, timeout=30).read()
+    except Exception as e:
+        print(f"[warn] notify: {e}")
+
+
+def mark_new(items, old_items):
+    """items に first_seen と new を付ける。戻り値: 今回はじめて見つかった項目"""
+    first_run = not old_items
+    old_seen = {i["title"]: i.get("first_seen", "2000-01-01") for i in old_items}
+    limit = (TODAY - timedelta(days=NEW_DAYS)).isoformat()
+    fresh = []
+    for it in items:
+        if it["title"] in old_seen:
+            it["first_seen"] = old_seen[it["title"]]
+        elif first_run:
+            it["first_seen"] = "2000-01-01"  # 初回は全部が新着にならないように
+        else:
+            it["first_seen"] = TODAY.isoformat()
+            fresh.append(it)
+        if it["first_seen"] >= limit:
+            it["new"] = True
+    return fresh
+
+
 TABS = [
     {"id": "tver", "name": "TVer", "kind": "news",
      "fetch": lambda: fetch_news(["TVer 名作ドラマ 配信 when:30d", "TVer 特集 期間限定 無料配信 when:30d"]),
      "note": "TVerには追加予定の一覧がないため、関連ニュースの見出しを表示しています。",
      "links": [("TVerを開く", "https://tver.jp/")]},
     {"id": "movie", "name": "地上波の映画", "kind": "days", "fetch": fetch_movies,
-     "note": "Gガイド(兵庫)から映画らしい番組を自動で拾っています。時刻・局は表示していません。深夜(0時以降)の放送は前日の日付で出ることがあります。",
+     "note": "Gガイド(兵庫)から映画らしい番組を拾い、放送枠が80分以上のものだけ表示しています。日付は実際の放送日です(深夜は翌日の日付で出ます)。",
      "links": [("Gガイド 兵庫の番組表", "https://bangumi.org/epg/td?ggm_group_id=85"),
                ("カンテレ 映画オンエア", "https://www.ktv.jp/cinema_tv/")]},
     {"id": "nico", "name": "ニコニコ", "kind": "days", "fetch": fetch_nico,
@@ -217,6 +312,7 @@ def main():
         except Exception:
             old = {}
     tabs = []
+    to_notify = []
     for t in TABS:
         tab = {"id": t["id"], "name": t["name"], "kind": t["kind"], "note": t["note"],
                "links": [{"label": l, "url": u} for l, u in t["links"]]}
@@ -224,6 +320,9 @@ def main():
         try:
             tab[key] = t["fetch"]()
             tab["status"] = "ok"
+            if t["kind"] == "news":
+                fresh = mark_new(tab[key], old.get(t["id"], {}).get("items", []))
+                to_notify += [i for i in fresh if NOTIFY_WORDS.search(i["title"])]
         except Exception as e:
             print(f"[warn] {t['id']}: {e}")
             tab[key] = old.get(t["id"], {}).get(key, [])
@@ -233,6 +332,9 @@ def main():
         tabs.append(tab)
     data = {"updated": datetime.now(JST).strftime("%Y-%m-%d %H:%M"), "tabs": tabs}
     OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1), "utf-8")
+    if to_notify:
+        lines = [i["title"] for i in to_notify[:5]]
+        notify(f"TVer 新着 {len(to_notify)}件", "\n".join(lines), to_notify[0]["link"])
     for t in tabs:
         n = sum(len(d["items"]) for d in t["days"]) if "days" in t else len(t["items"])
         print(t["id"], t["status"], n)
