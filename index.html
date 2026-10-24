@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="TVウォッチ">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>TVウォッチ</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --ink: #1c2230; --sub: #667085;
+    --line: #e3e6ec; --accent: #2457d6; --accent-ink: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #11141b; --card: #1a1f2a; --ink: #e8ebf2; --sub: #98a2b3;
+            --line: #2a3140; --accent: #7aa2ff; --accent-ink: #0d1220; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.6 -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom); }
+  header { display: flex; align-items: center; justify-content: space-between;
+    gap: 12px; padding: 14px 16px 8px; }
+  h1 { font-size: 20px; margin: 0; }
+  #stamp { font-size: 13px; color: var(--sub); margin: 2px 0 0; }
+  button { font: inherit; cursor: pointer; }
+  #refresh { border: 0; border-radius: 10px; padding: 10px 16px; min-height: 44px;
+    background: var(--accent); color: var(--accent-ink); font-weight: 600; }
+  #refresh:disabled { opacity: .6; }
+  nav { display: flex; gap: 8px; padding: 8px 16px; overflow-x: auto; }
+  nav button { flex: none; border: 1px solid var(--line); background: var(--card);
+    color: var(--ink); border-radius: 999px; padding: 8px 16px; min-height: 44px; }
+  nav button[aria-selected="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  main { padding: 4px 16px 32px; max-width: 720px; margin: 0 auto; }
+  h2 { font-size: 14px; color: var(--sub); margin: 18px 0 6px; font-weight: 600; }
+  .links a { display: block; padding: 12px 14px; margin-bottom: 8px; border-radius: 10px;
+    background: var(--card); border: 1px solid var(--line); color: var(--accent);
+    text-decoration: none; font-weight: 600; }
+  .item { display: block; padding: 12px 14px; margin-bottom: 8px; border-radius: 10px;
+    background: var(--card); border: 1px solid var(--line); color: var(--ink); text-decoration: none; }
+  .item .t { display: block; }
+  .item .m { display: block; font-size: 13px; color: var(--sub); margin-top: 2px; }
+  .empty, .err { padding: 16px; color: var(--sub); }
+  .err { color: #c0392b; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>TVウォッチ</h1>
+    <p id="stamp">読み込み中…</p>
+  </div>
+  <button id="refresh" type="button">更新</button>
+</header>
+<nav id="tabs" role="tablist"></nav>
+<main id="view"></main>
+
+<script>
+(function () {
+  var data = null, current = localStorageGet("tab") || "tver";
+
+  function localStorageGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function localStorageSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+
+  function fmtDate(iso) {
+    if (!iso) return "";
+    var d = new Date(iso);
+    return (d.getMonth() + 1) + "月" + d.getDate() + "日";
+  }
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+
+  function renderTabs() {
+    var nav = document.getElementById("tabs");
+    nav.textContent = "";
+    data.tabs.forEach(function (t) {
+      var b = el("button", null, t.name);
+      b.type = "button";
+      b.setAttribute("role", "tab");
+      b.setAttribute("aria-selected", String(t.id === current));
+      b.onclick = function () { current = t.id; localStorageSet("tab", t.id); render(); };
+      nav.appendChild(b);
+    });
+  }
+
+  function renderView() {
+    var view = document.getElementById("view");
+    view.textContent = "";
+    var tab = data.tabs.filter(function (t) { return t.id === current; })[0] || data.tabs[0];
+
+    view.appendChild(el("h2", null, "公式・一覧ページ"));
+    var links = el("div", "links");
+    tab.links.forEach(function (l) {
+      var a = el("a", null, l.label);
+      a.href = l.url; a.target = "_blank"; a.rel = "noopener";
+      links.appendChild(a);
+    });
+    view.appendChild(links);
+
+    view.appendChild(el("h2", null, "最近のニュース"));
+    if (!tab.items.length) {
+      view.appendChild(el("p", "empty", "該当するニュースはまだありません。"));
+      return;
+    }
+    tab.items.forEach(function (it) {
+      var a = el("a", "item");
+      a.href = it.link; a.target = "_blank"; a.rel = "noopener";
+      a.appendChild(el("span", "t", it.title));
+      var meta = [fmtDate(it.date), it.source].filter(Boolean).join(" ");
+      if (meta) a.appendChild(el("span", "m", meta));
+      view.appendChild(a);
+    });
+  }
+
+  function render() {
+    document.getElementById("stamp").textContent = "最終更新 " + data.updated;
+    renderTabs();
+    renderView();
+  }
+
+  function load() {
+    var btn = document.getElementById("refresh");
+    btn.disabled = true;
+    return fetch("data.json?t=" + Date.now(), { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (j) { data = j; render(); })
+      .catch(function () {
+        var v = document.getElementById("view");
+        v.textContent = "";
+        v.appendChild(el("p", "err", "データを読み込めませんでした。通信状況を確認して、もう一度「更新」を押してください。"));
+      })
+      .then(function () { btn.disabled = false; });
+  }
+
+  document.getElementById("refresh").onclick = load;
+  document.addEventListener("visibilitychange", function () {
+    if (!document.hidden) load();
+  });
+  load();
+})();
+</script>
+</body>
+</html>
