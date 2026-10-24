@@ -40,6 +40,7 @@
   .news .m { display:block; font-size:13px; color:var(--sub); }
   h2 { font-size:14px; color:var(--sub); margin:18px 0 6px; font-weight:600; }
   .links a { display:block; padding:12px 14px; margin-bottom:8px; border-radius:10px; background:var(--card); border:1px solid var(--line); color:var(--accent); text-decoration:none; font-weight:600; }
+  .badge { display:inline-block; margin-right:6px; padding:0 7px; border-radius:6px; background:var(--accent); color:var(--accent-ink); font-size:12px; font-weight:700; vertical-align:1px; }
   .empty { padding:12px 2px; color:var(--sub); }
   a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible { outline:3px solid var(--accent); outline-offset:2px; }
 </style>
@@ -101,6 +102,7 @@
     if (!tab.items.length) box.appendChild(el("p", "empty", "該当するニュースはまだありません。"));
     tab.items.forEach(function (it) {
       var a = el("a"); a.href = it.link; a.target = "_blank"; a.rel = "noopener";
+      if (it.new) a.appendChild(el("span", "badge", "NEW"));
       a.appendChild(document.createTextNode(it.title));
       if (it.date) a.appendChild(el("span", "m", it.date));
       box.appendChild(a);
