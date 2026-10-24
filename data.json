@@ -1,9 +1,11 @@
 {
- "updated": "2026-10-24 19:28",
+ "updated": "2026-10-24 20:53",
  "tabs": [
   {
    "id": "tver",
    "name": "TVer",
+   "kind": "news",
+   "note": "TVerには追加予定の一覧がないため、関連ニュースの見出しを表示しています。",
    "links": [
     {
      "label": "TVerを開く",
@@ -14,98 +16,86 @@
     {
      "title": "TVer、『第105回全国高校サッカー選手権大会』地区大会決勝全48試合＆全国大会全試合を無料ライブ配信 - PR TIMES",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBKQnhjdWZLbzdxZ2NKNlN2SlJnMkV3aVJ0MW14V210UWF0N2JJVnBxc0U1S2F1bHI5UVY5Uk5vWGlrVWNtTjJ0cWZrZW9yNWVva2lVVUFyd2I5ZERyYnhQUUkzbTdqUEJkbnc?oc=5",
-     "source": "PR TIMES",
-     "date": "2026-10-24T11:00:01+09:00"
+     "date": "10/24"
     },
     {
      "title": "TVerで『第105回全国高校サッカー選手権大会』地区大会決勝全48試合＆全国大会全試合を無料ライブ配信 - Excite エキサイト",
      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5LWkpXOF9fbVhObk02QjJIbkNBSkFfUjFDMlNFcXZORUtObXZENjhMajItZEx5OTNIWkRGWENFSlpVX1NBNDhIQUZEd2Y2ZmhDRXZBRmRLR2xTTFQ0T2c?oc=5",
-     "source": "Excite エキサイト",
-     "date": "2026-10-24T11:00:00+09:00"
+     "date": "10/24"
     },
     {
      "title": "晩酌の流儀５ 10月23日(金)放送分 第4話 「えのきステーキ」｜ドラマ｜見逃し無料配信はTVer！人気の動画見放題 - TVer",
      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5hR3ZxNFJSaV94N2d6b3NYa3REbDMyaEZNMFJKS0tMeDktdEhLM1BVdnZrc1Yya0JKOTE1NlU5UHhOekhqQTlXSVQ3Yw?oc=5",
-     "source": "TVer",
-     "date": "2026-10-24T01:54:35+09:00"
+     "date": "10/24"
     },
     {
      "title": "まめとむぎ 10月23日(金)放送分 #4 これからは、隣にいる。｜ドラマ｜見逃し無料配信はTVer！人気の動画見放題 - TVer",
      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE82d3RSZVNIQ0lBVjNhM3JQQlAwQm1IckNlWkc0Mm03aS1nQXZMX3VBZmVZTEZ2VmhSSnhPU005ZkVnWndVNWNEUkhfTQ?oc=5",
-     "source": "TVer",
-     "date": "2026-10-24T01:18:26+09:00"
+     "date": "10/24"
     },
     {
      "title": "第8話 涙腺崩壊！月海の決断と涙の別れ 最後の晩餐 - TVer",
      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5LWGFtdVM0cE92ZzY3WGhQUjJrMm9kX1Eyc2dwZzA4bDFCcDRONEtDMEY3eFlnbmo1X0RWb29uUmROMGVGRjNSa1ZnZw?oc=5",
-     "source": "TVer",
-     "date": "2026-10-24T00:18:57+09:00"
+     "date": "10/24"
     },
     {
      "title": "【解説放送版】第2話 二つの事件 一つの真実 - TVer",
      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1uakN1T0REMWZQVTFVbXJ5VUVjZ3U1UzlzbS1KNzZJbVdpemxFcEV3Q0dvdDczUmVfZjNZLVNIYkpLajZ2TkJTdXZGQQ?oc=5",
-     "source": "TVer",
-     "date": "2026-10-23T22:18:42+09:00"
+     "date": "10/23"
     },
     {
      "title": "【“コメ急落”日本米の逆襲】安く大量生産！さらに海外で稼ぐ！ - TVer",
      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1qSHdNN0dJSElfLTZaSEk1OHJ0NUlReFZjNG9hTU5aQ0NVVEtFeExkc2xXeGtvaHpORE5feEEzQU5zczVwRWF6TlhUbw?oc=5",
-     "source": "TVer",
-     "date": "2026-10-23T22:17:33+09:00"
+     "date": "10/23"
     },
     {
      "title": "第2話 二つの事件 一つの真実 - TVer",
      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB2Z2JwWWQ1ME9rbzZVZ3Q3Y0ZQdm9COU5QMWtwSUxNQm5tZ2RXbkk4VU54MlI2TllGLUd2YlFIUGhTT09FM2xudFdfcw?oc=5",
-     "source": "TVer",
-     "date": "2026-10-23T22:03:10+09:00"
+     "date": "10/23"
     },
     {
      "title": "「シルバニアファミリー フレアのカラフル・エブリデイ」の配信はどこで見れる？見放題サブスク・TVer・放送日まとめ - アニメ！アニメ！",
      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9mQTNrb2hncHI3cmw2VjNqZDZtNzY1bWZ3c0ExU3ZFQ0Y3dF9SSVgzS0l6dHh3SkVrOVZKWW9zZVREMmxTMGlST0QyQ3V0TG9qTWFlWTRuTEloQmIwWEZJWklB?oc=5",
-     "source": "アニメ！アニメ！",
-     "date": "2026-10-23T19:00:32+09:00"
+     "date": "10/23"
     },
     {
      "title": "TVerで『SMBC日本シリーズ2026』無料ライブ配信決定「横浜DeNAベイスターズ」と「福岡ソフトバンクホークス」が激突 - PR TIMES",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBqVzloUWNGdUkyLWloZ3F5cXdkdkZORDFVVW1BMXJLU2hCRnljb1NBYXYyV2l5dk5KTUd4LWMwZDg1VzRScDRpSlZsNC1hVFRSNmFRMWgxVDhXTkx6a29TTm13LWdCR0JsaEE?oc=5",
-     "source": "PR TIMES",
-     "date": "2026-10-23T16:00:02+09:00"
-    },
-    {
-     "title": "TVerで『SMBC日本シリーズ2026』無料ライブ配信決定「横浜DeNAベイスターズ」と「福岡ソフトバンクホークス」が激突する日本シリーズ全試合を無料ライブ配信 - Excite エキサイト",
-     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE04czQtamxfWHZVcHg4b3dIeUVmZTlpX1JOb2pwMWcxWFVueXR2aTFtb1ZMUktfLXh1eDlHN2xjb29qbnRaeUc0UVdlWXRUdXdUVVd1VjFFLWc5aDE5UUE?oc=5",
-     "source": "Excite エキサイト",
-     "date": "2026-10-23T16:00:00+09:00"
+     "date": "10/23"
     },
     {
      "title": "民間のコンソーシアムで、世界に負けないAIロボットをつくる！：アンパラレルド - テレビ東京",
      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5LZlRka0h1N2FCTkZ4ZGVQZ3lJOVEzUWZMYjIwR1V5M1YwRTQydnMzYkZMTlhoWWxlc2NYcnF4dkdqVmV6MXU3bDdVM1F3dExUay1zSUhrcDRHLWhfU054eTRQeGdlU19pQzdTUWxqQ1hFUQ?oc=5",
-     "source": "テレビ東京",
-     "date": "2026-10-23T15:21:32+09:00"
+     "date": "10/23"
     },
     {
      "title": "大手外食チェーン“110億円もの”買収劇＆経営難に陥った＜地方の宿＞再建請負人に密着!! - テレビ東京",
      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE91MVRMelgwQW56OUZCRVhxcHUySm5vMDIwQVRTUzZIdkhqSFVaUWpkS3NhTjFLX2xveDFqV0M2MTZSYXB5a05GYXdjbElkS01hSnMxQS16TWdiVE5YTFFKMDJ0Mk9qX1p3N0d5T2RvVGZaUQ?oc=5",
-     "source": "テレビ東京",
-     "date": "2026-10-23T15:21:32+09:00"
+     "date": "10/23"
     },
     {
      "title": "プロ野球日本シリーズ、TVerで全試合無料ライブ配信 - ｄメニューニュース",
      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQQURjY1ZWZzV5Tl9XQkN1UlhpWFNmWThKOHdpZ1pLT1VwSGV0TUFpSVhrbDhMcVFTeFAwZFVhSlExaldxeU1VWVc2SE5mZ3RFUWc5dEg5UF9yOU1QbTJPd1JoZ0dBb2d3VmdjWVpJVksyb2dQTjNrMEtYS282eXJKUWlaaE5zRTlyQkdEeVhB0gGOAUFVX3lxTFBBRGNjVlZnNXlOX1dCQ3VSWGlYU2ZZOEo4d2lnWktPVXBIZXRNQWlJWGtsOExxUVN4UDBkVWFKUTFqV3F5TVVZVzZITmZndEVRZzl0SDlQX3I5TVBtMk93UmhnR0FvZ3dWZ2NZWklWSzJvZ1BOM2swS1hLbzZ5ckpRaVpoTnNFOXJCR0R5WEE?oc=5",
-     "source": "ｄメニューニュース",
-     "date": "2026-10-23T15:00:00+09:00"
+     "date": "10/23"
     },
     {
      "title": "国内ドラマの見逃し配信サービス比較｜無料TVerと各局有料VODの違い・放送局別選び方ガイド - スポカレ",
      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBJbVZOS1hwemd4YmVMNHZiSkdoaHo2NzNSLUNYX1IxTThUbUlJMWtsZzczMWZRWnVnNnRrLWJPZ1RzVVZrUTYzLWE1R1p4ZlVRTjYyVG1ENFlnMllZ?oc=5",
-     "source": "スポカレ",
-     "date": "2026-10-23T10:22:48+09:00"
+     "date": "10/23"
+    },
+    {
+     "title": "君は夏のなか 10月22日(木)放送分 第4話 君のいない夏｜ドラマ｜見逃し無料配信はTVer！人気の動画見放題 - TVer",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9mbW5wM19RUmE1X2R2S29NQzFpdzdsQ1BUVEUySTBvS01WbXFIalJvS1RjY0s1emp2bHRTLXRFbU9Mdk03RUtZVmlhVQ?oc=5",
+     "date": "10/23"
     }
-   ]
+   ],
+   "status": "ok"
   },
   {
    "id": "movie",
    "name": "地上波の映画",
+   "kind": "days",
+   "note": "Gガイド(兵庫)から映画らしい番組を自動で拾っています。時刻・局は表示していません。深夜(0時以降)の放送は前日の日付で出ることがあります。",
    "links": [
     {
      "label": "Gガイド 兵庫の番組表",
@@ -116,310 +106,1087 @@
      "url": "https://www.ktv.jp/cinema_tv/"
     }
    ],
-   "items": [
+   "days": [
     {
-     "title": "「感動した」ウクライナの現状伝える映画祭 11月末まで各地で開催 ロシアによる侵攻長期化 神戸市 - au Webポータル",
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE80ZlluZ2ZVZVhtR0p6Zk8wVW8wMHp0Tzh6TUxQS2J0ZVhvbkFONHJwSllrb0lUYW9WRWhVdUZGRVNFcW1ieHVaRmY0Y2VqSkVkZzFQQkVSdmNzczFsSTBRLUpkUV9SVkZXTURpelh3?oc=5",
-     "source": "au Webポータル",
-     "date": "2026-10-24T17:37:20+09:00"
+     "date": "2026-10-24",
+     "label": "10月24日(土)",
+     "items": [
+      {
+       "title": "2週連続！映画「96時間／リベンジ」",
+       "link": "https://bangumi.org/tv_events/AmOwggmfsAM"
+      },
+      {
+       "title": "鈴木敏夫・石田ゆり子が巡る禅とジブリ京都展 鈴木敏夫と石田ゆり子が「禅とジブリ」京都展を巡る。展示の軸となる映画『君…",
+       "link": "https://bangumi.org/tv_events/AmOwgoJAYAM"
+      }
+     ]
     },
     {
-     "title": "「なんでまばたきするの？」「海外のホラー映画」関西朝の人気キャラ「探偵！ナイトスクープ」にまさかの依頼 - au Webポータル",
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAyeGVwSlc3SDFHV1BDSE8ycUJxOFlTRnZtaU9Mam1QS0wyTG40TFJKNHlCdzI2aThwdVMwSTJDZXdfbGxOV0lqTUxZeDFBWU5yTjI0dWJ6OUxmRHVtQTBBY1JpemxvaUgzVEEyVTVR?oc=5",
-     "source": "au Webポータル",
-     "date": "2026-10-24T16:59:00+09:00"
+     "date": "2026-10-25",
+     "label": "10月25日(日)",
+     "items": [
+      {
+       "title": "MM－TV【東京力車◆ReoNa◆CHIHIRO◆鞘師里保◆映画『ゴジラ-0.0』◆菊池亮太】 【ARTIST CO…",
+       "link": "https://bangumi.org/tv_events/AmPAgQqWkAM"
+      },
+      {
+       "title": "映画公開記念番組『ゴジラ-0.0』ーBEYONDー▽大公開!新たなる挑戦に完全密着!",
+       "link": "https://bangumi.org/tv_events/AmOwgYM3gAM"
+      },
+      {
+       "title": "鈴木敏夫・石田ゆり子が巡る禅とジブリ京都展 鈴木敏夫と石田ゆり子が「禅とジブリ」京都展を巡る。展示の軸となる映画『君…",
+       "link": "https://bangumi.org/tv_events/AmPAgoJCoAM"
+      }
+     ]
     },
     {
-     "title": "10月24日（土） | ウラマヨ！ - www.ktv.jp",
-     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1KRjVLekhEdm5pUkFLOUdVcFNpRWlXb3hPRDZrcEtxR1k4MkRrS2dqZFBsSGZhTjRfV25WU3RteG5QaEVDbmFKRjVfUUhHdTQ?oc=5",
-     "source": "www.ktv.jp",
-     "date": "2026-10-24T16:41:46+09:00"
+     "date": "2026-10-26",
+     "label": "10月26日(月)",
+     "items": [
+      {
+       "title": "鈴木敏夫・石田ゆり子が巡る禅とジブリ京都展 鈴木敏夫と石田ゆり子が「禅とジブリ」京都展を巡る。展示の軸となる映画『君…",
+       "link": "https://bangumi.org/tv_events/AmPQgoJEUAM"
+      }
+     ]
     },
     {
-     "title": "画像20 / 22＞金ロー4週連続コナン！147億円ヒット作『隻眼の残像』ノーカット初放送、最新作『ハイウェイの堕天使』への“予習動線”に - ウォーカープラス",
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9fT0syLW5ZSTlsV244OUdDdHo4QzNKbmtRMTRZUlFQd1VVTGRDRmxPYXVYMHlWRDZiM3NxXzUyU1lfMjlrbS16MUh3LXhSNW5Lckxra0V3OHVKWHhEM3JDUTdkdTUtMW0zbTlUSUR3?oc=5",
-     "source": "ウォーカープラス",
-     "date": "2026-10-24T16:03:29+09:00"
+     "date": "2026-10-27",
+     "label": "10月27日(火)",
+     "items": [
+      {
+       "title": "鈴木敏夫・石田ゆり子が巡る禅とジブリ京都展 鈴木敏夫と石田ゆり子が「禅とジブリ」京都展を巡る。展示の軸となる映画『君…",
+       "link": "https://bangumi.org/tv_events/AmPggoJGEAM"
+      }
+     ]
     },
     {
-     "title": "読売テレビ『土曜はダメよ!』に新レギュラー NMB48・岡腰星来が25日放送回に初登場「家族もとても喜んでくれました」【コメント】 - オリコンニュース",
-     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB1VVk0WktrMTE3SndfWjEzYkNfbVlMbi1nZHVacmRXRWtsczdCWjRtMVZHbU5DRnNpdlhsc3c3RlM5VkV2cFBXRk9yOTM1REVvMUFvSGNpclVJZw?oc=5",
-     "source": "オリコンニュース",
-     "date": "2026-10-24T14:50:13+09:00"
+     "date": "2026-10-28",
+     "label": "10月28日(水)",
+     "items": [
+      {
+       "title": "「バッド・ルーテナント：トウキョウ」トロント国際映画祭 裏側密着SP",
+       "link": "https://bangumi.org/tv_events/AmPggoJGgAM"
+      },
+      {
+       "title": "鈴木敏夫・石田ゆり子が巡る禅とジブリ京都展 鈴木敏夫と石田ゆり子が「禅とジブリ」京都展を巡る。展示の軸となる映画『君…",
+       "link": "https://bangumi.org/tv_events/AmPwgoJMoAM"
+      }
+     ]
     },
     {
-     "title": "石田彰版『タイタニック』後編、あす放送 見どころ紹介【今後の「金ロー」ラインナップ】 - 山陽新聞デジタル｜さんデジ",
-     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5MdTZLc2hGXzllTVlrOElaTVhtX3NpVThOb3VFbENramxZX0ZZY0tGQmlEU0Z5aEQwam1WTHhpN1Mzd24xWk9FVjc1V1VqN0FqS2c?oc=5",
-     "source": "山陽新聞デジタル｜さんデジ",
-     "date": "2026-10-24T06:32:10+09:00"
+     "date": "2026-10-29",
+     "label": "10月29日(木)",
+     "items": [
+      {
+       "title": "鈴木敏夫・石田ゆり子が巡る禅とジブリ京都展 鈴木敏夫と石田ゆり子が「禅とジブリ」京都展を巡る。展示の軸となる映画『君…",
+       "link": "https://bangumi.org/tv_events/AmQAgoJMUAM"
+      }
+     ]
     },
     {
-     "title": "『薬屋のひとりごと』金ローで特別編集版放送決定 第2期ラストシーンにつながる約4分の新規映像が追加 - 山陽新聞デジタル｜さんデジ",
-     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxORjhzcnpTT3hUcFprcTRIV1gyOVE3OEhxRDYxLUlVeXE2VExSanBYZVpuUENTVGJZXzVQZzU2d2ZSX2lkWkpEdklBMUlqREFCZVFSX1dNd0k4a1BmMi0zenNudV9qQWhTdldRdzd0RHZCR0FKZkViQ21kajl6RkdoNS0xWlVVWXp4cWc?oc=5",
-     "source": "山陽新聞デジタル｜さんデジ",
-     "date": "2026-10-24T06:11:15+09:00"
-    },
-    {
-     "title": "秋ドラマ《初回視聴率TOP10》フジテレビとテレ朝の｢意外な明暗｣…｢LOST10｣や｢救命病棟24時｣など\"気になる結果\" - 東洋経済オンライン",
-     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1nanh4NTN6a3JQV2k2RWFjQXhUZDFaNkx2MUpLSkNER0U3S1l1U3BwSFV5S1JLX1B5bmQycUI0ZThxdG9RSGZpNDd3MzZBS21zeXJhcEFLUnRkQXM?oc=5",
-     "source": "東洋経済オンライン",
-     "date": "2026-10-24T05:45:00+09:00"
-    },
-    {
-     "title": "画像 | 秋ドラマ《初回視聴率TOP10》フジテレビとテレ朝の｢意外な明暗｣…｢LOST10｣や｢救命病棟24時｣など\"気になる結果\" - 東洋経済オンライン",
-     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8wMGFPWlV5NmNBUnBSSHdwNDRwQ3NhWno5ODkzc1Z5MnpEX3pkdTRpVXp4Y25UWkNwM2tSXzZGNVVWUnNleHpHZVducEkyS3VtOURLOWtOeGNIUjFrSFE?oc=5",
-     "source": "東洋経済オンライン",
-     "date": "2026-10-24T05:45:00+09:00"
-    },
-    {
-     "title": "『劇場版 薬屋のひとりごと 亡妃の秘宝』最新情報が一挙解禁！公開初日には「金曜ロードショー」でスペシャルエディション放送 - Yahoo!ニュース",
-     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOczRYR2FjSlgxT3FZanVObFRUTFo2UU1uQXZqeHpLRVhFbUN5VmhvOE85VnpHMXZYeldvS3Fma3pvQ2x0TUktZ01zNFpqWmM5OWVlMGFCSTgycFoxQjR3dmVxbFRwT0JmZkNBeWJ5aVQ4amtCcW4zdTk0TnZhLWxhV01jMGlvSTgyU0k1bU9B?oc=5",
-     "source": "Yahoo!ニュース",
-     "date": "2026-10-23T21:13:17+09:00"
-    },
-    {
-     "title": "二拠点生活はすでに解消？ 「小雪」が田舎暮らし8年目で得た新しい“家族のスタイル”〈金曜ロードショー「ALWAYS 三丁目の夕日」きょう〉 - AERA DIGITAL",
-     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9aZmwzMEtheUpvLXh3NTJmajYydmlZS3lIWmJ3eWs3Q1ZFenBnS1R0MVZqUTNtcVhxZlZkWDdzXzQ3ZTlfTjctYl9kQnRuX1ZIa0VoVUVQOFpEUQ?oc=5",
-     "source": "AERA DIGITAL",
-     "date": "2026-10-23T21:00:00+09:00"
-    },
-    {
-     "title": "テレビのニュースとスマホがAIで連携！災害時には避難行動支援「AIシノビー」「しるべAI」を展示 読売テレビと大阪大学がCEATEC2026に共同出展（2026年10月23日掲載）｜YTV NEWS NNN - 日テレNEWS NNN",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQVzFrUXluUlZlXzQtajdZOFYyYWF0NXZOMFdoS1JEbEZLZk1WbFNkVWNhTGcyaU9wWkxMWmNhamNXdm9pcjFqZkZWbk9nWU1CYzFIZXU0TkVKV0M3TGhtSUNtaHJBbU52ckVSSmd1TzA0alNlWWlZQVFMMjZlNVlLSkQzMWhwT0E?oc=5",
-     "source": "日テレNEWS NNN",
-     "date": "2026-10-23T20:51:00+09:00"
-    },
-    {
-     "title": "『劇場版 薬屋のひとりごと 亡妃の秘宝』最新情報が一挙解禁！公開初日には「金曜ロードショー」でスペシャルエディション放送 - ｄメニューニュース",
-     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOOVYtR0lLOThTTlBSNk1RX1pCaUdKSTdrdjVDeEVuQUFwT2dJTHVzekZWLUI5Sjk0SnBaQWdZRW9mQy0ycHJVLXVGNngxV19sdGRhRFhCS1BnSzRKYThFM2t6a2E1cV8zdkRUcXZLZm5Xb1d5ZVg4NDA1Zy1wVHpEbWpOUm50RktTd0NzRjFqQ0QwTkHSAZMBQVVfeXFMTjlWLUdJSzk4U05QUjZNUV9aQmlHSkk3a3Y1Q3hFbkFBcE9nSUx1c3pGVi1COUo5NEpwWkFnWUVvZkMtMnByVS11RjZ4MVdfbHRkYURYQktQZ0s0SmE4RTNremthNXFfM3ZEVHF2S2ZuV29XeWVYODQwNWctcFR6RG1qTlJudEZLU3dDc0YxakNEME5B?oc=5",
-     "source": "ｄメニューニュース",
-     "date": "2026-10-23T20:30:00+09:00"
-    },
-    {
-     "title": "『劇場版 薬屋のひとりごと 亡妃の秘宝』最新情報が一挙解禁！公開初日には「金曜ロードショー」でスペシャルエディション放送 - MOVIE WALKER PRESS",
-     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA3emYxQ2NySjcxWHlVaUI1MWVQYUdlTEs5cUIxcUtGSjRBTWxQa1loN0FoZlp4M3JCMFFCOVN2LUNLZkRUaHRwd0ZCbWp5Qm5wS1ZLU1ByeThrWUk3Z3RV?oc=5",
-     "source": "MOVIE WALKER PRESS",
-     "date": "2026-10-23T20:30:00+09:00"
-    },
-    {
-     "title": "４７歳妻が２４歳年下夫の本心を探るために大変身！ - TVer",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE0zZWsyZ2dRN3E5a1N2anA5enFzNEZSc19BLWpoUmczMHl3QUhzUFE1cU95LUE0V3JfY1FITVo1eGZ6M3NJVjFsZlFDTQ?oc=5",
-     "source": "TVer",
-     "date": "2026-10-23T20:18:57+09:00"
+     "date": "2026-10-30",
+     "label": "10月30日(金)",
+     "items": [
+      {
+       "title": "金曜ロードショー「ゴジラ－1．0」★最新作「ゴジラ－0．0」公開記念",
+       "link": "https://bangumi.org/tv_events/AmQAgoJLcAM"
+      },
+      {
+       "title": "鈴木敏夫・石田ゆり子が巡る禅とジブリ京都展 鈴木敏夫と石田ゆり子が「禅とジブリ」京都展を巡る。展示の軸となる映画『君…",
+       "link": "https://bangumi.org/tv_events/AmQQgoJNAAM"
+      }
+     ]
     }
-   ]
+   ],
+   "status": "ok"
   },
   {
    "id": "nico",
    "name": "ニコニコ",
+   "kind": "days",
+   "note": "ニコニコインフォの週間一覧(アニメ生放送)から取得。一挙放送(ニコニコアニメスペシャル)は下のリンクで確認してください。",
    "links": [
     {
      "label": "Nアニメ 一挙放送の予定",
      "url": "https://anime.nicovideo.jp/live/reserved-ikkyo.html"
     },
     {
-     "label": "ニコニコアニメスペシャル 生放送",
+     "label": "ニコニコアニメスペシャル",
      "url": "https://ch.nicovideo.jp/anime-sp/live"
     }
    ],
-   "items": [
+   "days": [
     {
-     "title": "アニメ『薬屋のひとりごと』3期はいつから？2026年10月2日から分割2クールで放送！原作のどこからどこまで？ - ABEMA TIMES",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB0ZXg1eG5obDJROWdrMkh0YXR4d0h6Mjh6c0FER2ltUGdrVWNRY1hUUGF6RHBrTExsT2daODVrbi00NUo3eW1kdy10SUNvdzVISHJUZA?oc=5",
-     "source": "ABEMA TIMES",
-     "date": "2026-10-24T00:55:00+09:00"
+     "date": "2026-10-24",
+     "label": "10月24日(土)",
+     "items": [
+      {
+       "time": "24:00",
+       "title": "24:30 BLEACH 千年血戦篇-禍進譚- 49話上映会"
+      }
+     ]
     },
     {
-     "title": "「フィニアスとファーブ」“笑いとスリル”いっぱいの3時間一挙放送“日本初放送回”も＜フィニアスとファーブのハロウィーン - ニコニコニュース",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE50TmhUVExlSHA1dkNtMkZ6aG15Zml2alJiR0xENlNtbFk2WVBVY2FZbDB0UG5JV1dvSHFRRmZmVXVER043b2RQcEQ4eEpTSWI4QVdFYg?oc=5",
-     "source": "ニコニコニュース",
-     "date": "2026-10-23T12:42:20+09:00"
+     "date": "2026-10-31",
+     "label": "10月31日(土)",
+     "items": [
+      {
+       "time": "24:00",
+       "title": "BLEACH 千年血戦篇-禍進譚- 50話上映会"
+      }
+     ]
     },
     {
-     "title": "『劇場版 薬屋のひとりごと』7つの最新情報が一挙解禁！ 完成披露試写会や金ロー特別版の放送も - ニコニコニュース",
-     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBDQ0IwLWt0dHphYWtoRlRLbXJ6VEdWMDJuSUUzX1FUdEl5WDh2b0FvbW9JdE1FR2hSMlU0R3hQTHBRY3Rma1FJcVVpbmxad0UxQ19GWWJsRXZQU2NWdTFGNVRocXU1X2Z6OWdrSFMwQUV1SUZndnVPdmtNbw?oc=5",
-     "source": "ニコニコニュース",
-     "date": "2026-10-22T21:57:16+09:00"
-    },
-    {
-     "title": "劇場版『薬屋のひとりごと』最新情報が一挙解禁 キャスト登壇完成披露試写会、原作者書き下ろし入場者特典など7項目 - ニコニコニュース",
-     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5pUGV0MVVLcGV6ZmE5Ym40X1p1c05xYWs5WW9oZm1rWlNBLXJXa3B1TS0wVnlFYUJ1blV0LV9rMzExck1WbEowaE5jQkstSl9tWklSOTBGdXVuekVWS3ZvcFlRczhCN3ZTaGhjSGlWdmllN28?oc=5",
-     "source": "ニコニコニュース",
-     "date": "2026-10-22T21:00:19+09:00"
-    },
-    {
-     "title": "『キミとアイドルプリキュア♪』再放送が10月21日よりTOKYO - ニコニコニュース",
-     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFA3cUxFWWlPd1pISDdVTXhRNGFnMElMVlpLc095S2RrQVc2MHN6SDhVdml3Vk9MeHROSHhYTm9Rd2wxYmRXTmZPUmZyZEU0emZUc2xXSlJua2VEdWxVNy1uNVNLdmhydXhBOFBDVGM5OTdNNjFacTd3?oc=5",
-     "source": "ニコニコニュース",
-     "date": "2026-10-21T13:57:17+09:00"
-    },
-    {
-     "title": "ラブライブ！蓮ノ空＞「ついに来たぞ106期！」新情報が一挙公開、106期生集合のアーティスト写真にコメント続々 - ニコニコニュース",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8xVlJySURsb0V3VU5ra1ZZQVZNQUhzcENnN2M3cXhMT3FVcy1hc2ZTamVDb2c4ZWdzLU43UU1jQ1g3cEQ4NlJsb1lPWWhBcGN3T0lVZA?oc=5",
-     "source": "ニコニコニュース",
-     "date": "2026-10-19T19:30:14+09:00"
-    },
-    {
-     "title": "「エヴァ」即完売MA-1が追加生産！ 買い逃した人は今こそチャンス♪ 初号機やMark.06モチーフ再販受付中 - ニコニコニュース",
-     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5laW1GNFZvNngzSW5XS2FRT3JVNjRnTUJWa3VqZDB2SXUzLWdIS09aWUJEUlFRcHFfSk5qMzIxVGxObEUtZmNwcjFfV0pfWXNreDF2ajRLSVN4Mm0wR2d2d0VmRFRHR2d6MS1yWFVQbFFlSjA?oc=5",
-     "source": "ニコニコニュース",
-     "date": "2026-10-16T12:03:19+09:00"
-    },
-    {
-     "title": "昭和を代表する“名作ヒーローアニメ”2作品がABEMAに初登場！永井豪原作『マジンガーZ』『デビルマン』のABEMA初 - ニコニコニュース",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9FVVlVUGlXQkQ4MXlGV1d1U1JWdzV6akZudHNUYlpUS00yS1VSOTBCTmFTZWswYmZ0XzlCM1AxV2g2RkVFZmhvZGZjUjhqUTFmTVJKVQ?oc=5",
-     "source": "ニコニコニュース",
-     "date": "2026-10-15T16:00:00+09:00"
-    },
-    {
-     "title": "『鬼滅の刃』無限列車編・第2話「深い眠り」10月18日再放送！炭治郎たちが煉獄杏寿郎と合流 - ニコニコニュース",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1teU9YdUw1bG1tS1F1SmF1NHR2VWxaMl9ldXlCMzhoZXdmanM4VGtGekhRWndmQ2Z0WlhKZmhhLWNyellEbUM0NTl0QU4wODhIbHBrQw?oc=5",
-     "source": "ニコニコニュース",
-     "date": "2026-10-15T15:54:25+09:00"
-    },
-    {
-     "title": "【無料】『マジンガーZ』『デビルマン』の全話一挙放送がABEMAにて実施決定。昭和を代表する永井豪先生の“名作ヒーロー - ニコニコニュース",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9zQzY3LUZhTURtdV9NOVlPTmdrMDB2Ri14ejJqVTFhb29ILVRCak5hQnlrUDQ0TXotQThVbUxoRDR2M3o1Y0xjTUI0OFptLU5kOG52SA?oc=5",
-     "source": "ニコニコニュース",
-     "date": "2026-10-15T14:57:24+09:00"
-    },
-    {
-     "title": "『ワールドトリガー』『D.Gray-man』など人気アニメ3作品、ABEMAで全話無料一挙放送 - ニコニコニュース",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE81TGRZTS1uY3dlV3pseGgybm9MRDJfRzdvLTJoZ3F2elk5elAwU2ZyNERkUmpMS056ZFlrSFZCc3ZGdnQ3a2VmaW9vRGdRMlRVMS16Sg?oc=5",
-     "source": "ニコニコニュース",
-     "date": "2026-10-14T16:00:00+09:00"
-    },
-    {
-     "title": "ワールドトリガーら少年誌を彩る人気アニメをABEMAでイッキ見！ - ニコニコニュース",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB5dy1rYmFpU2ZaSzlQV2E2dWVaaGRCcEg5ODJqTGoxMXJ6UERwOG9UbWpvWnM2NXdZTDFkTGtpTXE0a0Rack8tTE1mVGRsbFdvYXFrcw?oc=5",
-     "source": "ニコニコニュース",
-     "date": "2026-10-10T16:00:00+09:00"
-    },
-    {
-     "title": "「ハイキュー!!」「黒子のバスケ」など青春スポーツアニメ5選☆ スポーツの日は球技で盛り上がろう【ABEMA】 - ニコニコニュース",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE83X0JwRTRXcG11QWlEN3R0RE5icll2aV9WWTFyck9uTFRWZEE5ejQtcFk1QTFzU04xY1pGRHM4M192ODZYZDQxLWRiTDNZUldDdHFxNw?oc=5",
-     "source": "ニコニコニュース",
-     "date": "2026-10-10T16:00:00+09:00"
-    },
-    {
-     "title": "NHKワールド JAPAN特別番組「Anime Journal」海外の人気アニメ系YouTuber「The Anime Man」が出演決定 ～声優・下野紘らと、世界が注目する日本アニメの魅力を深掘り～ - PR TIMES",
-     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9WTjNVbHFOWnJPamFJVXN1b0ZaX216QkhMN05PZjhfcnppbU5xYkN3eDB0WFRvdmJvREdSN2ZfZlZaUTY2MGhyYmp3OE00dGJVTW5nWGRlN0FyRHR4NS1MZ1V5X1ltV3hua0E?oc=5",
-     "source": "PR TIMES",
-     "date": "2026-10-10T16:00:00+09:00"
-    },
-    {
-     "title": "少年誌を彩る人気アニメをABEMAでイッキ見！『ワールドトリガー』『D.Gray-man』『憂国のモリアーティ』人気ア - ニコニコニュース",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA0Y0hzOXo0WHBUY1h2ZGx0YXZob1pYaHZHYXJ5VS1ZYTNhWU8xYXR5bE5Jdjg1S1F1Z3VYWkxja19ya3Z2REl6NlpVYmNVMkRmZ1hTQw?oc=5",
-     "source": "ニコニコニュース",
-     "date": "2026-10-09T16:00:00+09:00"
+     "date": "2026-11-01",
+     "label": "11月1日(日)",
+     "items": [
+      {
+       "time": "23:45",
+       "title": "てつりょー！meet with 鉄道むすめ 1～3話振り返り上映会"
+      }
+     ]
     }
-   ]
+   ],
+   "status": "ok"
   },
   {
    "id": "prime",
    "name": "アマプラ終了",
+   "kind": "days",
+   "note": "出典: アニライク。見放題終了「予定」で、取り消されて継続になることがあります。字幕版・吹替版は1つにまとめています。",
    "links": [
     {
-     "label": "見放題終了予定リスト(anilike)",
+     "label": "元のリスト(アニライク)",
      "url": "https://anilike.jp/end/amazon-end/"
-    },
-    {
-     "label": "終了・新作カレンダー(うさぎ亭)",
-     "url": "https://usagitei.com/prime-video-calendar/"
     }
    ],
-   "items": [
+   "days": [
     {
-     "title": "自滅覚悟？トランプ流中間選挙 責任転嫁にウクライナ激憤 - TVer",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9aMHRkbTI0Zms3X2xMZjJscVpRTDJSS2hFQnZEWWIydy03bnN3b2dmRGY5Vm9KTDEtZGcxY3lxeEZQa0ExYXMyLV9zVQ?oc=5",
-     "source": "TVer",
-     "date": "2026-10-24T15:18:51+09:00"
+     "date": "2026-10-24",
+     "label": "10月24日(土)",
+     "items": [
+      {
+       "title": "クレヨンしんちゃん シンエイセレクション"
+      },
+      {
+       "title": "クレヨンしんちゃん 懐かしコレクションだゾ"
+      },
+      {
+       "title": "クレヨンしんちゃんテレビスペシャル シンエイセレクション"
+      },
+      {
+       "title": "デンジャラス 見えない殺人鬼"
+      },
+      {
+       "title": "ポケットモンスター エピソード：メガシンカ"
+      },
+      {
+       "title": "千原ジュニアの愛知あたりまえワールド☆～あなたの街に新仰天！～"
+      },
+      {
+       "title": "閉ざされた雪国"
+      }
+     ]
     },
     {
-     "title": "VIVANT2は全何話？最終回はいつ？2クール連続放送の期間・最終話の日程予想・放送スケジュールまとめ - Goal.com",
-     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNVzR2NDk3Wjl4VUdVdVJ3dVczUzQ5UkRHVk5BbktPeUZIdUd6UnRtZEFDN1F4eHVNaWZoa3FYZ1dOMjZISkwyNmEtM2F0LTdwSDVsTU9GSTlMbDdqU3h0YnJIaUNwYUpqUDZsVUNWVXljaUxKdEFaN29vdGlDWFk2MEJETk80Z1ZGaGlWenpHNGUwX0JfWG5fbDJoNWJOZlp0M3dCWkV5MTU3ZUZXa0swa01wT1lxRWpHS19oN0VjazNONm4xZFB2ZE9UMXUtYWpPZmc?oc=5",
-     "source": "Goal.com",
-     "date": "2026-10-23T17:26:55+09:00"
+     "date": "2026-10-25",
+     "label": "10月25日(日)",
+     "items": [
+      {
+       "title": "ダーク・オデッセイ"
+      },
+      {
+       "title": "バビロン"
+      },
+      {
+       "title": "完璧な他人"
+      }
+     ]
     },
     {
-     "title": "ドイツ元情報トップ逮捕＆プーチン氏が仕掛ける“影の戦争” - TVer",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFA5ZjVvUEJSMTQ0Y2VLUTVzdHhfT09KZjZ3Q3FwZGU3UFN5Z2tZemtreTM5TEJoaWxNQWx3aC13U0w5eUZDc2w4QTN2cw?oc=5",
-     "source": "TVer",
-     "date": "2026-10-23T15:18:39+09:00"
+     "date": "2026-10-27",
+     "label": "10月27日(火)",
+     "items": [
+      {
+       "title": "ソード・オブ・レジェンド 古剣奇譚"
+      },
+      {
+       "title": "レジェンド・オブ・キングダム 勇者マイロックと聖なる甲冑の伝説"
+      }
+     ]
     },
     {
-     "title": "【魔法少女まどか☆マギカ】どこで見られる？DMM TVなど配信サービス・料金・無料視聴の条件まとめ - 攻略大百科",
-     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE11YWJTcGZuVlBnWGZvYkdFRzVmcjg2SDRfYnVQdkRCWUlrLXhJN2RtZHBOMlA5bGFJWHRjTmpCQl85Rm9KUVM4Tm5OTFQyaXJ5cGkw?oc=5",
-     "source": "攻略大百科",
-     "date": "2026-10-23T05:23:54+09:00"
+     "date": "2026-10-28",
+     "label": "10月28日(水)",
+     "items": [
+      {
+       "title": "トライバル ゲット・アウト・アライブ"
+      }
+     ]
     },
     {
-     "title": "高市政権を採点!満点も▽独自取材!サイバー被害証券会社▽仏暴動と市場 - TVer",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5wREJuS1FmUEVia1hhTVFJc2phYkNNVUN0OU9ZZXdBbDBSellXSXhDQ3A4Y0FQaW00dExHT3k0SWNnVzQ5QXlNanJkUQ?oc=5",
-     "source": "TVer",
-     "date": "2026-10-22T16:18:16+09:00"
+     "date": "2026-10-29",
+     "label": "10月29日(木)",
+     "items": [
+      {
+       "title": "ザ・スパイ ゴースト・エージェント"
+      },
+      {
+       "title": "シークレット・オブ・ハロウィン"
+      }
+     ]
     },
     {
-     "title": "伊吹元衆院議長＆橋本五郎氏が斬る！高市総理“変革の1年” - TVer",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9hbkM0aVdpY1VoNTVoV0dBeVQ2a1ZOSTAxcmJNcDh3RmFiUjBJaUo1dU9VZHE3ZW9sNHV0TEV1QVNqbF84YjV4OGVzWQ?oc=5",
-     "source": "TVer",
-     "date": "2026-10-22T15:18:13+09:00"
+     "date": "2026-10-30",
+     "label": "10月30日(金)",
+     "items": [
+      {
+       "title": "アフリカン・ネイチャー"
+      },
+      {
+       "title": "アンダーカバー・エンジェル 守護天使"
+      },
+      {
+       "title": "ザ・ラスト・ウェーブ"
+      },
+      {
+       "title": "シンクロニック"
+      },
+      {
+       "title": "スレイヤー 7日目の煉獄"
+      },
+      {
+       "title": "名探偵ポアロ：ベネチアの亡霊"
+      }
+     ]
     },
     {
-     "title": "『進撃の巨人』はどこで見れる？全話配信と無料で見る方法【2026年】 - 株式会社ピクセラ",
-     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE44N3M5VVhpbGQ5VXhPOVlxamo5b1RhaXI2djJsMXg4UzAxanJWRnhVNHplazdJRUw3Z1piQW5hbXZxNFlEX0sxWTA0WDFHb1loMHJEcld0dGxTVllZeWc?oc=5",
-     "source": "株式会社ピクセラ",
-     "date": "2026-10-21T16:00:00+09:00"
+     "date": "2026-10-31",
+     "label": "10月31日(土)",
+     "items": [
+      {
+       "title": "17歳"
+      },
+      {
+       "title": "60デイズ・イン：ナルコス 麻薬カルテル潜入60日"
+      },
+      {
+       "title": "Academy アカデミー"
+      },
+      {
+       "title": "Avanti"
+      },
+      {
+       "title": "CLOSING TIME クロージング・タイム"
+      },
+      {
+       "title": "China Moon"
+      },
+      {
+       "title": "D-デイ ノルマンディー上陸"
+      },
+      {
+       "title": "FLINT２ ～フリント 怒りの脱出～ 前編"
+      },
+      {
+       "title": "Fanmade: ENHYPEN"
+      },
+      {
+       "title": "HUNTER×HUNTER"
+      },
+      {
+       "title": "Halloween With The New Addams Family"
+      },
+      {
+       "title": "Hawaii Five-0 シーズン1"
+      },
+      {
+       "title": "Lie to Me"
+      },
+      {
+       "title": "Love, サイモン 17歳の告白"
+      },
+      {
+       "title": "MOMOKO KIKUCHI 40th ANNIVERSARY FINAL"
+      },
+      {
+       "title": "PLANET OF THE APES／猿の惑星"
+      },
+      {
+       "title": "Teen Wolf: The Movie"
+      },
+      {
+       "title": "The Addams Family (2019)"
+      },
+      {
+       "title": "The Silence of the Lambs"
+      },
+      {
+       "title": "xXx トリプルX：再起動"
+      },
+      {
+       "title": "xXxトリプルX：再起動"
+      },
+      {
+       "title": "あのこと"
+      },
+      {
+       "title": "あるいは裏切りという名の犬"
+      },
+      {
+       "title": "おそ松さん おうまでこばなし"
+      },
+      {
+       "title": "おそ松さん シーズン1"
+      },
+      {
+       "title": "おそ松さん～ヒピポ族と輝く果実～"
+      },
+      {
+       "title": "おそ松さん～魂のたこ焼きパーティーと伝説のお泊まり会～"
+      },
+      {
+       "title": "ひまわり"
+      },
+      {
+       "title": "ひまわり [新録吹替版]"
+      },
+      {
+       "title": "みなみけ シーズン1"
+      },
+      {
+       "title": "アクセレーション"
+      },
+      {
+       "title": "アスリート殺人事件～体操選手たちの光と闇"
+      },
+      {
+       "title": "アダムス・ファミリー 2"
+      },
+      {
+       "title": "アダムス･ファミリー"
+      },
+      {
+       "title": "アップタウン・ガールズ"
+      },
+      {
+       "title": "アニメ「モンスターストライク デッドバースリローデッド」"
+      },
+      {
+       "title": "アリエナ -禁断の女子高生-"
+      },
+      {
+       "title": "アレキサンダー"
+      },
+      {
+       "title": "イフ・アイ・ステイ 愛が還る場所"
+      },
+      {
+       "title": "イルジン 不良たち"
+      },
+      {
+       "title": "イルジン２ 不良たち"
+      },
+      {
+       "title": "インモラル家政婦"
+      },
+      {
+       "title": "ウィッチクラフト/黒魔術の追跡者"
+      },
+      {
+       "title": "ウルフ・オブ・ウォールストリート"
+      },
+      {
+       "title": "エグゼキューター 暗殺者"
+      },
+      {
+       "title": "エターナル・コード"
+      },
+      {
+       "title": "エンド・オブ・デイズ"
+      },
+      {
+       "title": "オフ・ザ・メニュー 恋は最高のスパイス"
+      },
+      {
+       "title": "オルラ"
+      },
+      {
+       "title": "オーバーボード"
+      },
+      {
+       "title": "ガールズバンドクライ"
+      },
+      {
+       "title": "キャビン28 ケディ殺人事件"
+      },
+      {
+       "title": "キル・イット～巡り合うふたり～"
+      },
+      {
+       "title": "クレヨンしんちゃん外伝 シーズン1"
+      },
+      {
+       "title": "グラスドラゴン"
+      },
+      {
+       "title": "グルメ探偵ヘンリー"
+      },
+      {
+       "title": "ゴースト／ニューヨークの幻"
+      },
+      {
+       "title": "サム＝サマンサ"
+      },
+      {
+       "title": "サラもり刑事～パチスロ捜査班～"
+      },
+      {
+       "title": "サン･イズ･オールソー･ア･スター引き寄せられる２人"
+      },
+      {
+       "title": "サークル：繋がった二つの世界"
+      },
+      {
+       "title": "ザ・イコライザー シーズン3"
+      },
+      {
+       "title": "ザ・ショーガールズ 優等生の欲望"
+      },
+      {
+       "title": "ザ・ショーガールズ 淫らな三角関係"
+      },
+      {
+       "title": "ザ・ショーガールズ 覗かれる快感"
+      },
+      {
+       "title": "シン・ゴジラ"
+      },
+      {
+       "title": "ジェミニマン"
+      },
+      {
+       "title": "ジュラシック・サバイブ"
+      },
+      {
+       "title": "スチューデント"
+      },
+      {
+       "title": "スーパー・マグナム"
+      },
+      {
+       "title": "ターミナル"
+      },
+      {
+       "title": "チャック・ノリスの地獄のヒーロー2"
+      },
+      {
+       "title": "チョアチョア"
+      },
+      {
+       "title": "ティーン・ウルフ"
+      },
+      {
+       "title": "ティーン・ウルフ2 僕のいとこも狼だった"
+      },
+      {
+       "title": "デストイレ"
+      },
+      {
+       "title": "デッド・オン・アライバル"
+      },
+      {
+       "title": "トゥームレイダー ファーストミッション"
+      },
+      {
+       "title": "トロピカル～ジュ！プリキュア"
+      },
+      {
+       "title": "ドラマW シリウスの道"
+      },
+      {
+       "title": "ドルフ・ラングレンinエリミネイト・ソルジャー"
+      },
+      {
+       "title": "ドント・オープン"
+      },
+      {
+       "title": "ノッティングヒルの恋人"
+      },
+      {
+       "title": "バッドガイズ ー悪い奴らー"
+      },
+      {
+       "title": "バッドガイズ２～悪の都市～"
+      },
+      {
+       "title": "バトルガンm‐16"
+      },
+      {
+       "title": "バトル・オブ・ポイントマン"
+      },
+      {
+       "title": "バリバリ伝説 劇場版"
+      },
+      {
+       "title": "パチスロバトルリーグ シーズン18"
+      },
+      {
+       "title": "パトリオット・ゲーム"
+      },
+      {
+       "title": "パニック・ライド 淫行強制"
+      },
+      {
+       "title": "ビトレイヤー 裏切りの闘争"
+      },
+      {
+       "title": "フィクサー シーズン1"
+      },
+      {
+       "title": "フューリアス ワン"
+      },
+      {
+       "title": "ブラドック/地獄のヒーロー３"
+      },
+      {
+       "title": "ペット"
+      },
+      {
+       "title": "ペナルティループ"
+      },
+      {
+       "title": "ホワイトシャーク"
+      },
+      {
+       "title": "ボディ・オブ・プルーフ/死体の証言 シーズン1"
+      },
+      {
+       "title": "ポルターガイスト2"
+      },
+      {
+       "title": "ポルターガイスト3／少女の霊に捧ぐ…"
+      },
+      {
+       "title": "ポルターガイスト<劇場 公開バージョン >"
+      },
+      {
+       "title": "マックス"
+      },
+      {
+       "title": "マックス２： ホワイトハウス･ヒーロー"
+      },
+      {
+       "title": "ミケランジェロ・プロジェクト"
+      },
+      {
+       "title": "ミッシング～彼らがいた～"
+      },
+      {
+       "title": "モトカレ←リトライ"
+      },
+      {
+       "title": "ユージュアル・サスペクツ"
+      },
+      {
+       "title": "ラスト、コーション [R-15指定版]"
+      },
+      {
+       "title": "リベンジ・ビースト"
+      },
+      {
+       "title": "レイジング･ブル"
+      },
+      {
+       "title": "レインマン"
+      },
+      {
+       "title": "レッド・ブレイク"
+      },
+      {
+       "title": "ロサンゼルス"
+      },
+      {
+       "title": "ロシアン・ルーレット"
+      },
+      {
+       "title": "ロジャー・ラビット"
+      },
+      {
+       "title": "ワールド・ウォーZ"
+      },
+      {
+       "title": "ヴァレー・ガール"
+      },
+      {
+       "title": "七人の秘書"
+      },
+      {
+       "title": "不倫したい女"
+      },
+      {
+       "title": "不思議の国の数学者"
+      },
+      {
+       "title": "事件"
+      },
+      {
+       "title": "人狼ゲーム プリズン・ブレイク"
+      },
+      {
+       "title": "人狼ゲーム ラヴァ-ズ"
+      },
+      {
+       "title": "人間動物園"
+      },
+      {
+       "title": "偉大な生涯の物語"
+      },
+      {
+       "title": "処刑人"
+      },
+      {
+       "title": "刑務所のルールブック"
+      },
+      {
+       "title": "劇場版 「オーバーロード」 聖王国編"
+      },
+      {
+       "title": "劇場版 機動戦士ガンダム00 -A wakening of the Trailblazer-"
+      },
+      {
+       "title": "劇場版「僕とロボコ」"
+      },
+      {
+       "title": "千年の愛"
+      },
+      {
+       "title": "博士と彼女のセオリー"
+      },
+      {
+       "title": "危険がいっぱい"
+      },
+      {
+       "title": "合併結婚"
+      },
+      {
+       "title": "名探偵シャーロック･ノームズ"
+      },
+      {
+       "title": "地獄のヒーロー"
+      },
+      {
+       "title": "夕陽のギャングたち"
+      },
+      {
+       "title": "大脱走"
+      },
+      {
+       "title": "女子万歳"
+      },
+      {
+       "title": "官能小説の女"
+      },
+      {
+       "title": "将軍家の末息子"
+      },
+      {
+       "title": "小説の向こう側～To Ship Someone～"
+      },
+      {
+       "title": "幼い依頼人"
+      },
+      {
+       "title": "快楽の悪の華"
+      },
+      {
+       "title": "怪盗クイーンの優雅な休暇"
+      },
+      {
+       "title": "怪盗グルーの月泥棒"
+      },
+      {
+       "title": "情事の終わり"
+      },
+      {
+       "title": "愛と青春の旅だち"
+      },
+      {
+       "title": "戦闘妖精少女 たすけて！メイヴちゃん"
+      },
+      {
+       "title": "捨てられ聖女の異世界ごはん旅 隠れスキルでキャンピングカーを召喚しました"
+      },
+      {
+       "title": "新・猿の惑星"
+      },
+      {
+       "title": "新機動戦記ガンダムW"
+      },
+      {
+       "title": "新機動戦記ガンダムW Endless Waltz"
+      },
+      {
+       "title": "日本統一69"
+      },
+      {
+       "title": "日経プレミアム 工場へ行こうⅢAMAZING FACTORY"
+      },
+      {
+       "title": "時には昔の話を 森山周一郎 声優と呼ばれた俳優"
+      },
+      {
+       "title": "最強出涸らし皇子の暗躍帝位争い"
+      },
+      {
+       "title": "最強配達人"
+      },
+      {
+       "title": "最後の猿の惑星"
+      },
+      {
+       "title": "最高の人生をあなたと"
+      },
+      {
+       "title": "来生たかお 50th Anniversary Concert 2025-2026 〜 The Song 〜"
+      },
+      {
+       "title": "東京裁判 [4Kリマスター版]"
+      },
+      {
+       "title": "機動戦士ガンダム 鉄血のオルフェンズ シーズン1"
+      },
+      {
+       "title": "機動戦士ガンダム00 セカンドシーズン"
+      },
+      {
+       "title": "機動戦士ガンダム00 ファーストシーズン"
+      },
+      {
+       "title": "機動戦士ガンダムΖΖ"
+      },
+      {
+       "title": "殺人犯ジョン・リスト"
+      },
+      {
+       "title": "水滸英雄伝"
+      },
+      {
+       "title": "沈黙の啓示 TRUE JUSTICE PART2"
+      },
+      {
+       "title": "沈黙の宿命 TRUE JUSTICE PART1"
+      },
+      {
+       "title": "沈黙の弾痕 TRUE JUSTICE PART4"
+      },
+      {
+       "title": "沈黙の挽歌 TRUE JUSTICE PART5"
+      },
+      {
+       "title": "沈黙の神拳 TRUE JUSTICE PART6"
+      },
+      {
+       "title": "沈黙の背信 TRUE JUSTICE PART3"
+      },
+      {
+       "title": "波打ち際のむろみさん"
+      },
+      {
+       "title": "湾岸ミッドナイト"
+      },
+      {
+       "title": "潮風のいたずら"
+      },
+      {
+       "title": "狙撃兵"
+      },
+      {
+       "title": "狼よさらば 地獄のリベンジャー"
+      },
+      {
+       "title": "猿の惑星・征服"
+      },
+      {
+       "title": "猿の惑星：創世記（ジェネシス）"
+      },
+      {
+       "title": "猿の惑星：新世紀（ライジング）"
+      },
+      {
+       "title": "猿の惑星：聖戦記（グレート・ウォー）"
+      },
+      {
+       "title": "私生活のない女 [4Kレストア版]"
+      },
+      {
+       "title": "続・猿の惑星"
+      },
+      {
+       "title": "罠の女"
+      },
+      {
+       "title": "翡翠の恋～占いから始まるロマンス～"
+      },
+      {
+       "title": "花ざかりのプリンセス"
+      },
+      {
+       "title": "花と竜"
+      },
+      {
+       "title": "誰が2PACを殺したか？ -殺害事件の真実"
+      },
+      {
+       "title": "転校先の清楚可憐な美少女が、昔男子と思って一緒に遊んだ幼馴染だった件"
+      },
+      {
+       "title": "郵便探偵 ロストレターズ・ミステリー"
+      },
+      {
+       "title": "銀河鉄道999 アンドロメダ篇"
+      },
+      {
+       "title": "開運！怪談好きが集まるお悩み相談所"
+      },
+      {
+       "title": "隠し砦の三悪人 THE LAST PRINCESS"
+      },
+      {
+       "title": "青い挑発"
+      },
+      {
+       "title": "青春の鐘"
+      },
+      {
+       "title": "黒いチューリップ"
+      }
+     ]
     },
     {
-     "title": "アニメ『銀魂』の配信はDMM TVで全話見放題視聴可能！シリーズ22作品の見る順番まとめ - 株式会社ピクセラ",
-     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5Yd3pTWTctN0UxWUVOZk9VcFk3VEF2RXNOUC1NVDgwVmRzbDZkenVrU1dpczE5UF94SUIwTGZkdzNMZ3NrTktjYTRuaG5hdFlqaGNRbENCU0ZzeFk?oc=5",
-     "source": "株式会社ピクセラ",
-     "date": "2026-10-21T16:00:00+09:00"
+     "date": "2026-11-02",
+     "label": "11月2日(月)",
+     "items": [
+      {
+       "title": "GODZILLA ゴジラ"
+      },
+      {
+       "title": "Viva!公務員"
+      },
+      {
+       "title": "コブリック大佐の決断"
+      },
+      {
+       "title": "バッド・デート 最悪から始まる恋"
+      },
+      {
+       "title": "ムービング・ロマンス"
+      },
+      {
+       "title": "メイズ・ランナー3：最期の迷宮"
+      },
+      {
+       "title": "メイズ・ランナー２：砂漠の迷宮"
+      }
+     ]
     },
     {
-     "title": "2026年10月版【Amazon Prime Video】おすすめ韓国ドラマ新作・配信予定（随時更新中） - ヨムーノ",
-     "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9DbUwtb0V0Q3RLelBNWFk1UW12QzYtdW1ibXFHcHB0Nl9GQVlCS0pIUWFjSGlyWVdaZGFVNlBtaVNfQjA?oc=5",
-     "source": "ヨムーノ",
-     "date": "2026-10-21T16:00:00+09:00"
+     "date": "2026-11-03",
+     "label": "11月3日(火)",
+     "items": [
+      {
+       "title": "セックス・ドール"
+      }
+     ]
     },
     {
-     "title": "更迭劇で内閣支持率は？▽米中間選挙分析 注目候補者の素顔は - TVer",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5uWXlHVHJuWlhId0V0Mkd3T0dLcEhra3QzZjRBY1loSTNhQWN4dS04ZTZyR3JDb1l2ZmtoMzFtRzFhT3p3U1ZUSWNqTQ?oc=5",
-     "source": "TVer",
-     "date": "2026-10-21T15:18:01+09:00"
+     "date": "2026-11-04",
+     "label": "11月4日(水)",
+     "items": [
+      {
+       "title": "バトル・オーシャン／海上決戦"
+      },
+      {
+       "title": "朝鮮魔術師"
+      },
+      {
+       "title": "罪深き少年たち"
+      }
+     ]
     },
     {
-     "title": "アニメ「ちいかわ」全話の配信はどこで見れる？無料視聴できるサービス・サブスクを紹介！ - アニメ！アニメ！",
-     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA2dlV3dHhVNGZKSXJIZFp0WHdXOGE5T21ESHd5UVB4VkhLQ1Q5QlVwdW1rNUM5N2FXQTZSY1IzcFR0eXdLUlUzcWlDT04zVnZLNnVONzZTaTNFVl9xbTdPMA?oc=5",
-     "source": "アニメ！アニメ！",
-     "date": "2026-10-20T16:00:00+09:00"
+     "date": "2026-11-05",
+     "label": "11月5日(木)",
+     "items": [
+      {
+       "title": "GP506"
+      },
+      {
+       "title": "ワンダフル・ラジオ"
+      },
+      {
+       "title": "美しき野獣"
+      },
+      {
+       "title": "長沙里9.15"
+      },
+      {
+       "title": "非常宣言"
+      }
+     ]
     },
     {
-     "title": "『スパイダーマン：ノー・ウェイ・ホーム』の配信はどこ？U-NEXTなど見放題6社 - 株式会社ピクセラ",
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBPV2ZQRVdyT2dFeUJxSnFxUFY2cElvazd5cUJYTlNjaGdCSUZqb0x4N0pfMVQ0Sm1Gb0RNbk5UdmU0RV9TQ2VPRW84dDlyY2JxamgzYktuUEVidExXZkhnelNYM0dDQnRLRkVXNlBTRlU?oc=5",
-     "source": "株式会社ピクセラ",
-     "date": "2026-10-20T16:00:00+09:00"
+     "date": "2026-11-07",
+     "label": "11月7日(土)",
+     "items": [
+      {
+       "title": "ドラゴン・ナイト 紅蓮の竜と最後の騎士"
+      }
+     ]
     },
     {
-     "title": "映画『聲の形』の配信はどこで見れる？無料視聴できるサイトも解説！ | PIXELA enta - 株式会社ピクセラ",
-     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1aWjNtdnRxVi1HTm93Vk8tb3FVcFlIWmIzeTY4TDh2QlJNUGk3ZGZWaFBmcFNrV3l6NjI3TDBxbmxhX2F1VzdMT2JQczE1ajhocTlONTNoOEZIUi04V3dkOHhmYV9vV1E0NUE?oc=5",
-     "source": "株式会社ピクセラ",
-     "date": "2026-10-20T16:00:00+09:00"
+     "date": "2026-11-08",
+     "label": "11月8日(日)",
+     "items": [
+      {
+       "title": "I AM. SM TOWN LIVE WORLD TOUR IN MADISON SQUARE GARDEN"
+      },
+      {
+       "title": "キャメラを止めるな！"
+      },
+      {
+       "title": "ファレル・ウィリアムス：ピース・バイ・ピース"
+      },
+      {
+       "title": "天命の城"
+      },
+      {
+       "title": "朝鮮名探偵 トリカブトの秘密"
+      },
+      {
+       "title": "朝鮮名探偵 鬼<トッケビ>の秘密"
+      },
+      {
+       "title": "海にかかる霧"
+      },
+      {
+       "title": "甘い人生 レストア版"
+      },
+      {
+       "title": "義兄弟 SECRET REUNION"
+      }
+     ]
     },
     {
-     "title": "『VIVANT 2』第21話の見逃し配信はどこで見れる？10月18日の放送予定・TVer視聴方法 - Sporting News JP",
-     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPWlg1SzYxbUZJTE5CX0VrSWl3cnk4ZzNGck4zWllWZGVSTFdUYnM4OEJ1RGd6MkVteU5yNThDRVFNdTRNSVdBMl9Bd09CQ2k5TDVBSU14Umg1ZTk5R0lxVnlRNDBiNV95dVpxWXEtbTBaNVhBUGVfMEMzR3dhVnNJb2tweFIta0tGWEd6R2ZkVUdxdWtKRlB4YUxLdlV2ZTVqUFljX2Vid3g5Uzhaanc?oc=5",
-     "source": "Sporting News JP",
-     "date": "2026-10-17T17:00:01+09:00"
+     "date": "2026-11-09",
+     "label": "11月9日(月)",
+     "items": [
+      {
+       "title": "アメージング・ネイチャー"
+      },
+      {
+       "title": "ローマ法王の休日"
+      }
+     ]
     },
     {
-     "title": "“禁じ手”連発＆銃殺刑配信？トランプ政権暴走の裏側と波紋 - TVer",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFAtcmU4Z2dNY2JHUzQ2SEVMaEZGeHZFQ2xSdkE4UHFWZVpQNi00VGhuMjBjaHQteXV4Mm40b2g2WGRsNEhrazhvQVVkaw?oc=5",
-     "source": "TVer",
-     "date": "2026-10-17T15:17:23+09:00"
+     "date": "2026-11-10",
+     "label": "11月10日(火)",
+     "items": [
+      {
+       "title": "ハウ"
+      },
+      {
+       "title": "侵入者"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-11",
+     "label": "11月11日(水)",
+     "items": [
+      {
+       "title": "ドント・ゴー・ダウン"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-14",
+     "label": "11月14日(土)",
+     "items": [
+      {
+       "title": "DEATH NOTE デスノート"
+      },
+      {
+       "title": "DEATH NOTE デスノート the Last name"
+      },
+      {
+       "title": "L change the WorLd"
+      },
+      {
+       "title": "NUMB[ナム] 極限の争奪戦"
+      },
+      {
+       "title": "アタック・ザ・ブロック"
+      },
+      {
+       "title": "カラーパープル(2023)"
+      },
+      {
+       "title": "グラディエーター"
+      },
+      {
+       "title": "サイコ・オンライン"
+      },
+      {
+       "title": "デスノート Light up the NEW world"
+      },
+      {
+       "title": "ヒトラーを殺し、その後ビッグフットを殺した男"
+      },
+      {
+       "title": "ホームステイ ボクと僕の100日間"
+      },
+      {
+       "title": "ワイルド・スピード"
+      },
+      {
+       "title": "ワイルド・スピードX2"
+      },
+      {
+       "title": "ワイルド・スピードX3 TOKYO DRIFT"
+      },
+      {
+       "title": "回路"
+      },
+      {
+       "title": "蛇の道"
+      },
+      {
+       "title": "黒の試走車"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-15",
+     "label": "11月15日(日)",
+     "items": [
+      {
+       "title": "キラーカット"
+      },
+      {
+       "title": "デーモン・インサイド 血塗られた家"
+      },
+      {
+       "title": "ラスト・デイズ・オブ・アビー 宇宙飛行士の記憶を持つ愛娘"
+      },
+      {
+       "title": "レイラ 売られた少女"
+      }
+     ]
     }
-   ]
+   ],
+   "status": "ok"
   }
  ]
 }
