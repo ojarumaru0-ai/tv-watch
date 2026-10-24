@@ -50,12 +50,26 @@ def group_by_day(rows):
 
 # ---------------------------------------------------------------- Amazon 配信終了
 VARIANT = re.compile(r"[（(]\s*(?:日本語)?(?:字幕版?|吹替版?|字幕\s*[/／]\s*吹替|Dubbed)\s*[）)]|^[（(]字幕版[）)]|^[（(]吹替版[）)]")
-PRIME_RE = re.compile(r"^(?P<t>.+?)\s*\[[^\]]*\]\s*(?P<y>\d{4})年(?P<m>\d{1,2})月(?P<d>\d{1,2})日終了")
+PRIME_RE = re.compile(r"^(?P<t>.+?)\s*\[(?P<info>[^\]]*)\]\s*(?P<y>\d{4})年(?P<m>\d{1,2})月(?P<d>\d{1,2})日終了")
+PRIME_SECTION = re.compile(r"^(アニメ|ドラマ|キッズ|その他)$")
+LENGTH = re.compile(r"(\d+)\s*(分|話)")
+
+
+def prime_genre(section, unit):
+    """アニライクの見出し(アニメ/ドラマ/キッズ/その他)と「分/話」から表示用のジャンルを決める。
+    サイトの「ドラマ」欄は映画も含むので、「分」(1本もの)は映画、「話」は連続ドラマとして分ける。"""
+    if section == "ドラマ":
+        return "映画" if unit == "分" else "ドラマ"
+    return section or "その他"
 
 
 def parse_prime(raw, today=TODAY, horizon_days=75):
-    seen, rows = set(), []
+    seen, rows, section = set(), [], ""
     for line in to_lines(raw):
+        h = PRIME_SECTION.match(line)
+        if h:
+            section = h[1]
+            continue
         m = PRIME_RE.match(line)
         if not m:
             continue
@@ -69,7 +83,11 @@ def parse_prime(raw, today=TODAY, horizon_days=75):
         if not title or (d, title) in seen:
             continue
         seen.add((d, title))
-        rows.append((d, {"title": title}))
+        ln = LENGTH.search(m["info"])
+        item = {"title": title, "genre": prime_genre(section, ln[2] if ln else "")}
+        if ln:
+            item["len"] = f"{ln[1]}{ln[2]}"
+        rows.append((d, item))
     rows.sort(key=lambda r: (r[0], r[1]["title"]))
     return group_by_day(rows)
 
@@ -153,6 +171,9 @@ def parse_epg_movies(raw):
 # 放送枠がこの分数より短い「映画」は、予告・紹介コーナーとみなして除く
 MIN_MINUTES = 80
 DETAIL = re.compile(r"(\d{1,2})月(\d{1,2})日\s*[月火水木金土日]曜日?\s*(\d{1,2}):(\d{2})\s*[-－–〜~]\s*(\d{1,2}):(\d{2})\s*(\S*)")
+GENRE = re.compile(r'(?:"|&quot;)genre(?:"|&quot;)\s*:\s*(?:"|&quot;)([^"&]*)')
+# スポーツ番組は除く（ジャンルがスポーツ、またはタイトルにこれらの語を含むもの）
+SPORTS = re.compile(r"野球|サッカー|ラグビー|バレー|バスケ|ゴルフ|テニス|駅伝|マラソン|相撲|プロレス|格闘|ボクシング|競馬|競輪|F1|オリンピック|五輪|ワールドカップ|Jリーグ|スポーツ")
 _detail_cache = {}
 
 
@@ -172,8 +193,10 @@ def parse_detail(raw):
             d = date(year + 1, mo, dd)
     except ValueError:
         return None
+    g = GENRE.search(raw)
     return {"date": d, "start": f"{sh}:{sm:02d}", "end": f"{eh}:{em:02d}",
-            "minutes": minutes, "sort": sh * 60 + sm, "channel": re.sub(r"\d+$", "", m[7])}
+            "minutes": minutes, "sort": sh * 60 + sm, "channel": re.sub(r"\d+$", "", m[7]),
+            "genre": g[1] if g else ""}
 
 
 def fetch_detail(link):
@@ -188,8 +211,9 @@ def fetch_detail(link):
 
 
 def fetch_movies(days=8):
+    # Gガイドの「1日」は朝5時区切り。今日の0〜5時の放送は昨日の番組表に載るので、昨日の分から読む
     rows, ok, seen = [], False, set()
-    for i in range(days):
+    for i in range(-1, days):
         grid_day = TODAY + timedelta(days=i)
         url = f"https://bangumi.org/epg/td?broad_cast_date={grid_day:%Y%m%d}&ggm_group_id=85"
         try:
@@ -200,12 +224,17 @@ def fetch_movies(days=8):
             candidates = []
         time.sleep(1)
         for item in candidates:
+            if SPORTS.search(item["title"]):
+                continue
             info = fetch_detail(item["link"])
             if info is None:
-                # 詳細が読めないときは落とさずに残す（日付は番組表の列の日付）
-                rows.append((grid_day, 9999, item))
+                # 詳細が読めないときは落とさずに残す（昨日の番組表のものは日付が不明なので除く）
+                if grid_day >= TODAY:
+                    rows.append((grid_day, 9999, item))
                 continue
-            if info["minutes"] < MIN_MINUTES:
+            if info["date"] < TODAY or info["minutes"] < MIN_MINUTES:
+                continue
+            if "スポーツ" in info["genre"]:
                 continue
             key = (info["date"], item["title"])
             if key in seen:
@@ -245,7 +274,7 @@ def fetch_news(queries):
 
 # ---------------------------------------------------------------- 新着の検出と通知
 # 新着のうち、タイトルにこれらの語を含むものだけスマホに通知する
-NOTIFY_WORDS = re.compile(r"名作|傑作|懐かし|過去作|一挙|期間限定|特集|再配信|あの")
+NOTIFY_WORDS = re.compile(r"名作|傑作|懐かし|過去作|一挙|期間限定|特集|再配信|初配信")
 NEW_DAYS = 3  # この日数以内に初めて見つかったものに NEW を付ける
 
 
@@ -287,9 +316,12 @@ def mark_new(items, old_items):
 
 TABS = [
     {"id": "tver", "name": "TVer", "kind": "news",
-     "fetch": lambda: fetch_news(["TVer 名作ドラマ 配信 when:30d", "TVer 特集 期間限定 無料配信 when:30d"]),
-     "note": "TVerには追加予定の一覧がないため、関連ニュースの見出しを表示しています。",
-     "links": [("TVerを開く", "https://tver.jp/")]},
+     "fetch": lambda: fetch_news(["TVer 名作ドラマ特集 when:45d", "TVer 俳優特集 配信開始 when:45d",
+                                  "TVer 初配信 ドラマ when:45d", "TVer 期間限定 無料配信 特集 when:45d"]),
+     "note": "TVerには追加予定の一覧がないため、関連ニュースの見出しを表示しています。名作ドラマ特集はおおむね春・夏・秋・冬の年4回、入れ替えと同時に発表されます。",
+     "links": [("TVer 名作ドラマ特集", "https://tver.jp/specials/meisaku-drama"),
+               ("名作ドラマ特集 配信ラインナップ一覧", "https://schedule-drama.tver.jp/meisaku"),
+               ("TVerを開く", "https://tver.jp/")]},
     {"id": "movie", "name": "地上波の映画", "kind": "days", "fetch": fetch_movies,
      "note": "Gガイド(兵庫)から映画らしい番組を拾い、放送枠が80分以上のものだけ表示しています。日付は実際の放送日です(深夜は翌日の日付で出ます)。",
      "links": [("Gガイド 兵庫の番組表", "https://bangumi.org/epg/td?ggm_group_id=85"),
