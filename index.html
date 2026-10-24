@@ -5,54 +5,48 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="TVウォッチ">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <title>TVウォッチ</title>
 <style>
-  :root {
-    --bg: #f6f7f9; --card: #ffffff; --ink: #1c2230; --sub: #667085;
-    --line: #e3e6ec; --accent: #2457d6; --accent-ink: #ffffff;
-  }
+  :root { --bg:#f6f7f9; --card:#fff; --ink:#1c2230; --sub:#667085; --line:#e3e6ec; --accent:#2457d6; --accent-ink:#fff; }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #11141b; --card: #1a1f2a; --ink: #e8ebf2; --sub: #98a2b3;
-            --line: #2a3140; --accent: #7aa2ff; --accent-ink: #0d1220; }
+    :root { --bg:#11141b; --card:#1a1f2a; --ink:#e8ebf2; --sub:#98a2b3; --line:#2a3140; --accent:#7aa2ff; --accent-ink:#0d1220; }
   }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
-  body { margin: 0; background: var(--bg); color: var(--ink);
-    font: 16px/1.6 -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
-    padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom); }
-  header { display: flex; align-items: center; justify-content: space-between;
-    gap: 12px; padding: 14px 16px 8px; }
-  h1 { font-size: 20px; margin: 0; }
-  #stamp { font-size: 13px; color: var(--sub); margin: 2px 0 0; }
-  button { font: inherit; cursor: pointer; }
-  #refresh { border: 0; border-radius: 10px; padding: 10px 16px; min-height: 44px;
-    background: var(--accent); color: var(--accent-ink); font-weight: 600; }
-  #refresh:disabled { opacity: .6; }
-  nav { display: flex; gap: 8px; padding: 8px 16px; overflow-x: auto; }
-  nav button { flex: none; border: 1px solid var(--line); background: var(--card);
-    color: var(--ink); border-radius: 999px; padding: 8px 16px; min-height: 44px; }
-  nav button[aria-selected="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
-  main { padding: 4px 16px 32px; max-width: 720px; margin: 0 auto; }
-  h2 { font-size: 14px; color: var(--sub); margin: 18px 0 6px; font-weight: 600; }
-  .links a { display: block; padding: 12px 14px; margin-bottom: 8px; border-radius: 10px;
-    background: var(--card); border: 1px solid var(--line); color: var(--accent);
-    text-decoration: none; font-weight: 600; }
-  .item { display: block; padding: 12px 14px; margin-bottom: 8px; border-radius: 10px;
-    background: var(--card); border: 1px solid var(--line); color: var(--ink); text-decoration: none; }
-  .item .t { display: block; }
-  .item .m { display: block; font-size: 13px; color: var(--sub); margin-top: 2px; }
-  .empty, .err { padding: 16px; color: var(--sub); }
-  .err { color: #c0392b; }
-  a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.6 -apple-system,"Hiragino Sans","Noto Sans JP",sans-serif;
+    padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom); }
+  header { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:14px 16px 8px; }
+  h1 { font-size:20px; margin:0; }
+  #stamp { font-size:13px; color:var(--sub); margin:2px 0 0; }
+  button { font:inherit; cursor:pointer; }
+  #refresh { border:0; border-radius:10px; padding:10px 16px; min-height:44px; background:var(--accent); color:var(--accent-ink); font-weight:600; }
+  #refresh:disabled { opacity:.6; }
+  nav { display:flex; gap:8px; padding:8px 16px; overflow-x:auto; }
+  nav button { flex:none; border:1px solid var(--line); background:var(--card); color:var(--ink); border-radius:999px; padding:8px 16px; min-height:44px; }
+  nav button[aria-selected="true"] { background:var(--ink); color:var(--bg); border-color:var(--ink); }
+  main { padding:4px 16px 32px; max-width:720px; margin:0 auto; }
+  .note { font-size:13px; color:var(--sub); margin:8px 0 12px; }
+  .warn { font-size:14px; color:#b54708; background:rgba(245,158,11,.12); border-radius:10px; padding:10px 12px; margin:8px 0 12px; }
+  #q { width:100%; min-height:44px; padding:10px 14px; border:1px solid var(--line); border-radius:10px; background:var(--card); color:var(--ink); font:inherit; margin-bottom:12px; }
+  details { background:var(--card); border:1px solid var(--line); border-radius:10px; margin-bottom:8px; }
+  summary { padding:12px 14px; font-weight:600; cursor:pointer; min-height:44px; }
+  summary .n { color:var(--sub); font-weight:400; font-size:13px; margin-left:6px; }
+  ul { margin:0; padding:0 14px 12px 32px; }
+  li { margin:2px 0; }
+  li .t { color:var(--sub); margin-right:6px; font-variant-numeric:tabular-nums; }
+  li a, .news a { color:var(--accent); text-decoration:none; }
+  .news a { display:block; padding:12px 14px; margin-bottom:8px; border-radius:10px; background:var(--card); border:1px solid var(--line); color:var(--ink); }
+  .news .m { display:block; font-size:13px; color:var(--sub); }
+  h2 { font-size:14px; color:var(--sub); margin:18px 0 6px; font-weight:600; }
+  .links a { display:block; padding:12px 14px; margin-bottom:8px; border-radius:10px; background:var(--card); border:1px solid var(--line); color:var(--accent); text-decoration:none; font-weight:600; }
+  .empty { padding:12px 2px; color:var(--sub); }
+  a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible { outline:3px solid var(--accent); outline-offset:2px; }
 </style>
 </head>
 <body>
 <header>
-  <div>
-    <h1>TVウォッチ</h1>
-    <p id="stamp">読み込み中…</p>
-  </div>
+  <div><h1>TVウォッチ</h1><p id="stamp">読み込み中…</p></div>
   <button id="refresh" type="button">更新</button>
 </header>
 <nav id="tabs" role="tablist"></nav>
@@ -60,90 +54,93 @@
 
 <script>
 (function () {
-  var data = null, current = localStorageGet("tab") || "tver";
-
-  function localStorageGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
-  function localStorageSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
-
-  function fmtDate(iso) {
-    if (!iso) return "";
-    var d = new Date(iso);
-    return (d.getMonth() + 1) + "月" + d.getDate() + "日";
-  }
-
-  function el(tag, cls, text) {
-    var e = document.createElement(tag);
-    if (cls) e.className = cls;
-    if (text != null) e.textContent = text;
-    return e;
-  }
+  var data = null, current = lsGet("tab") || "movie", query = "";
+  function lsGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
 
   function renderTabs() {
-    var nav = document.getElementById("tabs");
-    nav.textContent = "";
+    var nav = document.getElementById("tabs"); nav.textContent = "";
     data.tabs.forEach(function (t) {
-      var b = el("button", null, t.name);
-      b.type = "button";
-      b.setAttribute("role", "tab");
-      b.setAttribute("aria-selected", String(t.id === current));
-      b.onclick = function () { current = t.id; localStorageSet("tab", t.id); render(); };
+      var b = el("button", null, t.name); b.type = "button";
+      b.setAttribute("role", "tab"); b.setAttribute("aria-selected", String(t.id === current));
+      b.onclick = function () { current = t.id; query = ""; lsSet("tab", t.id); render(); };
       nav.appendChild(b);
     });
   }
 
-  function renderView() {
-    var view = document.getElementById("view");
-    view.textContent = "";
-    var tab = data.tabs.filter(function (t) { return t.id === current; })[0] || data.tabs[0];
+  function renderDays(tab, view) {
+    var q = query.trim().toLowerCase(), shown = 0, opened = 0;
+    var box = el("div");
+    (tab.days || []).forEach(function (day) {
+      var items = day.items.filter(function (it) { return !q || it.title.toLowerCase().indexOf(q) >= 0; });
+      if (!items.length) return;
+      shown += items.length;
+      var d = el("details");
+      if (q || opened < 3) d.open = true;
+      opened++;
+      var s = el("summary", null, day.label);
+      s.appendChild(el("span", "n", items.length + "件"));
+      d.appendChild(s);
+      var ul = el("ul");
+      items.forEach(function (it) {
+        var li = el("li");
+        if (it.time) li.appendChild(el("span", "t", it.time));
+        if (it.link) { var a = el("a", null, it.title); a.href = it.link; a.target = "_blank"; a.rel = "noopener"; li.appendChild(a); }
+        else li.appendChild(document.createTextNode(it.title));
+        ul.appendChild(li);
+      });
+      d.appendChild(ul); box.appendChild(d);
+    });
+    if (!shown) box.appendChild(el("p", "empty", q ? "該当する作品はありません。" : "予定を取得できませんでした。下のリンクから確認してください。"));
+    view.appendChild(box);
+  }
 
+  function renderNews(tab, view) {
+    var box = el("div", "news");
+    if (!tab.items.length) box.appendChild(el("p", "empty", "該当するニュースはまだありません。"));
+    tab.items.forEach(function (it) {
+      var a = el("a"); a.href = it.link; a.target = "_blank"; a.rel = "noopener";
+      a.appendChild(document.createTextNode(it.title));
+      if (it.date) a.appendChild(el("span", "m", it.date));
+      box.appendChild(a);
+    });
+    view.appendChild(box);
+  }
+
+  function renderView() {
+    var view = document.getElementById("view"); view.textContent = "";
+    var tab = data.tabs.filter(function (t) { return t.id === current; })[0] || data.tabs[0];
+    if (tab.note) view.appendChild(el("p", "note", tab.note));
+    if (tab.status === "error") view.appendChild(el("p", "warn", "最新の取得に失敗したため、前回の内容を表示しています。"));
+    if (tab.status === "empty") view.appendChild(el("p", "warn", "取得はできましたが、該当する予定が見つかりませんでした。サイトの作りが変わった可能性があります。"));
+    if (tab.kind === "days") {
+      var q = el("input"); q.id = "q"; q.type = "search"; q.placeholder = "作品名で絞り込み"; q.value = query;
+      q.oninput = function () { query = q.value; var pos = q.selectionStart; renderView(); var n = document.getElementById("q"); n.focus(); n.setSelectionRange(pos, pos); };
+      view.appendChild(q);
+      renderDays(tab, view);
+    } else renderNews(tab, view);
     view.appendChild(el("h2", null, "公式・一覧ページ"));
     var links = el("div", "links");
-    tab.links.forEach(function (l) {
-      var a = el("a", null, l.label);
-      a.href = l.url; a.target = "_blank"; a.rel = "noopener";
-      links.appendChild(a);
-    });
+    tab.links.forEach(function (l) { var a = el("a", null, l.label); a.href = l.url; a.target = "_blank"; a.rel = "noopener"; links.appendChild(a); });
     view.appendChild(links);
-
-    view.appendChild(el("h2", null, "最近のニュース"));
-    if (!tab.items.length) {
-      view.appendChild(el("p", "empty", "該当するニュースはまだありません。"));
-      return;
-    }
-    tab.items.forEach(function (it) {
-      var a = el("a", "item");
-      a.href = it.link; a.target = "_blank"; a.rel = "noopener";
-      a.appendChild(el("span", "t", it.title));
-      var meta = [fmtDate(it.date), it.source].filter(Boolean).join(" ");
-      if (meta) a.appendChild(el("span", "m", meta));
-      view.appendChild(a);
-    });
   }
 
-  function render() {
-    document.getElementById("stamp").textContent = "最終更新 " + data.updated;
-    renderTabs();
-    renderView();
-  }
+  function render() { document.getElementById("stamp").textContent = "最終更新 " + data.updated; renderTabs(); renderView(); }
 
   function load() {
-    var btn = document.getElementById("refresh");
-    btn.disabled = true;
+    var btn = document.getElementById("refresh"); btn.disabled = true;
     return fetch("data.json?t=" + Date.now(), { cache: "no-store" })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function (j) { data = j; render(); })
       .catch(function () {
-        var v = document.getElementById("view");
-        v.textContent = "";
-        v.appendChild(el("p", "err", "データを読み込めませんでした。通信状況を確認して、もう一度「更新」を押してください。"));
+        var v = document.getElementById("view"); v.textContent = "";
+        v.appendChild(el("p", "warn", "データを読み込めませんでした。通信状況を確認して、もう一度「更新」を押してください。"));
       })
       .then(function () { btn.disabled = false; });
   }
-
   document.getElementById("refresh").onclick = load;
-  document.addEventListener("visibilitychange", function () {
-    if (!document.hidden) load();
-  });
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) load(); });
   load();
 })();
 </script>
