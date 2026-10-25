@@ -1,4 +1,4 @@
-# update.py v2026.10.25-1 (2026-10-25): 映画の長さ絞り込み / スポーツ除外 / 深夜の取りこぼし修正 / アマプラのジャンル / TVer新着+通知
+# update.py v2026.10.25-2 (2026-10-25): ニコニコ検索(サイエンス/航空自衛隊/アニメスペシャル)を追加 / 予定カレンダー(events.json)タブを追加
 #!/usr/bin/env python3
 """TVウォッチ: 各サイトから「日付と作品名」を集めて data.json を作る。
 標準ライブラリだけで動く。GitHub Actions から毎日1回実行される想定。
@@ -16,7 +16,7 @@ from datetime import date, datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
-VERSION = "v2026.10.25-1"
+VERSION = "v2026.10.25-2"
 JST = timezone(timedelta(hours=9))
 OUT = Path(__file__).with_name("data.json")
 UA = {"User-Agent": "Mozilla/5.0 (tv-watch personal use; once a day)"}
@@ -125,23 +125,85 @@ def parse_nico_post(raw, pub):
     return rows
 
 
-def fetch_nico():
-    feed = ET.fromstring(get("https://blog.nicovideo.jp/niconews/index.xml").encode("utf-8"))
-    posts = []
-    for it in feed.iter("item"):
-        title = it.findtext("title") or ""
-        if "生放送一覧情報" in title and "Nアニメ" in title:
-            try:
-                pub = parsedate_to_datetime(it.findtext("pubDate")).astimezone(JST).date()
-            except Exception:
-                pub = TODAY
-            posts.append((pub, (it.findtext("link") or "").strip()))
-    posts.sort(reverse=True)
+# ニコニコ生放送の「放送予定」検索（キーワード, 表示ジャンル, 検索条件）
+NICO_SEARCHES = [
+    ("ニコニコサイエンス", "サイエンス", {"status": "reserved"}),
+    ("航空自衛隊", "航空自衛隊", {"status": "reserved", "providerTypes": "official"}),
+    ("ニコニコアニメスペシャル", "アニメ",
+     {"status": "reserved", "isTagSearch": "true", "providerTypes": ["official", "channel", "community"]}),
+]
+NICO_TITLE = re.compile(r"^(.*?)\s*-\s*(\d{4})/(\d{1,2})/(\d{1,2})\([^)]*\)\s*(\d{1,2}):(\d{2})開始")
+
+
+def parse_nico_watch(raw):
+    """番組ページの <title>（『番組名 - 2026/10/29(木) 18:00開始 - ニコニコ生放送』）から日時と番組名を取る"""
+    m = re.search(r"<title>(.*?)</title>", raw, re.S)
+    if not m:
+        return None
+    mm = NICO_TITLE.match(html.unescape(m[1]).strip())
+    if not mm:
+        return None
+    try:
+        d = date(int(mm[2]), int(mm[3]), int(mm[4]))
+    except ValueError:
+        return None
+    title = re.sub(r"\s*#\S+", "", mm[1]).strip()
+    return {"date": d, "time": f"{int(mm[5])}:{mm[6]}", "title": title} if title else None
+
+
+def fetch_nico_search(keyword, label, params, limit=15):
+    q = {"keyword": keyword, **params}
+    raw = get("https://live.nicovideo.jp/search?" + urllib.parse.urlencode(q, doseq=True))
+    ids = list(dict.fromkeys(re.findall(r"\b(lv\d{8,10})\b", raw)))[:limit]
     rows = []
-    for pub, link in posts[:3]:
-        if link:
-            rows += parse_nico_post(get(link), pub)
-            time.sleep(1)
+    for lv in ids:
+        link = f"https://live.nicovideo.jp/watch/{lv}"
+        info = parse_nico_watch(get(link))
+        time.sleep(1)
+        if info is None:
+            print(f"[warn] nico watch {lv}: 日時を読めませんでした")
+            continue
+        if info["date"] >= TODAY:
+            rows.append((info["date"], {"time": info["time"], "title": info["title"], "link": link, "genre": label}))
+    return rows
+
+
+def fetch_nico():
+    rows, weekly_err, search_ok = [], None, False
+    try:
+        feed = ET.fromstring(get("https://blog.nicovideo.jp/niconews/index.xml").encode("utf-8"))
+        posts = []
+        for it in feed.iter("item"):
+            title = it.findtext("title") or ""
+            if "生放送一覧情報" in title and "Nアニメ" in title:
+                try:
+                    pub = parsedate_to_datetime(it.findtext("pubDate")).astimezone(JST).date()
+                except Exception:
+                    pub = TODAY
+                posts.append((pub, (it.findtext("link") or "").strip()))
+        posts.sort(reverse=True)
+        for pub, link in posts[:3]:
+            if link:
+                for d, item in parse_nico_post(get(link), pub):
+                    item["genre"] = "アニメ"
+                    rows.append((d, item))
+                time.sleep(1)
+    except Exception as e:
+        weekly_err = e
+        print(f"[warn] nico weekly: {e}")
+    seen = {(d, i["title"]) for d, i in rows}
+    for keyword, label, params in NICO_SEARCHES:
+        try:
+            for d, item in fetch_nico_search(keyword, label, params):
+                if (d, item["title"]) not in seen:
+                    seen.add((d, item["title"]))
+                    rows.append((d, item))
+            search_ok = True
+        except Exception as e:
+            print(f"[warn] nico search {keyword}: {e}")
+        time.sleep(1)
+    if weekly_err and not search_ok:
+        raise weekly_err
     rows = [r for r in rows if r[0] >= TODAY]
     rows.sort(key=lambda r: (r[0], r[1]["time"]))
     return group_by_day(rows)
@@ -274,6 +336,33 @@ def fetch_news(queries):
     return items[:15]
 
 
+# ---------------------------------------------------------------- 予定カレンダー (events.json を手で育てる)
+EVENTS = Path(__file__).with_name("events.json")
+
+
+def fetch_events():
+    """決まっている予定(公式発表の日程・法律の施行日・ロードマップなど)。events.json の events 配列を読む。
+    各要素: {"date": "2026-11-03", "time": "11:05"(省略可), "title": "...", "category": "航空", "link": "https://..."(省略可)}"""
+    if not EVENTS.exists():
+        return []
+    rows = []
+    for e in json.loads(EVENTS.read_text("utf-8")).get("events", []):
+        try:
+            d = date.fromisoformat(e["date"])
+        except (KeyError, ValueError):
+            print(f"[warn] events.json: 日付が読めない {e!r}")
+            continue
+        if d < TODAY or not e.get("title"):
+            continue
+        item = {"title": e["title"]}
+        for k_out, k_in in (("time", "time"), ("genre", "category"), ("link", "link")):
+            if e.get(k_in):
+                item[k_out] = e[k_in]
+        rows.append((d, item))
+    rows.sort(key=lambda r: (r[0], r[1].get("time", "")))
+    return group_by_day(rows)
+
+
 # ---------------------------------------------------------------- 新着の検出と通知
 # 新着のうち、タイトルにこれらの語を含むものだけスマホに通知する
 NOTIFY_WORDS = re.compile(r"名作|傑作|懐かし|過去作|一挙|期間限定|特集|再配信|初配信")
@@ -329,9 +418,13 @@ TABS = [
      "links": [("Gガイド 兵庫の番組表", "https://bangumi.org/epg/td?ggm_group_id=85"),
                ("カンテレ 映画オンエア", "https://www.ktv.jp/cinema_tv/")]},
     {"id": "nico", "name": "ニコニコ", "kind": "days", "fetch": fetch_nico,
-     "note": "ニコニコインフォの週間一覧(アニメ生放送)から取得。一挙放送(ニコニコアニメスペシャル)は下のリンクで確認してください。",
+     "note": "ニコニコインフォの週間一覧(Nアニメ)と、ニコニコ生放送の「放送予定」検索(ニコニコサイエンス・航空自衛隊・ニコニコアニメスペシャル)から取得。予定がないものは表示されません。",
      "links": [("Nアニメ 一挙放送の予定", "https://anime.nicovideo.jp/live/reserved-ikkyo.html"),
                ("ニコニコアニメスペシャル", "https://ch.nicovideo.jp/anime-sp/live")]},
+    {"id": "events", "name": "予定カレンダー", "kind": "days", "fetch": fetch_events, "manual": True,
+     "note": "公式発表などで日程が決まっている予定の一覧です(events.json を元に表示)。日程は変更・中止になることがあるので、公式ページで確認してください。",
+     "links": [("ブルーインパルス展示飛行予定(航空自衛隊)", "https://www.mod.go.jp/asdf/event/cat-blue/"),
+               ("航空自衛隊", "https://www.mod.go.jp/asdf/")]},
     {"id": "prime", "name": "アマプラ終了", "kind": "days", "fetch": fetch_prime,
      "note": "出典: アニライク。見放題終了「予定」で、取り消されて継続になることがあります。字幕版・吹替版は1つにまとめています。",
      "links": [("元のリスト(アニライク)", "https://anilike.jp/end/amazon-end/")]},
@@ -361,7 +454,7 @@ def main():
             print(f"[warn] {t['id']}: {e}")
             tab[key] = old.get(t["id"], {}).get(key, [])
             tab["status"] = "error"
-        if t["kind"] == "days" and not tab[key] and tab["status"] == "ok":
+        if t["kind"] == "days" and not tab[key] and tab["status"] == "ok" and not t.get("manual"):
             tab["status"] = "empty"
         tabs.append(tab)
     data = {"updated": datetime.now(JST).strftime("%Y-%m-%d %H:%M"), "version": VERSION, "tabs": tabs}
