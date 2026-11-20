@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20 06:40",
+ "updated": "2026-11-21 06:38",
  "version": "v2026.10.25-2",
  "tabs": [
   {
@@ -23,17 +23,59 @@
    ],
    "items": [
     {
-     "title": "第5話 戦争と三人の女・・・ - TVer",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFA0bVZucFhmUm9aZWstV1FpVC1fNXFyektIZlhWM0JjQUVHQ3NidHhTR0RaMnp2NHl6RVJRVHZONzBCM2x3dEt1N0MxWQ?oc=5",
-     "date": "11/20",
-     "first_seen": "2026-11-20",
+     "title": "第1話 松本若菜主演スーパー救命医があらゆる命を救う - TVer",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5FeUJ2T0lDNFN3ejJnVTZBNGp5SkJZeHdfX2NXX3d3YlBjUXpNNURKRFZlYWlZV1BhbTcwMi1HbUhOUGtEOTI3eGRXZw?oc=5",
+     "date": "11/21",
+     "first_seen": "2026-11-21",
      "new": true
     },
     {
-     "title": "第7話 7th ROUND ケンカの良い所は仲直りできる事 - TVer",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE14X0NVTjl3NWhHVzV4QVFtRDNzT05Ick53V3I1VkdTMlBDUGNLVHY3WW5SUjF4VUlyOXVBcHV1Vk9qQXJGOUVIcVVTSQ?oc=5",
+     "title": "11月マンスリーゲストはOCHA NORMA！広本瑠璃と筒井澪心が登場！GIFT、ロックアンセム特集 - TVer",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9nMVVmMWF0cHhXVndWLVpXalgzY3Brc2hydUxNeVdtOFVTQ3N6QjJHaUhnWFpRWHo1VFFvOEZhZzBCNFEwZ2JYaEF2MA?oc=5",
+     "date": "11/21",
+     "first_seen": "2026-11-21",
+     "new": true
+    },
+    {
+     "title": "第7話 どうして警察が・・・だまされた女 - TVer",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5TV1lTMTN2bDJpelhMZVJKUF9UU0dnRHZGbG92V184dFZCLWszTWhyaFpJdmVNUzBxejk0ajlqZHVpanZHWC1hNHZNTQ?oc=5",
+     "date": "11/21",
+     "first_seen": "2026-11-21",
+     "new": true
+    },
+    {
+     "title": "俳優 アイドル 大集合 ディズニースペシャル【前編】 - TVer",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1mVEVvVUk0NmNjYVNIZE8zam5ITlVIdEhtc3huS1dWRldVTFhZUjBTWWllRmdFdmZCOU9rSG1LalVxdTBSXzdycE5FMA?oc=5",
      "date": "11/20",
-     "first_seen": "2026-11-20",
+     "first_seen": "2026-11-21",
+     "new": true
+    },
+    {
+     "title": "「イーアス沖縄豊崎」特集 - TVer",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBaMHBsRGpEMlBsT2NwMk1yN2JRMjNPS3J2eTFUR0RSdTNfWDY1UzM5UFBSRE1IRWEwOFEtXzVfTm1pbnFFSUg0ZzZmMA?oc=5",
+     "date": "11/20",
+     "first_seen": "2026-11-21",
+     "new": true
+    },
+    {
+     "title": "パン好きも思わず唸る！静岡こだわりのパン特集 - TVer",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE03czhxWm8zLTBzcTdqaDdkLWl4SWUwbXpNaTFmYWxrcUpYMzgyU2xOWDZ4V0Faa0R2Y1dnTDhlbUZTQkROcFZrTXNxdw?oc=5",
+     "date": "11/20",
+     "first_seen": "2026-11-21",
+     "new": true
+    },
+    {
+     "title": "中国ドラマ「大奉打更人－正義の銅鑼と王朝の闇－」 - TVer",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5VWVBOVlVnclVtelI2ck5ka2ZjN21HT3JMaFpaYUllSlpHTGpMdHdITms0WUJXaTJ3bWtHZmo2LTJseVp1WGRTLUk0aw?oc=5",
+     "date": "11/20",
+     "first_seen": "2026-11-21",
+     "new": true
+    },
+    {
+     "title": "第８話【蝕む悪意】新章突入 - TVer",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9ub3dIcExIUTdyVkowZm1yVmtZZ01pRU9XeDdmS0JIOUpST18zRzJJcnFDTG9BemNJZDltUUVxekxRLUIwZXVHeksxdw?oc=5",
+     "date": "11/20",
+     "first_seen": "2026-11-21",
      "new": true
     },
     {
@@ -44,8 +86,15 @@
      "new": true
     },
     {
-     "title": "【特集】県立病院の赤字見込みが26億円超 医療現場「赤字脱却」への模索 動き出した病院 - TVer",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9xTXh1Zk14dnREVXk2SDJnSHZsMzQwWEVHeGxCd1RCbGNfN0pDOVNvQUdXNkdWcTlDUm1KOWhUVDZKR1VTd3dwTHJLRQ?oc=5",
+     "title": "万城目学人気シリーズ「ホルモー3部作」特集＆文豪が愛した「文学のまち」城崎温泉に初出張！ - TVer",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9DaVVHcHlrMTRVLVBuVDFGTjhlTklvbDdVbjZnM1dPTDF1MFdvS1JpY0QwcEluOGYxM1gwbUtyU2x5RHVQRGZWQmpmVQ?oc=5",
+     "date": "11/19",
+     "first_seen": "2026-11-21",
+     "new": true
+    },
+    {
+     "title": "第5話 戦争と三人の女・・・ - TVer",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFA0bVZucFhmUm9aZWstV1FpVC1fNXFyektIZlhWM0JjQUVHQ3NidHhTR0RaMnp2NHl6RVJRVHZONzBCM2x3dEt1N0MxWQ?oc=5",
      "date": "11/19",
      "first_seen": "2026-11-20",
      "new": true
@@ -65,13 +114,6 @@
      "new": true
     },
     {
-     "title": "フジテレビ『プロポーズ大作戦』『最高の離婚』…新旧ドラマ50タイトル以上をTVer・FOD無料配信【配信作品一覧掲載】 - オリコンニュース",
-     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Sc2RJYmdOQlJqSG1yMERzazVnSHM4LU5TMDNnOG5MS2RKSEhEejBHTFhlZ2gxamtOYTNTZ3NSTTVYeUF5a0xJT0hfRVVhNTh0ZS00N253?oc=5",
-     "date": "11/19",
-     "first_seen": "2026-11-20",
-     "new": true
-    },
-    {
      "title": "新旧ドラマ50タイトル超を無料配信！『silent』『コンフィデンスマンJP』などをラインナップ『フジドラ Winter 2026』TVer、FODで開催 - めざましmedia",
      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB2cWtUWTVjZTY4TFhhVURkS1FnT3lLVHZUN3ZpMHZFODZpd184RWF0RHBpWEZwVEI5REtzQk4xMms0cjVaUXJZTEVXdUZBa0FGTUdr?oc=5",
      "date": "11/19",
@@ -79,52 +121,10 @@
      "new": true
     },
     {
-     "title": "特集「狙いは若者 新たな戦略～ちふれ化粧品～」 - TVer",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBvQnBMazdxY21GbUJtamFTSUU4OXg5dmE0M2VQdG1qdzJSRGF3d1V0SGtuYXJ3Qzl3RWVKM1NqV09zSENuLUJmZlk3RQ?oc=5",
+     "title": "フジテレビ『プロポーズ大作戦』『最高の離婚』…新旧ドラマ50タイトル以上をTVer・FOD無料配信【配信作品一覧掲載】 - オリコンニュース",
+     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Sc2RJYmdOQlJqSG1yMERzazVnSHM4LU5TMDNnOG5MS2RKSEhEejBHTFhlZ2gxamtOYTNTZ3NSTTVYeUF5a0xJT0hfRVVhNTh0ZS00N253?oc=5",
      "date": "11/19",
      "first_seen": "2026-11-20",
-     "new": true
-    },
-    {
-     "title": "【こんな仕掛けの漫画初めて】まだ見ぬ癖やフェチ！「竹コミ！」特集 - TVer",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5HeFk5OXZ0YXNFUlNFdkFfOHNqSXBSMWQ2M1ZrWFFVcmQ0d2RfY0dlZnJGcHVBaW9WX1UyMU1FbGJycXg4REVUOFNFUQ?oc=5",
-     "date": "11/19",
-     "first_seen": "2026-11-19",
-     "new": true
-    },
-    {
-     "title": "ポリティカルパン 11月18日(水)放送分 第7話 レッドダイヤモンド｜ドラマ｜見逃し無料配信はTVer！人気の動画見放題 - TVer",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5ST0tpVG1MQ2V2NnFQREJNSUxzUkVvY3JLeEhJSmR2cjRXS3FyRjlxS2ZTQUIzemdneGlBdUFBX1gtMTJNeElwUlJoZw?oc=5",
-     "date": "11/18",
-     "first_seen": "2026-11-20",
-     "new": true
-    },
-    {
-     "title": "密着！ カニが一番高く売れる日『every.特集』 - TVer",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9fVU0wYmw4ZS1xTklZY0NqT0RxTmRBMFhzeFZyRG51YjlIWDBJMWk4NmRWUUxVWU9kNG1MOUJvX2hwR2NTTW04cUFHbw?oc=5",
-     "date": "11/18",
-     "first_seen": "2026-11-19",
-     "new": true
-    },
-    {
-     "title": "第4話 私たち今日から親友で共犯者・・・ - TVer",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9DVEJsRDAxR0dVTF91bUlJT010U0hOYVM2UENHQVRqdi1NUHoybFd5Z0VLTmpWbmtnY1ZjdkxFWC1EakV5ZURjMk9Taw?oc=5",
-     "date": "11/18",
-     "first_seen": "2026-11-19",
-     "new": true
-    },
-    {
-     "title": "イ・サン 11月18日(水)放送分 第33話「初めての異国」｜ドラマ｜見逃し無料配信はTVer！人気の動画見放題 - TVer",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE91RnM4Mnp3cjFaWmxNb0kxRFVaaFIwZllXQUtUcU5XMEtEX3ljSWVTZ2ZfSHpxOFNQaTF5RHpRRlZaclRTXzlOdjZDUQ?oc=5",
-     "date": "11/18",
-     "first_seen": "2026-11-19",
-     "new": true
-    },
-    {
-     "title": "第4話 4th ROUND 消えた結婚指輪 - TVer",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1OZUJSTldvTjNrWkJJUnBSTUI3bGt3NEpjdnZtRmhTNkFaTTNkc3RpbHBRU1hudUNtZFJwM1ZpNjVVTzRNMUc1NV9uOA?oc=5",
-     "date": "11/18",
-     "first_seen": "2026-11-18",
      "new": true
     }
    ],
@@ -147,24 +147,24 @@
    ],
    "days": [
     {
-     "date": "2026-11-20",
-     "label": "11月20日(金)",
-     "items": [
-      {
-       "title": "金曜ロードショー「SING／シング」★2週連続放送！第1弾",
-       "link": "https://bangumi.org/tv_events/AmVQgoJ1UAM",
-       "time": "21:00〜23:04 読売テレビ"
-      }
-     ]
-    },
-    {
      "date": "2026-11-27",
      "label": "11月27日(金)",
      "items": [
       {
-       "title": "金曜ロードショー「SING／シング：ネクストステージ」",
+       "title": "金曜ロードショー「SING／シング：ネクストステージ」★本編ノーカット",
        "link": "https://bangumi.org/tv_events/AmXAgoKCcAM",
        "time": "21:00〜23:09 読売テレビ"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-28",
+     "label": "11月28日(土)",
+     "items": [
+      {
+       "title": "土曜プレミアム・映画「東京リベンジャーズ」",
+       "link": "https://bangumi.org/tv_events/AmXQgglcIAM",
+       "time": "21:00〜23:30 関西テレビ"
       }
      ]
     }
@@ -187,24 +187,6 @@
     }
    ],
    "days": [
-    {
-     "date": "2026-11-20",
-     "label": "11月20日(金)",
-     "items": [
-      {
-       "time": "19:00",
-       "title": "獣王武神ダンデヴァイン 1～6話振り返り上映会",
-       "link": "https://live.nicovideo.jp/watch/lv351687622",
-       "genre": "アニメ"
-      },
-      {
-       "time": "20:00",
-       "title": "【ゲスト：岸本勇太】安藤夢叶の「若最強への道」vol.2 supported by ニコメン",
-       "link": "https://live.nicovideo.jp/watch/lv351694912",
-       "genre": "サイエンス"
-      }
-     ]
-    },
     {
      "date": "2026-11-21",
      "label": "11月21日(土)",
@@ -254,13 +236,11 @@
       {
        "time": "19:30",
        "title": "探偵はもう、死んでいる。Season2 1～6話振り返り上映会",
-       "link": "https://live.nicovideo.jp/watch/lv351645930",
        "genre": "アニメ"
       },
       {
        "time": "22:30",
        "title": "世界最強の魔女、始めました 1～6話振り返り上映会",
-       "link": "https://live.nicovideo.jp/watch/lv351789258",
        "genre": "アニメ"
       }
      ]
@@ -278,7 +258,18 @@
       {
        "time": "20:25",
        "title": "冰剣の魔術師が世界を統べるⅡ 1～6話振り返り上映会",
-       "link": "https://live.nicovideo.jp/watch/lv351633647",
+       "genre": "アニメ"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-27",
+     "label": "11月27日(金)",
+     "items": [
+      {
+       "time": "19:30",
+       "title": "とある暗部の少女共棲 1～6話振り返り上映会",
+       "link": "https://live.nicovideo.jp/watch/lv351645942",
        "genre": "アニメ"
       }
      ]
@@ -287,6 +278,11 @@
      "date": "2026-11-28",
      "label": "11月28日(土)",
      "items": [
+      {
+       "time": "21:00",
+       "title": "「機動戦士ガンダムSEED FREEDOM」上映会【ニコニコプレミアム限定】",
+       "genre": "アニメ"
+      },
       {
        "time": "21:00",
        "title": "『機動戦士ガンダムSEED FREEDOM』上映会【ニコニコプレミアム限定】",
@@ -328,62 +324,6 @@
     }
    ],
    "days": [
-    {
-     "date": "2026-11-20",
-     "label": "11月20日(金)",
-     "items": [
-      {
-       "title": "SUNNY 強い気持ち・強い愛",
-       "genre": "その他",
-       "len": "119分"
-      },
-      {
-       "title": "さよなら、ティラノ",
-       "genre": "キッズ",
-       "len": "98分"
-      },
-      {
-       "title": "ステイク・ランド 戦いの果て",
-       "genre": "映画",
-       "len": "85分"
-      },
-      {
-       "title": "モテキ",
-       "genre": "映画",
-       "len": "118分"
-      },
-      {
-       "title": "亜人",
-       "genre": "映画",
-       "len": "108分"
-      },
-      {
-       "title": "屍人荘の殺人",
-       "genre": "映画",
-       "len": "120分"
-      },
-      {
-       "title": "怒り",
-       "genre": "映画",
-       "len": "141分"
-      },
-      {
-       "title": "悪人",
-       "genre": "映画",
-       "len": "140分"
-      },
-      {
-       "title": "花遊記<ファユギ>",
-       "genre": "ドラマ",
-       "len": "20話"
-      },
-      {
-       "title": "言葉を失う",
-       "genre": "映画",
-       "len": "102分"
-      }
-     ]
-    },
     {
      "date": "2026-11-21",
      "label": "11月21日(土)",
